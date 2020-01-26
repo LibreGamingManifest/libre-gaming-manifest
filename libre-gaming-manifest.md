@@ -21,22 +21,11 @@ We live in a world where economic concerns play a more or less part of our daily
 Why create games?
 Due to the narrative and artistic aspects added to technological development, game creation is as diverse as it can get. In game creation, there is room for many types of creativity, be it writing stories, scenes, or narratives, be it artistic content creation of all kinds, like images, textures, 3d models, animation, sound, music, cinematography, world, or character creation, through to the more structured creativity of the kind of programming, coding, conceptualization, organization, management, public relation, or documentation. There is space for almost any type of creativity or interest.
 
-Libre game creation not only challanges but also brings fun, utilizing your free time while benefiting all humanity, and can be a much more rewarding (if not even therapeutic) escape from the harsh reality of our life ('cause she is equally a harsh mistess). Creative engagement presents a much better reality escape route than e.g. television, web surfing, or drugs. It further presents a excellent playing field for personal growth.
+Libre game creation not only challenges but also brings fun, utilizing your free time while benefiting all humanity, and can be a much more rewarding (if not even therapeutic) escape from the harsh reality of our life ('cause she is equally a harsh mistress). Creative engagement presents a much better reality escape route than e.g. television, web surfing, or drugs. It further presents a excellent playing field for personal growth.
 
-Still, even in the age of global tech giants living off libre software without returns to original developers, we advocate the establishment of structures that will enable creators to fully excersise their creativity with as few obstacles as possible.
+Still, even in the age of global tech giants living off libre software without returns to original developers, we advocate the establishment of structures that will enable creators to fully exercise their creativity with as few obstacles as possible.
 
-This is an attempt at removing obstacles and reducing challenges found by contemporary and future libre game creators and developers.
-
-
-**Games Within Games**
--------------------------------------
-
-Some say that "life is a game".
-Actually it is a "play" and you are the player. Life is full of fakes: e.g. fake news, fake packaging, fake friends, and fake virtual reality games.
-
-Within those games we are given the opportunity to be gods and create a better reality. Within those games we create minigames.
-
-Games within games to chose in which one you want to grow.
+This project is an attempt at removing obstacles and reducing challenges found by contemporary and future libre game creators and developers.
 
 
 **Game Types**
@@ -91,7 +80,6 @@ This is the nature of open source.
 Be sure that you are prepared to walk this path.
 
 
-
 **Headsup Advice**
 -------------------------------------
 
@@ -114,7 +102,6 @@ Be sure that you are prepared to walk this path.
 - as all roads, this one is also full of sweat and disappointments (but also achievements and rewards)
 
 
-
 **About the Originator**
 -------------------------------------
 
@@ -130,7 +117,7 @@ On a side note: 1958's Tennis for Two is considered to be the first video game (
 **Chapter Outline**
 -------------------------------------
 
-The gaming challenges chapter is the manifesto of this document. It discusses desired game mechanics, technology, story telling, and other aspects relevant to creation ang gameplay.
+The [gaming challenges](#gaming-challenges) chapter is the manifesto of this document. It discusses desired game mechanics, technology, story telling, and other aspects relevant to creation and gameplay.
 
 
 
@@ -360,6 +347,17 @@ Release formats must support the various requirements of an engine, most notably
 - release: bxmf
 
 
+**Games Within Games**
+-------------------------------------
+
+Some say that "life is a game".
+Actually it is a "play" and you are the player. Life is full of fakes: e.g. fake news, fake packaging, fake friends, and fake virtual reality games.
+
+Within those games we are given the opportunity to be gods and create a better reality. Within those games we create minigames.
+
+Games within games to chose in which one you want to grow.
+
+
 **Production Pipeline**
 -------------------------------------
 
@@ -367,7 +365,6 @@ From idea to finished release. All creativity starts with an idea. There is the 
 
 The story dictates which characters and environment assets will be designed.
 Visual Effects, voice, audio, and cut scenes may be required in additions.
-
 
 
 **Asset Pipeline**
@@ -587,6 +584,7 @@ A collection of assorted references with the objective to shorten the entry barr
 **Game Developer Blogs**
 -------------------------------------
 
+- [https://openteq.wordpress.com/portfolio/libregaming/](https://openteq.wordpress.com/portfolio/libregaming/)
 - [https://erikhjortsberg.blogspot.com/](https://erikhjortsberg.blogspot.com/)
 - [http://dublin.alistairriddoch.org/](http://dublin.alistairriddoch.org/)
 - [https://kblin.blogspot.com/](https://kblin.blogspot.com/)
@@ -688,6 +686,7 @@ Less known engines
 - [GIMP](https://www.gimp.org/)
 
 - [Listing from https://wiki.vega-strike.org/Links:Graphic_Applications](https://wiki.vega-strike.org/Links:Graphic_Applications)
+
 
 **3D Modeling Applicationa**
 -------------------------------------
