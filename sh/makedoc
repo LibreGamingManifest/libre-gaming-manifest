@@ -1,0 +1,45 @@
+#! /bin/bash
+# @file   : makedoc (Linux)
+# @version: 2020-01-24
+# @created: 2020-01-19
+# @author : pyramid
+# @brief  : make release docs from .md source
+# @param  : none
+# list system fonts
+# find /usr/share/texmf-dist/tex/latex | grep sty | uniq
+# fc-list --format="%{family[0]}\n" | sort | uniq
+
+
+
+
+echo "--------------------------------"
+echo "---   makedoc | 2020-01-24  ---"
+echo "--------------------------------"
+
+TARGETDIR=release
+FILENAME=libre-gaming-manifest
+TITLE="Libre Gaming Manifest"
+AUTHOR="pyramid, et al"
+RELEASEDATE=$(date --iso-8601)
+
+#echo "found toc items"
+#echo "grep '#' $FILENAME.md | tee toc.txt"
+#grep '#' $FILENAME.md | tee toc.txt
+
+echo "creating dir $TARGETDIR"
+echo "mkdir -p $TARGETDIR"
+mkdir -p $TARGETDIR
+
+
+echo "creating pdf from $FILENAME.md"
+echo "pandoc --metadata title='$TITLE' -o $FILENAME.pdf $FILENAME.md"
+#pandoc --metadata title="$TITLE" -o $FILENAME.epub $FILENAME.md
+#pandoc --toc --toc-depth=3 --number-sections --metadata title="$TITLE" --metadata author="authors: $AUTHOR" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.pdf $FILENAME.md
+pandoc --toc --toc-depth=3 --number-sections --metadata-file=metadata.yaml --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.pdf $FILENAME.md
+
+
+echo "creating epub from $FILENAME.md"
+echo "pandoc --metadata title='$TITLE' -o $FILENAME.epub $FILENAME.md"
+#pandoc --toc --toc-depth=3 --number-sections --metadata title="$TITLE" --metadata author="authors: $AUTHOR" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.epub $FILENAME.md
+pandoc --toc --toc-depth=3 --number-sections --metadata-file=metadata.yaml --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.epub $FILENAME.md
+
