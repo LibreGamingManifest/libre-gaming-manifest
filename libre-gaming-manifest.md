@@ -41,11 +41,11 @@ We aggregate, collect, discuss but do not create games within this community. Th
 **Game Vision**
 -------------------------------------
 
-The originators envision of a game is an exploratory free-style open-universe first-person adenture style game that is non-repetitive enticing and at the same time rewards the player for his spent time.
+The originators envision of a game is an exploratory free-style open-universe first-person adenture role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
 
 Think about a holodeckesque style of game as the guiding vision.
 
-It should a large cosmos of star systems with spacefaring mechanics as well as roaming the entire planet (or any other object in space), in atmosphere, on the surface, on and sub-liquid, or below ground. Ships, buildings, structures, space stations, caves should be walkable and explorable.
+It should be a large cosmos of star systems with spacefaring mechanics as well as roaming the entire planets (or any other objects in space), in atmosphere, on the surface, on and sub-liquid, or below ground. Ships, buildings, structures, space stations, caves should be walkable and explorable.
 
 Further specifics will be discussed in later chapters keeping in mind that an exemplary fantasy game may as well utilize a subset of the envisioned mechanics.
 
@@ -141,8 +141,8 @@ Gaming Challenges
 **Things to have**
 -------------------------------------
 
-- Unlimited experience levels
-- Automatic progression (when not in game too)
+- Unlimited skill-based experience levels
+- Automatic idle progression (when not in game)
 - Loot chests with rare items you need, otherwise usefull mats
 
 
@@ -194,7 +194,8 @@ source: [https://forums.vega-strike.org/viewtopic.php?p=31090#p31090](https://fo
 **What can be done procedurally**
 -------------------------------------
 
-to avoid repetitiveness, content must be procedural
+To avoid repetitiveness, content, in the long run, must be procedural
+
 - landscapes
 - cities
 - characters
@@ -204,6 +205,7 @@ to avoid repetitiveness, content must be procedural
 - gear
 - stories
 - wildlife
+- ...
 
 
 **Content and Challenge Types**
@@ -218,46 +220,14 @@ to avoid repetitiveness, content must be procedural
 **Design Documents**
 -------------------------------------
 
-We separate the game content from the game play. The foloowing documents are required for good game design
+We separate the game content from the game play. The following documents are required for good game design
+
 - Universe canon 
 - Game design
 
 Universe canon describes history, events,species, culture, music, art, designs, vessels, personnae, galaxies, planets, places, fauna, flora, and everything that is needed to represent a believable universe.
 
 The design document describes game mechanics, technologies, object standards, interfaces, libraries, coding standards, and everything required to make the game.
-
-
-**Open Fictional Universe Canon**
--------------------------------------
-
-While there are a lot of enticing universes out there. Unfortunately, due to the state of general greed and copyright laws, it is not recommended to develop games based on published mainstream canon.
-
-Public domain and libre licensed canons van be the basis for libre games, though care should be given to establish a viable consensus mechanism when enlarging the existing canon.
-
-With procedural content, objects from the canon, e.g. places or characters, must be both, present in the universe, and not replaced by procedural content upon respawn.
-
-Further care must be given in establishing authoritative bodies and decision processes in case canon needs to be furthered and enhanced.
-
-**Recommendation**
-We reference here particularly the Vega Strike canon, principally devised by John Sampson aka jackS aka JS.
-Daniel Horn started Vega Strike in 1998 in high school. The engine and game are now orphaned but the canon is extensive and offers a good starting point for further development of our sci-fi game universe.
-The relevant document is the [vsudd][] "Vega Strike Universe Development Document".
-
-
-**Game Architecture**
--------------------------------------
-
-A very [solid multiplayer architecture](https://www.worldforge.org/index.php/develop/technical-overview/) is presented in the World Forge project.
-
-![World Forge architecture](image/WF_component_rel_graph.jpg "World Forge architecture")
-
-[Cyphesis](https://www.worldforge.org/index.php/components/cyphesis/) is the main WorldForge server. It provides everything needed in order to run a virtual world.
-
-[Mercator](https://www.worldforge.org/index.php/components/mercator/) is primarily aimed at terrain for multiplayer online games. Mercator is designed in such a way that individual tiles can be generated on-the-fly from a very small source data set. Each tile uses a fast deterministic random number generation to ensure that identical results are produced "anytime, anywhere". This enables transmission of terrain across low bandwidth links as part of the standard data stream, or server side collision detection with the same terrain that the player sees.
-
-[Atlas](https://www.worldforge.org/index.php/components/atlas-cpp/) is the protocol which binds all of Worldforge together. It's a protocol meant to express a complete virtual worlds, and all communication between the servers and the clients uses it. The world itself as well as all actions that occur are all expressed through Atlas.
-
-[Eris](https://www.worldforge.org/index.php/components/eris/) is designed to simplify client development (and promote code reuse) by providing a common system to deal with the back-end Atlas tasks. Notably, Eris encapsulates most of the work in getting Atlas entities available on your client, and managing updates from the server. Thus it can be considered as a session layer above Atlas, providing persistent (for an entire gaming session) objects as opposed to transient Atlas ones.
 
 
 **Documentation Standards and Formats**
@@ -281,14 +251,71 @@ An appropriate pipeline shall be established for the above documentation process
 - converted documents in repo directory: doc/canon/release
 
 
+**Open Fictional Universe Canon**
+-------------------------------------
+
+There are a lot of interesting universes out there. Unfortunately, due to the state of general greed and copyright laws, it is not recommended to develop games based on published mainstream canon (think Star $$$$).
+
+Public domain and libre licensed canons can be the basis for libre games, though care should be given to establish a viable consensus mechanism when enlarging the existing canon.
+
+With procedural content, objects from the canon, e.g. places or characters, must be both, present in the universe, and not replaced by procedural content upon respawn.
+
+Further care must be given in establishing authoritative bodies and decision processes in case canon needs to be furthered and enhanced.
+
+**Recommendation**
+We reference here particularly the Vega Strike canon, principally devised by John Sampson aka jackS aka JS.
+Daniel Horn started Vega Strike in 1998 in high school. The engine and game are now orphaned but the canon is extensive and offers a good starting point for further development of our sci-fi game universe.
+The relevant document is the [vsudd][] "Vega Strike Universe Development Document".
+
+See also:
+- https://www.gamasutra.com/blogs/AlexanderFreed/20150615/246115/On_a_Lack_of_Originality_in_ScienceFiction_and_Fantasy_Game_Settings.php
+
+
 **Story Writing**
 -------------------------------------
 
-Engaging non-repetitive story writing is a challenging undertaking. Many stories can be sampled from real life, art and especially literature.
+Engaging in non-repetitive story writing is a challenging undertaking. Many stories can be sampled from real life, art, and especially literature.
+
+A word processor is your main tool for story writing. A chapter should be reserved for the manuscript with the big picture plot, personnages, notes, comments, and ideas.
+
+Try Manuskript, the open-source tool for writers: http://www.theologeek.ch/manuskript/
+
+See also: https://alternativeto.net/software/scrivener/?license=opensource, https://itsfoss.com/open-source-tools-writers/, https://github.com/Blecki/TreeWriter, https://www.giuspen.com/cherrytree/
 
 Stories must be converted into workable code, usually using scripting.
 
-A libre standard format for stories is desired. Not only to maketories interchangeable but also to allow for future artificial algorithms to automatically add additional content to the game.
+See also:
+- https://www.gamasutra.com/blogs/AlexanderFreed/20150629/247222/Six_Metrics_for_Better_Game_Narrative.php
+- https://www.gamasutra.com/blogs/AlexanderFreed/20150504/242101/Yes_You_Have_To_Write_a_Game_Plot_Summary_and_Yes_It_Has_To_Be_Good.php
+
+
+**Storyboarding**
+-------------------------------------
+
+Before moving on with asset production, the story can be optionally converted into a graphical sequence of events.
+
+A libre standard storyboard exchange source format for stories is desired. Not only to make stories interchangeable but also to allow for future artificial algorithms to automatically add additional content to the game.
+
+A storyboard exchange format (SXF) should at least contain informmation on
+
+- personnages
+- location
+- time
+- dependencies
+- events
+- triggers
+- environment description
+- scenes
+- dialogues
+- dialog options
+- optionally images to visualize your story
+
+Libraries for reading and writing storybords must exist, as well as user software for creators.
+
+Explorable topics: screenwriting software, storyboard software, story writing software, storyboard templates
+
+- https://github.com/wonderunit/storyboarder
+
 
 
 **Conversations**
@@ -296,6 +323,10 @@ A libre standard format for stories is desired. Not only to maketories interchan
 
 The following concepts are current reference:
 - https://wiki.worldforge.org/wiki/Conversation
+- https://www.gamedev.net/forums/topic/596071-best-technique-to-write-multiple-choice-dialogue/?page=2
+- https://en.wikipedia.org/wiki/Dialogue_tree
+- https://en.wikipedia.org/wiki/Digital_conversation
+- https://en.wikipedia.org/wiki/Dialogue_system
 
 
 **Quests and Missions**
@@ -492,6 +523,22 @@ Thete is an inerent latency problem that may arise in universe instances with lo
 Scaling of servers to users implies cost  and time for maintenance.
 
 
+**Game Architecture**
+-------------------------------------
+
+A very [solid multiplayer architecture](https://www.worldforge.org/index.php/develop/technical-overview/) is presented in the World Forge project.
+
+![World Forge architecture](image/WF_component_rel_graph.jpg "World Forge architecture")
+
+[Cyphesis](https://www.worldforge.org/index.php/components/cyphesis/) is the main WorldForge server. It provides everything needed in order to run a virtual world.
+
+[Mercator](https://www.worldforge.org/index.php/components/mercator/) is primarily aimed at terrain for multiplayer online games. Mercator is designed in such a way that individual tiles can be generated on-the-fly from a very small source data set. Each tile uses a fast deterministic random number generation to ensure that identical results are produced "anytime, anywhere". This enables transmission of terrain across low bandwidth links as part of the standard data stream, or server side collision detection with the same terrain that the player sees.
+
+[Atlas](https://www.worldforge.org/index.php/components/atlas-cpp/) is the protocol which binds all of Worldforge together. It's a protocol meant to express a complete virtual worlds, and all communication between the servers and the clients uses it. The world itself as well as all actions that occur are all expressed through Atlas.
+
+[Eris](https://www.worldforge.org/index.php/components/eris/) is designed to simplify client development (and promote code reuse) by providing a common system to deal with the back-end Atlas tasks. Notably, Eris encapsulates most of the work in getting Atlas entities available on your client, and managing updates from the server. Thus it can be considered as a session layer above Atlas, providing persistent (for an entire gaming session) objects as opposed to transient Atlas ones.
+
+
 **Player Character**
 -------------------------------------
 
@@ -562,6 +609,7 @@ A collection of assorted references with the objective to shorten the entry barr
 - https://social.freegamedev.net/channel/devplanet
 - https://social.freegamedev.net/channel/planet
 - https://freegamer.blogspot.com/search/label/devcorner
+- [Gamasutra](https://www.gamasutra.com/)
 - https://www.gamasutra.com/blogs/ChiragChopra/20190604/343845/Admiring_the_Game_Design_in_HyperCasual_Games.php
 - https://gamedev.net/
 - http://archive.gamedev.net/archive/index.html
@@ -569,16 +617,26 @@ A collection of assorted references with the objective to shorten the entry barr
 - https://terranova.blogs.com/terra_nova/games/
 
 
+**Conferencees**
+-------------------------------------
+
+- [Gamedev.World](https://gamedev.world/en/)
+- [SIGGRAPH](https://www.siggraph.org/)
+
+
 **Technology Articles**
 -------------------------------------
 
-- Thinking in C++ http://www.bruceeckel.com/ThinkingInCPP2e.html
+- [Thinking in C++] (http://www.bruceeckel.com/ThinkingInCPP2e.html)
  
-- Adaptive planet and terrain mesh generation http://www.vterrain.org/LOD/Papers/index.html
+- [Adaptive planet and terrain mesh generation] (http://www.vterrain.org/LOD/Papers/index.html)
 
-- A Real-Time Procedural Universe http://sponeil.net/
+- [A Real-Time Procedural Universe] (http://sponeil.net/)
 
-- SFZ Engine Implementation http://sfz.schattenkind.net/wiki/index.php/Main_Page
+- [SFZ Engine Implementation] (http://sfz.schattenkind.net/wiki/index.php/Main_Page)
+
+- [Defining Dialogue Systems](https://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php?print=1)
+- [Dialogue Trees in Interactive Fiction](https://voicefirstfiction.com/2018/05/dialogue-trees-in-interactive-fiction/)
 
 
 **Game Developer Blogs**
@@ -594,7 +652,51 @@ A collection of assorted references with the objective to shorten the entry barr
 **Game Development Forums**
 -------------------------------------
 
+- [GameDev.net Forums](https://www.gamedev.net/forums/)
+- [IndieGamer Forums](http://forums.indiegamer.com/)
 - [https://forums.cgsociety.org/](https://forums.cgsociety.org/)
+- [TIG Forums](https://forums.tigsource.com/)
+- [IndieDB Forums](https://www.indiedb.com/forum)
+- [Reddit Gamedev Topic](https://www.reddit.com/r/gamedev/)
+- [Stack Exchange Game Development](https://gamedev.stackexchange.com/)
+- [Kaidus Community](http://kaidus.com/community/)
+- [Kongregate](https://www.kongregate.com/forums/4-game-programming)
+- [Dream.In.Code](https://www.dreamincode.net/forums/forum/69-game-development/)
+- [Buildbox Forum](https://www.buildbox.com/forum/)
+- [GitHub Community Forum](https://github.community/)
+- [Develteam](https://www.develteam.com/Forums/Develteam/Game-Development)
+- [Cocos Forums](https://discuss.cocos2d-x.org/)
+- [Unreal Engine Forums](https://forums.unrealengine.com/)
+- [Unity Forum](https://forum.unity.com/)
+- [Python Game Development](https://python-forum.io/Forum-Game-Development)
+- [The Game Creators Developer Forums](https://forum.thegamecreators.com/)
+- [Nvidia Visual and Game Development Forums](https://devtalk.nvidia.com/default/board/60/visual-and-game-development/)
+- [Ogre Forums](https://forums.ogre3d.org/)
+- []()
+
+
+**Gamer Forums**
+-------------------------------------
+
+- [NeoGAF](https://www.neogaf.com/forums/gaming-discussion.2/)
+- [Gamespot Forums](https://www.gamespot.com/forums/)
+- [VideoGamer Forums](https://www.videogamer.com/forums/)
+- [PCGamer](https://forums.pcgamer.com/)
+- [Gaming Latest](https://gaminglatest.com/)
+- [GameFAQs](https://gamefaqs.gamespot.com/)
+- [Steam Forums](https://steamcommunity.com/discussions/)
+- [IGN Boards](https://www.ignboards.com/)
+- [Adventure Gamers - Forums](https://adventuregamers.com/forums/viewforum/2/)
+- [MMORPG Forums](http://forums.mmorpg.com/)
+- [The Verge Gaming Forums](https://www.theverge.com/forums/gaming/)
+- [VGR](https://www.vgr.com/forum/)
+- [AV Forums](https://www.avforums.com/forums/general-video-gaming-chat.100/)
+- [Eurogamer Forum](https://community.eurogamer.net/)
+- [Giant Bomb](https://www.giantbomb.com/forums/)
+- [Escapist Forums](https://www.escapistmagazine.com/forums/)
+- [Ars Technica Forums](https://arstechnica.com/civis/viewforum.php?f=22)
+- [Game Revolution Forums](https://forums.gamerevolution.com/)
+- [Something Awful FOrums](https://forums.somethingawful.com/forumdisplay.php?forumid=44)
 
 
 **Fictional Universes**
@@ -609,6 +711,13 @@ A collection of assorted references with the objective to shorten the entry barr
   Dural \
   [Dural on World Forge Wiki](https://wiki.worldforge.org/wiki/Dural) \
   https://wiki.worldforge.org/wiki/Dural
+
+
+**Story Writing**
+-------------------------------------
+
+- [Hemingway](http://www.hemingwayapp.com/)
+- [Dialog](https://www.linusakesson.net/dialog/)
 
 
 **2D Assets**
@@ -663,10 +772,7 @@ Popular engines
 - [Blender Game Engine](http://www.blender.org/)
 - [Kha](http://kha.tech/)
 - [Unreal Engine 4](https://www.unrealengine.com/)
-
-
-Less known engines
-
+- [CryEngine](https://github.com/CRYTEK/CRYENGINE)
 - [Castle Game Engine](https://castle-engine.io/)
 
 
@@ -675,9 +781,18 @@ Less known engines
 
 - [OGRE](https://www.ogre3d.org/)
 - [Armory Engine](https://armory3d.org/)
+- [OpenMesh](http://openmesh.org/)
+- [Collada](https://www.khronos.org/collada/)
+- [Universal Scene Description](https://github.com/PixarAnimationStudios/USD)
 - [WFMath](https://www.worldforge.org/index.php/components/wfmath/) geometric objects
 - [Varconf](https://www.worldforge.org/index.php/components/varconf/) configuration files
 - [libWfut](https://www.worldforge.org/index.php/components/wfut/) server/client asset synchronization
+- [Open Dynamics Engine](https://www.ode.org/)
+- [OpenSubdiv](http://graphics.pixar.com/opensubdiv/docs/intro.html)
+- [OpenEXR](https://www.openexr.com/)
+- [OpenTimelineIO](https://github.com/PixarAnimationStudios/OpenTimelineIO)
+- [Ptex](https://github.com/wdas/ptex)
+- [Computational Geometry Lib](https://www.cgal.org/)
 
 
 **Graphic Content Creation Tools**
@@ -686,6 +801,22 @@ Less known engines
 - [GIMP](https://www.gimp.org/)
 
 - [Listing from https://wiki.vega-strike.org/Links:Graphic_Applications](https://wiki.vega-strike.org/Links:Graphic_Applications)
+
+- [AcademySoftwareFoundation Landscape](https://github.com/AcademySoftwareFoundation/aswf-landscape)
+- [ASWF Interactive Landscape](https://landscape.aswf.io/)
+
+- [OpenSourceVFX.org](http://opensourcevfx.org/)
+
+- [OpenFX](http://openfx.sourceforge.net/)
+- [OpenColorIO](https://opencolorio.org/)
+- [Open Shading Language](http://opensource.imageworks.com/?p=osl)
+- [Open Shading Language GitHub](https://github.com/imageworks/OpenShadingLanguage)
+- [OpenVDB](https://www.openvdb.org/)
+- [OpenBatchIO](http://opensourcevfx.org/2012/11/openbatchio/)
+- [pfstools](http://pfstools.sourceforge.net/)
+- [Alembic](https://github.com/alembic/alembic)
+- [OpenFlipper](http://www.openflipper.org/)
+- [SeExpr](http://www.disneyanimation.com/technology/seexpr.html)
 
 
 **3D Modeling Applicationa**
@@ -701,6 +832,7 @@ Less known engines
 **3D Texture Painting**
 -------------------------------------
 
+- [CinePaint]()https://github.com/archont00/cinepaint-oyranos
 - [ArmorPaint](https://armorpaint.org/)
 
 
@@ -747,6 +879,13 @@ Libre game listings
 -------------------------------------
 
 - [Unreal Engine](https://docs.unrealengine.com/en-US/Programming/Development/CodingStandard/index.html)
+
+
+**Catalogs**
+-------------------------------------
+
+- [MagicTools](https://github.com/ellisonleao/magictools)
+- [GitHub Game Development](https://github.com/topics/game-development)
 
 
 
