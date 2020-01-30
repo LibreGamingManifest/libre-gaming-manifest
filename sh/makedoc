@@ -1,6 +1,6 @@
 #! /bin/bash
 # @file   : makedoc (Linux)
-# @version: 2020-01-27
+# @version: 2020-01-28
 # @created: 2020-01-19
 # @author : pyramid
 # @brief  : make release docs from .md source
@@ -13,7 +13,7 @@
 
 
 echo "--------------------------------"
-echo "---   makedoc | 2020-01-27  ---"
+echo "---   makedoc | 2020-01-28  ---"
 echo "--------------------------------"
 
 TARGETDIR=release
@@ -23,10 +23,11 @@ AUTHOR="pyramid, et al"
 RELEASEDATE=$(date --iso-8601)
 
 
+# egrep '===|---' -B1 --no-group-separator libre-gaming-manifest.md | tee toc.txt
+#grep '**' $FILENAME.md | tee toc.txt
 echo "exporting toc items"
-echo "grep '**' $FILENAME.md | tee toc.txt"
-grep '**' $FILENAME.md | tee toc.txt
-
+echo "egrep '===|---' -B1 --no-group-separator $FILENAME.md | tee toc.txt"
+egrep '===|---' -B1 --no-group-separator $FILENAME.md | tee toc.txt
 
 echo "creating dir $TARGETDIR"
 echo "mkdir -p $TARGETDIR"

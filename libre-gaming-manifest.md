@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2020-01-26
+# @version: 2020-01-30
 # @created: 2019-02-01
 #
 ```
@@ -10,7 +10,7 @@
 **Introduction**
 =====================================
 
-**Libre Gaming Manifest** (LGM) is a working title for what is to become a collection of ideas, practices, and tools for aiding and advancing the creative development of libre games (as in unrestricted in creativity by copyright or liability concerns) games. Manifest as in an ordered list (not as in manifesto, a declaration). 
+**Libre Gaming Manifest** (LGM) is a working title for what is to become a collection of ideas, practices, and tools for aiding and advancing the creative development of libre games (as in unrestricted in creativity by copyright or liability concerns) games. Manifest as in an ordered list (not as in manifesto, a declaration).
 
 Other potential candidates pondered for a release title were
 - Libre Games Library (LGL)
@@ -41,11 +41,11 @@ We aggregate, collect, discuss but do not create games within this community. Th
 **Game Vision**
 -------------------------------------
 
-The originators envision of a game is an exploratory free-style open-universe first-person adenture role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
+The originators envision a cinematographic  exploratory free-style open-universe first-person adenture role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
 
 Think about a holodeckesque style of game as the guiding vision.
 
-It should be a large cosmos of star systems with spacefaring mechanics as well as roaming the entire planets (or any other objects in space), in atmosphere, on the surface, on and sub-liquid, or below ground. Ships, buildings, structures, space stations, caves should be walkable and explorable.
+It should be a large cosmos possibilities and opportunities populated by star systems with spacefaring mechanics as well as possibility of roaming entire planets (or any other objects in space), in atmosphere, on the surface, on and sub-liquid, or below ground. Ships, buildings, structures, space stations, caves should be walkable and explorable.
 
 Further specifics will be discussed in later chapters keeping in mind that an exemplary fantasy game may as well utilize a subset of the envisioned mechanics.
 
@@ -127,7 +127,25 @@ Gaming Challenges
 =====================================
 
 
-**Things to avoid**
+**Things to Consider**
+-------------------------------------
+
+For our sci-fi roleplaying space operaa game, we would like to see
+
+- space travel
+- walkable space ships
+- docking to space objects
+- planet flight and landings without cutscenes
+- walkable planets without barriers
+- terrain with progressive loading
+- no loading screens for relocation
+- loading screens only to private player dungeons that require teleporting (e.g. arenas)
+- Unlimited skill-based experience levels
+- Automatic idle progression (when not in game)
+- Loot chests with rare items you need, otherwise usefull mats
+
+
+**Things to Avoid**
 -------------------------------------
 
 - boredom from repetitive content
@@ -136,20 +154,13 @@ Gaming Challenges
 - losing items from death
 - advancing only by killing pixels
 - multiple currencies
+- silent protgonist
 
 
-**Things to have**
+**Compelling Experience**
 -------------------------------------
 
-- Unlimited skill-based experience levels
-- Automatic idle progression (when not in game)
-- Loot chests with rare items you need, otherwise usefull mats
-
-
-**Enticing Experience**
--------------------------------------
-
-Though game sales grow, those games with unique and realistic content that are able to engage the user for a long time will prevail.
+Those compelling, enticing, reactive games with unique and realistic content that are able to engage the user for a long time will prevail.
 
 Just like life, there is no knowing what will be. Games must become the same.
 
@@ -196,6 +207,8 @@ source: [https://forums.vega-strike.org/viewtopic.php?p=31090#p31090](https://fo
 
 To avoid repetitiveness, content, in the long run, must be procedural
 
+- space
+- planets
 - landscapes
 - cities
 - characters
@@ -204,12 +217,15 @@ To avoid repetitiveness, content, in the long run, must be procedural
 - loot boxes
 - gear
 - stories
+- vegetation
 - wildlife
 - ...
 
 
 **Content and Challenge Types**
 -------------------------------------
+
+TODO: why this chapter?
 
 - Story and mission based
 - Skill and level based
@@ -222,12 +238,14 @@ To avoid repetitiveness, content, in the long run, must be procedural
 
 We separate the game content from the game play. The following documents are required for good game design
 
-- Universe canon 
+- Universe canon
 - Game design
 
 Universe canon describes history, events,species, culture, music, art, designs, vessels, personnae, galaxies, planets, places, fauna, flora, and everything that is needed to represent a believable universe.
 
 The design document describes game mechanics, technologies, object standards, interfaces, libraries, coding standards, and everything required to make the game.
+
+We **recommend** the structure for both documents derived from the one of the [Vega Strike Universe Development Document](https://github.com/vegastrike/VS-Universe-Lore-Docs) and [Game Design Document](https://github.com/vegastrike/VS-Design-Docs) documents.
 
 
 **Documentation Standards and Formats**
@@ -251,7 +269,7 @@ An appropriate pipeline shall be established for the above documentation process
 - converted documents in repo directory: doc/canon/release
 
 
-**Open Fictional Universe Canon**
+**Open Fictional Universe Canons**
 -------------------------------------
 
 There are a lot of interesting universes out there. Unfortunately, due to the state of general greed and copyright laws, it is not recommended to develop games based on published mainstream canon (think Star $$$$).
@@ -266,6 +284,8 @@ Further care must be given in establishing authoritative bodies and decision pro
 We reference here particularly the Vega Strike canon, principally devised by John Sampson aka jackS aka JS.
 Daniel Horn started Vega Strike in 1998 in high school. The engine and game are now orphaned but the canon is extensive and offers a good starting point for further development of our sci-fi game universe.
 The relevant document is the [vsudd][] "Vega Strike Universe Development Document".
+
+For medieval type roleplaying games, WorlForge's Dural world, while not an as elaborate universe as Vega Strike, would be a good starting point.
 
 See also:
 - https://www.gamasutra.com/blogs/AlexanderFreed/20150615/246115/On_a_Lack_of_Originality_in_ScienceFiction_and_Fantasy_Game_Settings.php
@@ -317,16 +337,125 @@ Explorable topics: screenwriting software, storyboard software, story writing so
 - https://github.com/wonderunit/storyboarder
 
 
-
 **Conversations**
 -------------------------------------
 
-The following concepts are current reference:
-- https://wiki.worldforge.org/wiki/Conversation
-- https://www.gamedev.net/forums/topic/596071-best-technique-to-write-multiple-choice-dialogue/?page=2
-- https://en.wikipedia.org/wiki/Dialogue_tree
-- https://en.wikipedia.org/wiki/Digital_conversation
-- https://en.wikipedia.org/wiki/Dialogue_system
+Conversations add immersion, realism, believability, engagement, and interactivity to the game play usually in one of the prevalent forms of branching conversations, with or without voice over, subtitles, or cinematographic scenes.
+
+Branching conversations are a narrative tool for role-playing. They involve the player by giving him a sense of agency. They help establish the player character’s personality and explore his emotions and inner life. Paired with voice over, subtitles, and cinematographic scenes they aid in convey a sense of believability or realism.
+
+Instead of repeating ourselves, we will just summarize the important aspects of conversations to be considered when developing such and refer for further reading to the excellent article series [Branching Conversation Systems](http://www.alexanderfreed.com/2014/09/02/branching-conversation-systems-and-the-working-writer-part-1-introduction/) by [Alexander Freed](alexanderfreed.com) at [alexanderfreed.com](alexanderfreed.com).
+
+Key concepts to consider
+
+- Character emphasis
+- Player character customization
+- Branching Narratives
+- Complex storylines with critical path
+- Tool requirements
+- Simple choice
+- Hub and Spoke structure
+- Waterfall structure
+- Dialogue vs Narration
+- Text manipulation (variables)
+- Choice presentation (wheel, icons, paraphrases)
+- Choice timing
+- Forced player lines
+- Marking critical path
+- Skipping through conversations
+- Merging “conversation” and “gameplay” games
+
+
+***Conversation Tools of the trade***
+
+- TreeLine Outliner Tool in Python \
+  http://treeline.bellz.org/ \
+  Source code: https://github.com/doug-101/TreeLine
+
+- Ink open source scripting markup \
+  https://www.github.com/inkle/ink
+  Inky open source scripting editor: https://www.github.com/inkle/inky
+
+- DlgSystem C++ Library and Tool \
+  https://gitlab.com/NotYetGames/DlgSystem/wikis/home \
+  https://gitlab.com/NotYetGames/DlgSystem \
+
+- ClearDialogue Java Dialogue Tool\
+  https://github.com/SkyAphid/ClearDialogue \
+  Example format: https://github.com/SkyAphid/ClearDialogue/blob/master/ClearDialogueAPI/examples/ButThouMust.json
+
+- Twine Tool for Interactive Stories \
+  http://twinery.org/ \
+  Harlowe file format: https://twine2.neocities.org/
+
+- Yarn Editor \
+  https://github.com/YarnSpinnerTool/YarnEditor \
+  https://yarnspinnertool.github.io/YarnEditor/
+
+- Monologue Branching Dialogue Editor in Haxe (superseded by ClearDialogue) \
+  https://github.com/nospoone/monologue \
+  File format: https://github.com/nospoone/monologue.wiki.git
+
+There is no recommendation as to the preferential tool yet, but a quick analysis highlights TreeLine or DlgSystem as potential candidates.
+TreeLine is a flexible and customizable tree node editor, but lacks a C++ library or game engine integration.
+DlgSystem comes with a library as well as authoring tools, allows for game engine integration, but seems a bit more complicated to grasp.
+
+
+**Conversation formats** must represent the conversation in such a way that it can be written, tested, debugged, and scripted. This means that in addition to text and the tree structure of the dialog object, it must include certain attributes that allow referencing audio, subtitles, and animation sequences. Further it should allow to contain information on which mood to apply when delivering voice-over and acting, what are the conditions triggering the conversation, variables that allow the dialogue to reflect previous player choices.
+
+Such a standard format has yet to be established.
+
+
+Recommended further reading:
+- [Branching Conversation Systems](http://www.alexanderfreed.com/2014/09/02/branching-conversation-systems-and-the-working-writer-part-1-introduction/) by [Alexander Freed](alexanderfreed.com)
+- [Defining Dialogue Systems](https://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php) by [Brent Ellison](https://www.gamasutra.com/view/authors/849904/Brent_Ellison.php)
+
+
+**Game Engine**
+-------------------------------------
+
+The burning question is: how to select an open source game engine?
+Some of the most popular open source game engines are listed under [References Game Engines](#game-engines).
+
+The most popular cinematic quality engine for cinema and games seems to be the [Unreal Engine](https://www.unrealengine.com/) with just licensing terms and royalties depending on your project's income.
+
+- [Urho3D](https://urho3d.github.io/)
+
+We do not recommend:
+
+- [CryEngine](https://github.com/CRYTEK/CRYENGINE) though visually stunning with an impressive reference of major past games, it on ly supports non-libre WIndows based development. 
+
+- [Unity](https://unity.com/) though impressive and popular is closed-source and only free for personal use, thus not adequate to comunity projects.
+
+Our **recommendation** goes to
+
+- [Godot Engine](http://godotengine.org/) comes with innovative design and features, is extensible in C++ and scripting, script debugging, supports many major target platforms, and offers a wide range of authoring tools, as well as a friendly community, and much more.
+
+
+**Single or Multiplayer**
+-------------------------------------
+
+Huge online universes can be fun through interactionn with other players though require many servers.
+
+Thete is an inerent latency problem that may arise in universe instances with local servers and a gobal population.
+
+Scaling of servers to users implies cost and time for maintenance.
+
+
+**Game Architecture**
+-------------------------------------
+
+A very [solid multiplayer architecture](https://www.worldforge.org/index.php/develop/technical-overview/) is presented in the World Forge project.
+
+![World Forge architecture](image/WF_component_rel_graph.jpg "World Forge architecture")
+
+[Cyphesis](https://www.worldforge.org/index.php/components/cyphesis/) is the main WorldForge server. It provides everything needed in order to run a virtual world.
+
+[Mercator](https://www.worldforge.org/index.php/components/mercator/) is primarily aimed at terrain for multiplayer online games. Mercator is designed in such a way that individual tiles can be generated on-the-fly from a very small source data set. Each tile uses a fast deterministic random number generation to ensure that identical results are produced "anytime, anywhere". This enables transmission of terrain across low bandwidth links as part of the standard data stream, or server side collision detection with the same terrain that the player sees.
+
+[Atlas](https://www.worldforge.org/index.php/components/atlas-cpp/) is the protocol which binds all of Worldforge together. It's a protocol meant to express a complete virtual worlds, and all communication between the servers and the clients uses it. The world itself as well as all actions that occur are all expressed through Atlas.
+
+[Eris](https://www.worldforge.org/index.php/components/eris/) is designed to simplify client development (and promote code reuse) by providing a common system to deal with the back-end Atlas tasks. Notably, Eris encapsulates most of the work in getting Atlas entities available on your client, and managing updates from the server. Thus it can be considered as a session layer above Atlas, providing persistent (for an entire gaming session) objects as opposed to transient Atlas ones.
 
 
 **Quests and Missions**
@@ -374,8 +503,8 @@ Release formats must support the various requirements of an engine, most notably
 **Recommendation**
 
 - source: blender
-- exchange: obj
-- release: bxmf
+- exchange: obj, collada
+- release: engine specific
 
 
 **Games Within Games**
@@ -409,7 +538,7 @@ Will strongly depend on asset formats and types of games.
 
 A good practise when constructing new tools is to separte binaries for processing and visualization.
 
-The asset pipeline shouls be automatable in the sense that bulk operations can becripted.
+The asset pipeline should be automatable in the sense that bulk operations can be scripted.
 
 By creating technology dependent user interfaces which call the command line procesding tool we assure cross-platform as well as future portability.
 
@@ -439,7 +568,7 @@ Ogre V2 support three basic types of workflow: Specular workflow, Specular as fr
 
 Converting OGRE material files from FFP to HLMS is possible (see: http://www.ogre3d.org/tikiwiki/tiki-index.php?page=HLMS+Materials). For the conversion, the following tasks need to be accomplished.
 
-1  Textures reaproppriation
+1  Textures re-appropriation
 Required textures: diffuse, metallic, roughness.
 Optional textures: height, normal, ambient occlusion
 
@@ -478,17 +607,173 @@ Naturally, the images should be seamless (tilable) so that seams are not visible
 source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](https://wiki.vega-strike.org/Development:Orbital_Planet_Surfaces)
 
 
+**Procedural Content**
+-------------------------------------
+
+- [Procedural Content Generation](http://ianparberry.com/research/content/)
+
+
+**Procedural Textures**
+-------------------------------------
+
+- [Material Maker](https://github.com/RodZill4/material-maker)
+- [Processing Framework](https://processing.org/)
+- [Processing Source Code](https://github.com/processing)
 
 **Procedural Randomness**
 -------------------------------------
 
+An interesting concept to consider is the [random number generator](https://github.com/MtnViewJohn/context-free/wiki/About#any-code-worth-snagging) used in [Context Free Art](https://www.contextfreeart.org/) procedural processor:
 
-**Universe Building**
+There is a nice system and user interface for managing the random seed and the scalable, distributed random number generators used to generate an image. This allows the user to reproduce an image. [Steal it, please!](https://github.com/MtnViewJohn/context-free) (Credit appreciated, of course.)
+source: https://github.com/MtnViewJohn/context-free/wiki/About#any-code-worth-snagging
+
+The random number seed is salted with an "entropy" value that is derived from the text of the cfdg file. Any change to the cfdg file will change the variations, even meaningless changes like changing '0.5' to '.5'. Adding or removing white space has no effect, so you can reformat the cfdg file as you wish.
+
+Why do we do this? Context Free does not use a single, global random number generator. Instead each instance of a shape has its own random number seed. We use the venerable, but not so great, 48-bit linear congruent generator. Each shape instance passes a tweaked version of its seed to its child shape instances. This is all done so that you can render a given variation at a different resolution and get the same image, only with more detail.
+
+Say you wanted to make a poster of a cfdg file. You would need a 10,000 x 10,000 pixel image. But when you are scanning for a good variation you want to render at, say, 500 x 500. With a global random number generator changing the resolution would completely change the variation. With local random number generators the variation looks about the same at all resolutions.
+
+The 48-bit random number seed is salted with "entropy" because otherwise it doesn't work very well. The variations are all boring. We can't use a better random number generator because they all use lots of memory for state and we would need each shape instance to store its own state. And there can be millions of shapes. So we use the barely adequate 48-bit LCG algorithm and tweak it to keep it interesting.
+
+Now in the next version of Context Free there will be global and local variables and you can change their value without affecting the "entropy". The entropy will be derived from the variable's name, not its value. There will be ways to animate designs using changing variables.
+source: https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=895
+
+Context Free uses a tree of random number seeds instead of a global pseudo-random number generator. This is done so that a variation doesn't change radically when you change the rendering resolution. To keep things interesting, the actual text of each shape replacement in a rule is reduced to a 64-bit value that we call its "entropy". This entropy value gets exclusive-ORed into the random seed during the shape replacement. If you change the text of a shape replacement then you change the entropy, which changes the randomness of the descendent shapes.
+
+If you have a value that you want to change without affecting randomness then store this value in a global variable and reference the global variable in your shape rules. The entropy of a variable is derived from its name, not its value. So you can change a value without affecting randomness.
+
+references and sources (search: same seed): [1](https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=1053&p=3959), [2](https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=895&p=3354)
+
+
+**Procedural Universe Building**
+-------------------------------------
+
+keywords: real-time procedural universe
+
+listings
+- https://awesomeopensource.com/projects/procedural-generation
+
+
+**Procedural Starfields and Space Backgrounds**
+-------------------------------------
+
+keywords
+
+- procedural space backgrounds
+- procedural starfields
+- processing starfields
+- generating starscape
+- processing engine intergration
+
+articles and code
+
+- http://alexcpeterson.com/spacescape/
+- https://petrocket.blogspot.com/
+- https://github.com/petrocket/spacescape
+- [Shader based](https://www.junkship.net/News/2014/02/02/my-god-its-full-of-stars)
+- https://github.com/smcameron/cosmic-space-boxinator/tree/master/cosmicspaceboxinator
+- http://www.mclelun.com/2015/10/blender3d-procedural-texture-starfield.html
+- https://www.blendswap.com/blend/14059
+- https://glitch.com/~starfield-maker-dev
+- https://blenderartists.org/t/procedural-starfields-in-2-8/1160156
+- https://github.com/yahiko00/Starfield
+- https://www.overdraw.xyz/blog/2018/7/17/using-cellular-noise-to-generate-procedural-stars
+- https://www.gamedev.net/forums/topic/690392-procedural-generated-2d-starfield-planet/
+- https://www.shadertoy.com/view/XlfGRj
+- Unity's ShaderLab: https://gist.github.com/CloudyWater/9dc32b60f73e4a3c300e067c11caa027
+- https://github.com/slammayjammay/hyper-postprocessing/blob/master/examples/glsl/space-travel.glsl
+
+
+**Procedural Planet**
+-------------------------------------
+
+keywords: open source seamless planetary flight, open source planet generator, Adaptive Mesh Refinement
+
+articles
+
+- http://vterrain.org/
+- http://leah-lindner.com/blog/2016/10/10/planetrenderer_week1/
+- http://leah-lindner.com/blog/et_engine/
+- https://www.gamasutra.com/view/feature/131507/a_realtime_procedural_universe_.php?print=1
+- https://experilous.com/1/blog/post/procedural-planet-generation
+- https://forum.unity.com/threads/realistic-openworld-workflow.593788/
+
+source code
+
+- https://github.com/Illation/ETEngine
+- http://ratman.sourceforge.net/ contains P-BDAM algorithm
+- http://www.firedrake.org/terraform/
+- http://freshmeat.sourceforge.net/projects/exoflight/?branch_id=73789&release_id=274211
+- https://github.com/sehugg/exoflight
+- https://forum.unity.com/threads/roam-implementation-for-terrain-lod-c-help.70137/
+- http://hhoppe.com/proj/geomclipmap/
+- [Pioneer](https://pioneerspacesim.net/) \
+  https://github.com/pioneerspacesim/pioneer
+- [Pioneer Scout Plus](https://sourceforge.net/projects/pioneersp/)
+- [GroundGrowing](https://github.com/RichardGSchmidt/GroundGrowing/)
+- https://sourceforge.net/projects/wideland/
+- [Stylized Planet Generator](https://github.com/Bauxitedev/stylized-planet-generator) for Godot
+- [Procedural Planets](https://github.com/SebLague/Procedural-Planets) (Unity)
+- [Procedural Worlds](https://github.com/alelievr/Procedural-Worlds-Editor) for Unity
+- [Thalatta](https://github.com/JustGamingLTD/Thalatta) for Unity
+- https://github.com/jpbetz/planet-generator
+- https://zarkonnen.itch.io/planet-generator
+- https://worldengine.readthedocs.io/en/latest/
+- https://github.com/ZKasica/Planet-Generator
+- https://www.findbestopensource.com/product/bauxitedev-stylized-planet-generator
+- https://sourceforge.net/projects/fracplanet/
+- https://sourceforge.net/projects/planetgenesis/
+- https://sourceforge.net/projects/planetgenesis/
+- https://forum.unity.com/threads/truly-procedural-planet-generator.198536/
+
+catalogs
+
+- http://vterrain.org/LOD/spherical.html
+- http://vterrain.org/LOD/Papers/
+- https://sourceforge.net/directory/graphics/graphics/3drendering/
+
+
+**Procedural Terrain**
+-------------------------------------
+
+search: fractal terrain generation
+
+articles
+- http://www.jgallant.com/procedurally-generating-wrapping-world-maps-in-unity-csharp-part-1/
+- https://gamedevelopment.tutsplus.com/tutorials/unity-terrain-engine-tools--cms-28623
+- https://www.shamusyoung.com/twentysidedtale/?p=202
+- https://freegamer.blogspot.com/2009/03/open-source-3d-landscape-generators.html
+
+sources
+- [A Large Scale Analysis of Gradient Distribution in Procedural Terrain Generation](https://github.com/Ian-Parberry/Tobler)
+- https://github.com/topics/procedural-terrain
+- [WorldSynth](https://gitlab.com/wsynth)
+- https://github.com/Scrawk/Interactive-Erosion
+- https://icecreamyou.github.io/THREE.Terrain/
+- http://wwwtyro.github.io/procedural.js/planet1/
+
+search: open source terrain
+
+- https://alternativeto.net/software/nems-mega-3d-terrain-generator/?license=free
+- https://code.google.com/archive/p/picogen/downloads
+- https://forum.unity.com/threads/open-source-quixel-terrain-engine-smooth-voxel-terrain.240645/
+- https://github.com/Chippington/Quixel
+- http://paulbourke.net/geometry/polygonise/
+- https://www.reddit.com/r/gamedev/comments/9pjeac/procedural_voxel_terrain_open_source/
+- https://www.artifexterra.com/
+
+
+**Procedural World Building**
 -------------------------------------
 
 
-**World Building**
--------------------------------------
+listings
+
+- http://vterrain.org/
+- http://vterrain.org/Packages/NonCom/
+- http://vterrain.org/Packages/Artificial/
+
 
 
 **Biosphere Building**
@@ -497,46 +782,6 @@ source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](
 
 **Game Mechanics**
 -------------------------------------
-
-
-**Game Engine**
--------------------------------------
-
-For our sci-fi game, we would like
-- space travel
-- walkable space ships
-- docking to space objects
-- planet landings without cutscenes
-- walkable planets without barriers
-- terrain with progressive loading
-- no loading screens for relocation
-- loading screens only to private player dungeons that require teleporting (e.g. arenas)
-
-
-**Single or Multiplayer**
--------------------------------------
-
-Huge online universes can be fun through interactionn with other players though require many servers.
-
-Thete is an inerent latency problem that may arise in universe instances with local servers and a gobal population.
-
-Scaling of servers to users implies cost  and time for maintenance.
-
-
-**Game Architecture**
--------------------------------------
-
-A very [solid multiplayer architecture](https://www.worldforge.org/index.php/develop/technical-overview/) is presented in the World Forge project.
-
-![World Forge architecture](image/WF_component_rel_graph.jpg "World Forge architecture")
-
-[Cyphesis](https://www.worldforge.org/index.php/components/cyphesis/) is the main WorldForge server. It provides everything needed in order to run a virtual world.
-
-[Mercator](https://www.worldforge.org/index.php/components/mercator/) is primarily aimed at terrain for multiplayer online games. Mercator is designed in such a way that individual tiles can be generated on-the-fly from a very small source data set. Each tile uses a fast deterministic random number generation to ensure that identical results are produced "anytime, anywhere". This enables transmission of terrain across low bandwidth links as part of the standard data stream, or server side collision detection with the same terrain that the player sees.
-
-[Atlas](https://www.worldforge.org/index.php/components/atlas-cpp/) is the protocol which binds all of Worldforge together. It's a protocol meant to express a complete virtual worlds, and all communication between the servers and the clients uses it. The world itself as well as all actions that occur are all expressed through Atlas.
-
-[Eris](https://www.worldforge.org/index.php/components/eris/) is designed to simplify client development (and promote code reuse) by providing a common system to deal with the back-end Atlas tasks. Notably, Eris encapsulates most of the work in getting Atlas entities available on your client, and managing updates from the server. Thus it can be considered as a session layer above Atlas, providing persistent (for an entire gaming session) objects as opposed to transient Atlas ones.
 
 
 **Player Character**
@@ -620,15 +865,18 @@ A collection of assorted references with the objective to shorten the entry barr
 **Conferencees**
 -------------------------------------
 
+- http://jcgt.org/
+- http://ianparberry.com/
 - [Gamedev.World](https://gamedev.world/en/)
 - [SIGGRAPH](https://www.siggraph.org/)
+- [SIGGRAPH Papers](https://dl.acm.org/conference/siggraph/proceedings)
 
 
 **Technology Articles**
 -------------------------------------
 
 - [Thinking in C++] (http://www.bruceeckel.com/ThinkingInCPP2e.html)
- 
+
 - [Adaptive planet and terrain mesh generation] (http://www.vterrain.org/LOD/Papers/index.html)
 
 - [A Real-Time Procedural Universe] (http://sponeil.net/)
@@ -642,11 +890,17 @@ A collection of assorted references with the objective to shorten the entry barr
 **Game Developer Blogs**
 -------------------------------------
 
-- [https://openteq.wordpress.com/portfolio/libregaming/](https://openteq.wordpress.com/portfolio/libregaming/)
+- [Leah Lindner](http://leah-lindner.com/)
+- [Alexander Freed](alexanderfreed.com)
 - [https://erikhjortsberg.blogspot.com/](https://erikhjortsberg.blogspot.com/)
 - [http://dublin.alistairriddoch.org/](http://dublin.alistairriddoch.org/)
 - [https://kblin.blogspot.com/](https://kblin.blogspot.com/)
 - [https://www.stevestreeting.com/](https://www.stevestreeting.com/)
+- [Tynan Sylvester](https://tynansylvester.com/)
+- [Alex Peterson](http://alexcpeterson.com/)
+- [Ryan Smith](https://www.overdraw.xyz/)
+- [https://openteq.wordpress.com/portfolio/libregaming/](https://openteq.wordpress.com/portfolio/libregaming/)
+- [Paul Bourke](http://paulbourke.net/)
 
 
 **Game Development Forums**
@@ -672,7 +926,6 @@ A collection of assorted references with the objective to shorten the entry barr
 - [The Game Creators Developer Forums](https://forum.thegamecreators.com/)
 - [Nvidia Visual and Game Development Forums](https://devtalk.nvidia.com/default/board/60/visual-and-game-development/)
 - [Ogre Forums](https://forums.ogre3d.org/)
-- []()
 
 
 **Gamer Forums**
@@ -766,13 +1019,13 @@ May be free but not libre
 Popular engines
 
 - [Godot Engine](http://godotengine.org/)
-- [jMonkey Engine](http://jmonkeyengine.org/)
-- [The Atomic Game Engine](https://github.com/AtomicGameEngine/AtomicGameEngine)
-- [Urho3D](https://urho3d.github.io/)
-- [Blender Game Engine](http://www.blender.org/)
-- [Kha](http://kha.tech/)
 - [Unreal Engine 4](https://www.unrealengine.com/)
 - [CryEngine](https://github.com/CRYTEK/CRYENGINE)
+- [Urho3D](https://urho3d.github.io/)
+- [Kha](http://kha.tech/)
+- [jMonkey Engine](http://jmonkeyengine.org/)
+- [The Atomic Game Engine](https://github.com/AtomicGameEngine/AtomicGameEngine)
+- [Blender Game Engine](http://www.blender.org/)
 - [Castle Game Engine](https://castle-engine.io/)
 
 
@@ -842,6 +1095,20 @@ Popular engines
 - [Fracplanet](http://www.bottlenose.net/share/fracplanet/index.htm) [http://www.bottlenose.net/share/fracplanet/index.htm](http://www.bottlenose.net/share/fracplanet/index.htm)
 
 
+**Godot Engine Tools and Plugins**
+-------------------------------------
+
+articles
+- https://steincodes.tumblr.com/post/175407913859/introduction-to-procedural-generation-with-godot
+- https://medium.com/@swarnimarun/introduction-to-procedural-generation-with-godot-f24ea52532dc
+
+tools
+- https://github.com/kidscancode/godot3_procgen_demos
+- https://github.com/Zylann/godot_heightmap_plugin
+
+keywords: godot engine procedural generation
+
+
 **Audio Production**
 -------------------------------------
 
@@ -863,6 +1130,7 @@ Popular engines
 - Vega Strike [http://vegastrike.sourceforge.net/]
 - Naev [http://naev.org/]
 - PlaneShift [http://www.planeshift.it/]
+- [Oolite](http://www.oolite.org/)
 
 Libre game listings
 - https://en.wikipedia.org/wiki/List_of_open-source_video_games
