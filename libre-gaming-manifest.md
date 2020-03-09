@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2020-02-23
+# @version: 2020-03-09
 # @created: 2019-02-01
 #
 ```
@@ -881,7 +881,7 @@ listings
 
 We use the more common **right-handed cartesian coordinate system** (the same as in  OpenGL). When using your right hand, your thumb points to the right (the +X axis), your index finger points up (the +Y axis), and your middle finger points towards you (the +Z axis). Note: a careful reevaluation should be done in around 10-20 years time should OpenGL be discontinued for the majority of game engines and replaced by Vulkan, since Vulkan's y-axis points downward.
 
-For planet positions we use the counter-clockwise **spherical coordinate system** whereas the distance from origin is *rho*, the angle along the latitudonal equator in the xz-plane is *theta*, and the angular position along the longitude is *phi*. However, the azimuth φ is restricted to the interval (−180°, +180°], or (−π, +π] in radians. This is the standard convention for geographic longitude. Conversion between cartesian and polar coordinates must be performed whenever entering or leaving a planet and when landing on a planet. 
+For planet positions we use the counter-clockwise **spherical coordinate system** whereas the distance from origin is *rho*, the angle along the latitudonal equator in the xz-plane is *theta*, and the angular position along the longitude is *phi*. However, the azimuth *phi* is restricted to the interval (-180 deg, +180 deg), or (-*pi*, + *pi*) in radians. This is the standard convention for geographic longitude. Conversion between cartesian and polar coordinates must be performed whenever entering or leaving a planet and when landing on a planet. 
 
 For HUDs we use **2D cartesian coordinate system** with extensions between (0.0, 1.0). Whenever the screen aspect ratio differs from 1:1 the smaller screen extension will have an extension of (0.0+0.5/aspect_ration, 1.0-0.5/aspect_ratio).
 
