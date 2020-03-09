@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2020-01-30
+# @version: 2020-02-23
 # @created: 2019-02-01
 #
 ```
@@ -57,9 +57,11 @@ Because (for those who care)
 
 - we don't need repeated effort for the same type of games over and over and again
 
-- for benefit of many is more desirable than for profit for few
+- for-benefit of many is more desirable than for-profit for few
 
 - we must not be indirectly responsible for low-wage coding sweat shops
+
+- we may be the only ones to boss oneself around
 
 - creativity shall be free
 
@@ -263,6 +265,7 @@ We distinguish the following use cases:
 An appropriate pipeline shall be established for the above documentation process.
 
 **Recommendation**
+
 - scratch pad: canon forum, e.g. https://forums.vega-strike.org/viewforum.php?f=28
 - master document: Markdown (md), Open Document Text (odt), LaTex (tex)
 - master document repository: game repository under doc/canon
@@ -288,6 +291,7 @@ The relevant document is the [vsudd][] "Vega Strike Universe Development Documen
 For medieval type roleplaying games, WorlForge's Dural world, while not an as elaborate universe as Vega Strike, would be a good starting point.
 
 See also:
+
 - https://www.gamasutra.com/blogs/AlexanderFreed/20150615/246115/On_a_Lack_of_Originality_in_ScienceFiction_and_Fantasy_Game_Settings.php
 
 
@@ -305,6 +309,7 @@ See also: https://alternativeto.net/software/scrivener/?license=opensource, http
 Stories must be converted into workable code, usually using scripting.
 
 See also:
+
 - https://www.gamasutra.com/blogs/AlexanderFreed/20150629/247222/Six_Metrics_for_Better_Game_Narrative.php
 - https://www.gamasutra.com/blogs/AlexanderFreed/20150504/242101/Yes_You_Have_To_Write_a_Game_Plot_Summary_and_Yes_It_Has_To_Be_Good.php
 
@@ -365,7 +370,6 @@ Key concepts to consider
 - Skipping through conversations
 - Merging “conversation” and “gameplay” games
 
-
 ***Conversation Tools of the trade***
 
 - TreeLine Outliner Tool in Python \
@@ -400,15 +404,66 @@ There is no recommendation as to the preferential tool yet, but a quick analysis
 TreeLine is a flexible and customizable tree node editor, but lacks a C++ library or game engine integration.
 DlgSystem comes with a library as well as authoring tools, allows for game engine integration, but seems a bit more complicated to grasp.
 
-
 **Conversation formats** must represent the conversation in such a way that it can be written, tested, debugged, and scripted. This means that in addition to text and the tree structure of the dialog object, it must include certain attributes that allow referencing audio, subtitles, and animation sequences. Further it should allow to contain information on which mood to apply when delivering voice-over and acting, what are the conditions triggering the conversation, variables that allow the dialogue to reflect previous player choices.
 
 Such a standard format has yet to be established.
 
-
 Recommended further reading:
+
 - [Branching Conversation Systems](http://www.alexanderfreed.com/2014/09/02/branching-conversation-systems-and-the-working-writer-part-1-introduction/) by [Alexander Freed](alexanderfreed.com)
 - [Defining Dialogue Systems](https://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php) by [Brent Ellison](https://www.gamasutra.com/view/authors/849904/Brent_Ellison.php)
+
+
+
+**Game Mechanics**
+-------------------------------------
+
+
+**Player Character**
+-------------------------------------
+
+
+
+**Player Posessions**
+-------------------------------------
+
+
+
+**Character Progression**
+-------------------------------------
+
+Instead of player levels, we recommend a per skill progression, advancing the particular skill, the more it is used. Slowly forgetting the skill during prolonged non-usage is an explorable option. Care must be given to balancing forgetting so as not to annoy and demotivate the player.
+
+
+
+**Autosaving**
+-------------------------------------
+
+The autosaving feature immerses the player in the fictional world to a better extent. Care must be given that the player character is not locked into a situation without escape when reverting to a previous game state.
+
+**Recommendation**
+
+- auto save at predefined checkpoints
+- create autosave slots at different intervals (equivalent to yearly, monthly, daily)
+
+
+**Time Progression**
+-------------------------------------
+
+
+How fast should time progress in-game?
+How should the time progression be relative to the real out-of-game time?
+
+In Vega Strike around 14h gameplay correspond to 1 Vega Strike Earth year.
+
+
+
+**Universal Time**
+-------------------------------------
+
+In a space simulator game, there are different clocks on different planets, or in space, even different clocks across alien cultures.
+How would we establish a universal clock?
+
 
 
 **Game Engine**
@@ -507,6 +562,24 @@ Release formats must support the various requirements of an engine, most notably
 - release: engine specific
 
 
+**Serialization Formats**
+-------------------------------------
+
+There are many formats available for serialization, the most commonly used being CSV, XML, JSON, YAML.
+
+Our requiremnet for data serialization is that it would be:
+
+- Editable with a text editor
+- Human readable
+- Machine readable
+- Compact even for large data sets
+- Libraries available in popular programming languages
+
+Following the analysis and recommendations in this article, we equally **recommend** **JSON** as the select serialization data format for fulfilling all of the above criteria better than other formats.
+
+[1]  [CSV vs XML vs JSON – Which is the Best Response Data Format?](https://digitalhospital.com.sg/csv-vs-xml-vs-json-which-is-the-best-response-data-format/). Digital Hospital. 2016. Retrieved on 2020-02-23.
+
+
 **Games Within Games**
 -------------------------------------
 
@@ -554,6 +627,7 @@ Licensing must be considered as some of the free assets may be only for personal
 An aggregator service with search and filtering would enshorten the creators time when looking for appropriate libre assets for his creation.
 
 
+
 **Texture Rendering Systems**
 -------------------------------------
 
@@ -593,6 +667,7 @@ In order to improve rendering some textures might be need to be tweaked further
 - PBR roughness may be customized (where 0=smooth; 255=rough)
 
 
+
 **Planetary Textures**
 -------------------------------------
 
@@ -607,10 +682,12 @@ Naturally, the images should be seamless (tilable) so that seams are not visible
 source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](https://wiki.vega-strike.org/Development:Orbital_Planet_Surfaces)
 
 
+
 **Procedural Content**
 -------------------------------------
 
 - [Procedural Content Generation](http://ianparberry.com/research/content/)
+
 
 
 **Procedural Textures**
@@ -619,6 +696,8 @@ source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](
 - [Material Maker](https://github.com/RodZill4/material-maker)
 - [Processing Framework](https://processing.org/)
 - [Processing Source Code](https://github.com/processing)
+
+
 
 **Procedural Randomness**
 -------------------------------------
@@ -644,6 +723,20 @@ Context Free uses a tree of random number seeds instead of a global pseudo-rando
 If you have a value that you want to change without affecting randomness then store this value in a global variable and reference the global variable in your shape rules. The entropy of a variable is derived from its name, not its value. So you can change a value without affecting randomness.
 
 references and sources (search: same seed): [1](https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=1053&p=3959), [2](https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=895&p=3354)
+
+Godot engine implements the performant PCG 32 bit pseudorandom number generator.
+
+As such, sufficient randomness and repeatability (across platforms) is assured and thus fulfils our needs for procedural generation.
+
+Open topics to investigate next:
+
+How do we assure repeatability of planet when refinement is dependent on camera position?
+
+How do we store the seed hierarchy (e.g. system, planets and types, planet surface, biomes)?
+
+Do we allow offline procedural preselection  of seeds by the asset artist, to lets say select one of several procedurally generated biomes?
+
+Do we generate on server (seed only) or on client (geometry) in a multi-player environment?
 
 
 **Procedural Universe Building**
@@ -780,53 +873,46 @@ listings
 -------------------------------------
 
 
-**Game Mechanics**
+
+**Coordinate Systems**
 -------------------------------------
-
-
-**Player Character**
--------------------------------------
-
-
-**Player Posessions**
--------------------------------------
-
-
-**Character Progression**
--------------------------------------
-
-Instead of player levels, we recommend a per skill progression, advancing the particular skill, the more it is used. Slowly forgetting the skill during prolonged non-usage is an explorable option. Care must be given to balancing forgetting so as not to annoy and demotivate the player.
-
-
-**Autosaving**
--------------------------------------
-
-The autosaving feature immerses the player in the fictional world to a better extent. Care must be given that the player character is not locked into a situation without escape when reverting to a previous game state.
 
 **Recommendation**
-- auto save at predefined checkpoints
-- create autosave slots at different intervals (equivalent to yearly, monthly, daily)
+
+We use the more common **right-handed cartesian coordinate system** (the same as in  OpenGL). When using your right hand, your thumb points to the right (the +X axis), your index finger points up (the +Y axis), and your middle finger points towards you (the +Z axis). Note: a careful reevaluation should be done in around 10-20 years time should OpenGL be discontinued for the majority of game engines and replaced by Vulkan, since Vulkan's y-axis points downward.
+
+For planet positions we use the counter-clockwise **spherical coordinate system** whereas the distance from origin is *rho*, the angle along the latitudonal equator in the xz-plane is *theta*, and the angular position along the longitude is *phi*. However, the azimuth φ is restricted to the interval (−180°, +180°], or (−π, +π] in radians. This is the standard convention for geographic longitude. Conversion between cartesian and polar coordinates must be performed whenever entering or leaving a planet and when landing on a planet. 
+
+For HUDs we use **2D cartesian coordinate system** with extensions between (0.0, 1.0). Whenever the screen aspect ratio differs from 1:1 the smaller screen extension will have an extension of (0.0+0.5/aspect_ration, 1.0-0.5/aspect_ratio).
+
+```
+// Example:
+screen size = 1920 x 1080
+aspect ratio / 1920 / 1080 = 1.78
+x screen extension min, max = 0.0, 1.0
+y screen extension min, max = (0.0+0.5/1.78, 1.0-0.5/1.78) = 0.28, 0.72
+
+```
 
 
-**Time Progression**
--------------------------------------
+**References**
 
-How should the time progression be relative to the real time.
+[1]  [Learn OpenGL - Coordinate Systems](https://learnopengl.com/Getting-started/Coordinate-Systems). Joey de Vries. Retrieved on 2020-02-23.
 
+[2]  [Game Programming - Coordinates](https://relativity.net.au/gaming/java/Coordinates.html). WSI. 2013. Retrieved on 2020-02-23.
 
+[3]  [3D Graphics with OpenGL - Basic Theory](https://www.ntu.edu.sg/home/ehchua/programming/opengl/CG_BasicsTheory.html). Chua Hock-Chuan. 2012. Retrieved on 2020-02-23.
 
-**Universal Time**
--------------------------------------
+[4]  [World in Motion - Part II. Positioning](https://web.archive.org/web/20150225192604/http://www.arcsynthesis.org/gltut/Positioning/Tutorial%2007.html). Jason L. McKesson. 2012. Retrieved on 2020-02-23.
 
-In a space simulator game, there are different clocks on different planets, or in space, even different clocks across alien cultures.
-How would we establish a universal clock?
+[5]  [Spherical coordinate system](https://en.wikipedia.org/wiki/Spherical_coordinate_system). Wikipedia. Last edited on 2020-02-18. Retrieved on 2020-02-23.
 
 
 
 **Unsorted Topics**
 -------------------------------------
 
-What can we learn and which goo dpractices can we carry forward from the original sandbox vision? What is the original sandbox vision?
+What can we learn and which good practices can we carry forward from the original sandbox vision? What is the original sandbox vision?
 
 
 
@@ -839,12 +925,21 @@ References
 A collection of assorted references with the objective to shorten the entry barrier for new members.
 
 
+**Game Design Books**
+-------------------------------------
+
+- [Learn OpenGL](https://learnopengl.com/Offline-book)
+- [The gamebook convention](https://github.com/r-lyeh/gamebook)
+
+
+
 **Gaming Theory**
 -------------------------------------
 
 - Open Gaming (https://en.wikipedia.org/wiki/Open_gaming)
 - Open Game Systems (https://wiki.rpg.net/index.php/Open_Game_Systems)
 - Circe Roleplaying System (http://worldforge.org/dev/content/rules/circe/)
+
 
 
 **Game Design Sites**
@@ -860,6 +955,7 @@ A collection of assorted references with the objective to shorten the entry barr
 - http://archive.gamedev.net/archive/index.html
 - https://terranova.blogs.com/
 - https://terranova.blogs.com/terra_nova/games/
+- [Physically Based Rendering: From Theory To Implementation](http://www.pbr-book.org/)
 
 
 **Conferencees**
@@ -870,6 +966,7 @@ A collection of assorted references with the objective to shorten the entry barr
 - [Gamedev.World](https://gamedev.world/en/)
 - [SIGGRAPH](https://www.siggraph.org/)
 - [SIGGRAPH Papers](https://dl.acm.org/conference/siggraph/proceedings)
+- [FOSDEM](https://fosdem.org/)
 
 
 **Technology Articles**
@@ -1046,6 +1143,11 @@ Popular engines
 - [OpenTimelineIO](https://github.com/PixarAnimationStudios/OpenTimelineIO)
 - [Ptex](https://github.com/wdas/ptex)
 - [Computational Geometry Lib](https://www.cgal.org/)
+- [Godot Extended Libraries](https://github.com/godot-extended-libraries)
+- [List of Modules for Godot engine](https://godottips.gitlab.io/stories/modules/)
+- [A curated list of awesome C++ (or C) frameworks, libraries, resources](https://github.com/fffaraz/awesome-cpp)
+- [Awesome list of C++ GameDev project](https://github.com/Cmdu76/AwesomeCppGameDev)
+- [Single-file public-domain/open source libraries with minimal dependencies](https://github.com/nothings/single_file_libs)
 
 
 **Graphic Content Creation Tools**
@@ -1071,6 +1173,8 @@ Popular engines
 - [OpenFlipper](http://www.openflipper.org/)
 - [SeExpr](http://www.disneyanimation.com/technology/seexpr.html)
 
+- [Physically Based Rendering: From Theory to Implementation Code](https://github.com/mmp/pbrt-v3)
+
 
 **3D Modeling Applicationa**
 -------------------------------------
@@ -1089,7 +1193,7 @@ Popular engines
 - [ArmorPaint](https://armorpaint.org/)
 
 
-**Procedural Modeling Tools**
+**Procedural Planet Tools**
 -------------------------------------
 
 - [Fracplanet](http://www.bottlenose.net/share/fracplanet/index.htm) [http://www.bottlenose.net/share/fracplanet/index.htm](http://www.bottlenose.net/share/fracplanet/index.htm)
@@ -1119,8 +1223,11 @@ keywords: godot engine procedural generation
 -------------------------------------
 
 
-**Story Visual Novel Authoring**
+**Procedural Quest Authoring**
 -------------------------------------
+
+- [Everquest Emulator](http://www.eqemulator.org/)
+- [Everquest Emulator Source](https://github.com/EQEmu/Server)
 
 
 **Notable Libre Games**
@@ -1154,7 +1261,7 @@ Libre game listings
 
 - [MagicTools](https://github.com/ellisonleao/magictools)
 - [GitHub Game Development](https://github.com/topics/game-development)
-
+- [PROCJAM Tutorials](http://www.procjam.com/tutorials/)
 
 
 
