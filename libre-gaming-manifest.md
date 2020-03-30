@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2020-03-09
+# @version: 2020-03-30
 # @created: 2019-02-01
 #
 ```
@@ -1198,6 +1198,39 @@ Popular engines
 
 - [Fracplanet](http://www.bottlenose.net/share/fracplanet/index.htm) [http://www.bottlenose.net/share/fracplanet/index.htm](http://www.bottlenose.net/share/fracplanet/index.htm)
 
+### open source terrain
+
+http://vterrain.org/Packages/NonCom/
+http://vterrain.org/Packages/Artificial/
+https://alternativeto.net/software/nems-mega-3d-terrain-generator/?license=free
+https://code.google.com/archive/p/picogen/downloads
+
+https://forum.unity.com/threads/open-source-quixel-terrain-engine-smooth-voxel-terrain.240645/
+https://github.com/Chippington/Quixel
+http://paulbourke.net/geometry/polygonise/
+https://www.reddit.com/r/gamedev/comments/9pjeac/procedural_voxel_terrain_open_source/
+
+https://gamedevelopment.tutsplus.com/tutorials/unity-terrain-engine-tools--cms-28623
+https://www.shamusyoung.com/twentysidedtale/?p=202
+https://freegamer.blogspot.com/2009/03/open-source-3d-landscape-generators.html
+
+https://www.artifexterra.com/
+
+
+### open source planet generator
+
+https://gfindbestopensource.com/product/bauxitedev-stylized-planet-generator
+https://sourceforge.net/projects/fracplanet/
+https://sourceforge.net/projects/planetgenesis/
+https://sourceforge.net/projects/planetgenesis/
+https://forumithub.com/jpbetz/planet-generator
+https://zarkonnen.itch.io/planet-generator
+https://worldengine.readthedocs.io/en/latest/
+https://github.com/ZKasica/Planet-Generator
+https://www..unity.com/threads/truly-procedural-planet-generator.198536/
+
+
+
 
 **Godot Engine Tools and Plugins**
 -------------------------------------
@@ -1262,6 +1295,8 @@ Libre game listings
 - [MagicTools](https://github.com/ellisonleao/magictools)
 - [GitHub Game Development](https://github.com/topics/game-development)
 - [PROCJAM Tutorials](http://www.procjam.com/tutorials/)
+- [https://www.gamedesigning.org/career/video-game-engines/]
+- [https://www.gamedesigning.org/engines/bullet/]
 
 
 
