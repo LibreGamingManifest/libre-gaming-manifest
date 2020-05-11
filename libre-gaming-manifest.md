@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2020-03-30
+# @version: 2020-05-11
 # @created: 2019-02-01
 #
 ```
@@ -115,6 +115,10 @@ The aggregation of catalogued knowledge becomes more and more necessary with a v
 
 On a side note: 1958's Tennis for Two is considered to be the first video game (source [https://www.bnl.gov/about/history/firstvideo.php](https://www.bnl.gov/about/history/firstvideo.php). For timeline of video games also see [https://www.museumofplay.org/about/icheg/video-game-history/timeline](https://www.museumofplay.org/about/icheg/video-game-history/timeline)
 
+As early as 2017-08-30, pyramid started a collection of ideas for future games, albeit limited to a simple listing of objectives, features, and anti-features for games he would like to play, it was the spark that ignited this voyage.
+
+
+
 
 **Chapter Outline**
 -------------------------------------
@@ -132,7 +136,7 @@ Gaming Challenges
 **Things to Consider**
 -------------------------------------
 
-For our sci-fi roleplaying space operaa game, we would like to see
+For our sci-fi roleplaying space opera game, we would like to see the following desired features (non-exhaustive)
 
 - space travel
 - walkable space ships
@@ -144,19 +148,66 @@ For our sci-fi roleplaying space operaa game, we would like to see
 - loading screens only to private player dungeons that require teleporting (e.g. arenas)
 - Unlimited skill-based experience levels
 - Automatic idle progression (when not in game)
-- Loot chests with rare items you need, otherwise usefull mats
+- Loot chests with rare items you need, otherwise useful mats
+- personal growth aids with private ethical / unethical "kudos"
+- non-combat sportive skill matches (e.g. races, knowledge competition, crafting competition)
+- cooperative game modes (groups, parties, squads, operations)
+- local and global chats
 
 
 **Things to Avoid**
 -------------------------------------
 
+We would also strongly discourage the following anti-features:
+
 - boredom from repetitive content
+
 - coercion from grinding
+
 - frustration from loot boxes
+
 - losing items from death
+
 - advancing only by killing pixels
+
 - multiple currencies
-- silent protgonist
+
+- silent protagonist
+
+- killing or destroying as main objective
+
+- currency based economy
+
+- oversized weapons
+
+- limited skill treas (by trade or class)
+
+- endless grinding
+
+- in-app purchases
+
+- in-app/world currency exchange
+
+- random number cases to get your gear and keep you grinding
+
+- unskippable cut-scenes
+
+- MTX (micro-transaction) because the game devs don't respect your time, space, nor wallet.
+
+- paid season passes
+
+- bullshit DLC (DownLoadable Content)
+
+- QTE (Quick-Time Events) You remember Dragon's Lair ? Yup, that's what modern "AAA" gaming has devolved into.
+
+- grindfeasts aka Skinner boxes
+
+- Flat UI that you can't fucking tell what are UI elements you can interact with vs static elements.
+
+- Multiplayer games that don't allow you to run your own server
+
+- "gaming industry" care for only how long they can keep "milking" you
+
 
 
 **Compelling Experience**
@@ -169,10 +220,13 @@ Just like life, there is no knowing what will be. Games must become the same.
 Usual objectives in casual gaming:
 - immersion (mixing your life with someone else's story)
 - pastime (actively doing something)
-- progression (sence of advancement and growth)
+- progression (sense of advancement and growth)
+- heroics (help humanity by eliminating monsters or saving a character from peril)
 - safety (fight the bad and evil and you will not really get hurt or die)
 - challenge (solve puzzles or problems to keep brain activity)
-- heroics (help humanity by eliminating monsters or saving a character from peril)
+- personal growth (learning collaboration, communication, ethics, bring out our better more cooperative instincts, discover positive evolution as a possible meaning of life, also learn functional knowledge through solving tasks)
+- social advancement (encourage evolution of cooperative behavior, learn to flourish and thrive together)
+- creativity (satisfaction from imagining worlds, characters, places, events and turning them virtual)
 - physical activity (limited, depends on technology like 3d controllers or holodeck)
 
 There is little doubt that content development must swing towards artificially and intelligently procedurally generated universes in order to provide the games with enticing (immersive, challenging, safe, active) gaming experience.
@@ -666,6 +720,38 @@ In order to improve rendering some textures might be need to be tweaked further
 - PBR metallic intensity range to be validated (min=235; max=255)
 - PBR roughness may be customized (where 0=smooth; 255=rough)
 
+**Terrain Tiling Issue**
+-------------------------------------
+
+Graphical world representation uses meshes and textures to simulate visual properties of materials. Large terrains can become problematic when tiling (repeating) the same textures over a large terrain expanse. Due to distinctive features of the texture, they can become repetitive. Where texture tiling is very visible it will break the immersion for the player.
+
+Terrain texture require
+
+- sufficient variance and detail when close up
+- non-repeating patterns when viewed from high up
+
+Tiling is a recognized problem for environment artists.  There is no unique cure, so tiling must be approached correctly from several fronts: texture preparation/generation, and texture rendering, props covering.
+
+**Texture preparation**
+- Make textures have less distinct features.
+- Make texture details more uniform in hue and lightness
+
+**Texture rendering**
+- Overlay other textures at different frequencies.
+- Add randomness to the texture, especially rotation, and size randomness. 
+- Blend between multiple textures. This can be achieved through vertex blending or a mask texture tiling at a different frequencies, or a combination of both.
+- Add distance falloff blending
+- Add random noise layer
+
+**Props covering**
+- Occlude far away terrain repetitions so the the tiling isn't as noticeable (prop coverage) with grass, trees, rocks, garbage, houses, or other objects.
+
+**References**
+
+[1]  [Improved Terrain Texture Tiling](https://forum.unity.com/threads/improved-terrain-texture-tiling.116509/). larsbertram1. Retrieved on 2020-05-11.
+[2]  [Texture Repetition](https://www.iquilezles.org/www/articles/texturerepetition/texturerepetition.htm). Inigo Quilez. Retrieved on 2020-05-11.
+[3]  [Distance Blending](https://acegikmo.com/shaderforge/wiki/index.php?title=Distance_Blending). Freya Holmér. Last modified on 2014-03-16. Retrieved on 2020-05-11.
+
 
 
 **Planetary Textures**
@@ -692,6 +778,8 @@ source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](
 
 **Procedural Textures**
 -------------------------------------
+
+Here are some tools to review for making procedural game textures
 
 - [Material Maker](https://github.com/RodZill4/material-maker)
 - [Processing Framework](https://processing.org/)
@@ -914,6 +1002,13 @@ y screen extension min, max = (0.0+0.5/1.78, 1.0-0.5/1.78) = 0.28, 0.72
 
 What can we learn and which good practices can we carry forward from the original sandbox vision? What is the original sandbox vision?
 
+Simple use of [texture synthesis](https://github.com/EmbarkStudios/texture-synthesis) to transform one texture into a seamless tiling texture:
+
+```bash
+./texture-synthesis --threads 1 --inpaint masks/1_tile.jpg --out-size 1024 --tiling -o out/out.png generate in/in.png
+./texture-synthesis --out out/out.png generate in/in.png
+```
+
 
 
 
@@ -969,6 +1064,14 @@ A collection of assorted references with the objective to shorten the entry barr
 - [FOSDEM](https://fosdem.org/)
 
 
+
+**Research Papers**
+-------------------------------------
+
+- [Lund University Computer Graphics](http://graphics.cs.lth.se/)
+
+
+
 **Technology Articles**
 -------------------------------------
 
@@ -998,6 +1101,8 @@ A collection of assorted references with the objective to shorten the entry barr
 - [Ryan Smith](https://www.overdraw.xyz/)
 - [https://openteq.wordpress.com/portfolio/libregaming/](https://openteq.wordpress.com/portfolio/libregaming/)
 - [Paul Bourke](http://paulbourke.net/)
+- https://freegamer.blogspot.com/search/label/devcorner
+- https://www.iquilezles.org/www/index.htm
 
 
 **Game Development Forums**
@@ -1023,6 +1128,7 @@ A collection of assorted references with the objective to shorten the entry barr
 - [The Game Creators Developer Forums](https://forum.thegamecreators.com/)
 - [Nvidia Visual and Game Development Forums](https://devtalk.nvidia.com/default/board/60/visual-and-game-development/)
 - [Ogre Forums](https://forums.ogre3d.org/)
+- https://forum.freegamedev.net/
 
 
 **Gamer Forums**
@@ -1047,6 +1153,12 @@ A collection of assorted references with the objective to shorten the entry barr
 - [Ars Technica Forums](https://arstechnica.com/civis/viewforum.php?f=22)
 - [Game Revolution Forums](https://forums.gamerevolution.com/)
 - [Something Awful FOrums](https://forums.somethingawful.com/forumdisplay.php?forumid=44)
+
+
+**Asset Artists Forums**
+-------------------------------------
+
+- [Blender Artists](https://blenderartists.org/)
 
 
 **Fictional Universes**
@@ -1075,7 +1187,7 @@ A collection of assorted references with the objective to shorten the entry barr
 
 e.g. portraits, background images
 
-- http://opengameart.org/
+- http://opengameart.org/, also 3D, sound, music
 
 
 **Libre 3D Assets**
@@ -1091,10 +1203,19 @@ May be free but not libre
 **Texture Assets**
 -------------------------------------
 
-### **With Master Sources**
+### **With Sources**
+
+Procedurally generated textures with source files that allow altering or reproduction of textures (e.g. with different resolution).
+
+
 
 
 ### **Release Only**
+
+Texture files in various image formats but without source files.
+
+- https://www.deviantart.com
+- http://texturelib.com
 
 
 
@@ -1113,17 +1234,21 @@ May be free but not libre
 **Game Engines**
 -------------------------------------
 
+Listings
+- [Wikipedia Listing of Game Engines](https://en.wikipedia.org/wiki/List_of_game_engines)
+
 Popular engines
 
 - [Godot Engine](http://godotengine.org/)
-- [Unreal Engine 4](https://www.unrealengine.com/)
+- [Blender Game Engine](http://www.blender.org/)
+- [Torque 3D](http://torque3d.org/)
 - [CryEngine](https://github.com/CRYTEK/CRYENGINE)
 - [Urho3D](https://urho3d.github.io/)
 - [Kha](http://kha.tech/)
 - [jMonkey Engine](http://jmonkeyengine.org/)
 - [The Atomic Game Engine](https://github.com/AtomicGameEngine/AtomicGameEngine)
-- [Blender Game Engine](http://www.blender.org/)
 - [Castle Game Engine](https://castle-engine.io/)
+- [WorldForge](https://www.worldforge.org/)
 
 
 **Game Libraries**
@@ -1174,9 +1299,10 @@ Popular engines
 - [SeExpr](http://www.disneyanimation.com/technology/seexpr.html)
 
 - [Physically Based Rendering: From Theory to Implementation Code](https://github.com/mmp/pbrt-v3)
+- [LuxCoreRender PBR Engine](https://luxcorerender.org/)
 
 
-**3D Modeling Applicationa**
+**3D Modeling Applications**
 -------------------------------------
 
 - [Blender](http://www.blender.org/)
@@ -1193,12 +1319,30 @@ Popular engines
 - [ArmorPaint](https://armorpaint.org/)
 
 
-**Procedural Planet Tools**
+**Software: Texture Processing**
+-------------------------------------
+
+- [Texture Synthesis](https://github.com/EmbarkStudios/texture-synthesis)
+
+
+**Procedural Planet Generators**
 -------------------------------------
 
 - [Fracplanet](http://www.bottlenose.net/share/fracplanet/index.htm) [http://www.bottlenose.net/share/fracplanet/index.htm](http://www.bottlenose.net/share/fracplanet/index.htm)
 
-### open source terrain
+https://gfindbestopensource.com/product/bauxitedev-stylized-planet-generator
+https://sourceforge.net/projects/fracplanet/
+https://sourceforge.net/projects/planetgenesis/
+https://sourceforge.net/projects/planetgenesis/
+https://forumithub.com/jpbetz/planet-generator
+https://zarkonnen.itch.io/planet-generator
+https://worldengine.readthedocs.io/en/latest/
+https://github.com/ZKasica/Planet-Generator
+https://www..unity.com/threads/truly-procedural-planet-generator.198536/
+
+
+**Terrain Generators**
+-------------------------------------
 
 http://vterrain.org/Packages/NonCom/
 http://vterrain.org/Packages/Artificial/
@@ -1215,21 +1359,14 @@ https://www.shamusyoung.com/twentysidedtale/?p=202
 https://freegamer.blogspot.com/2009/03/open-source-3d-landscape-generators.html
 
 https://www.artifexterra.com/
+http://irrrpgbuilder.sourceforge.net/
+http://lithosphere.codeflow.org/
+https://bitbucket.org/gdecarpentier/scape/src/default/
 
-
-### open source planet generator
-
-https://gfindbestopensource.com/product/bauxitedev-stylized-planet-generator
-https://sourceforge.net/projects/fracplanet/
-https://sourceforge.net/projects/planetgenesis/
-https://sourceforge.net/projects/planetgenesis/
-https://forumithub.com/jpbetz/planet-generator
-https://zarkonnen.itch.io/planet-generator
-https://worldengine.readthedocs.io/en/latest/
-https://github.com/ZKasica/Planet-Generator
-https://www..unity.com/threads/truly-procedural-planet-generator.198536/
-
-
+https://picogen.org/
+https://github.com/heremaps/tin-terrain
+https://cesiumjs.org/
+https://github.com/heremaps/quantized-mesh-viewer
 
 
 **Godot Engine Tools and Plugins**
@@ -1329,28 +1466,28 @@ In-depth technical specifications are carrier by their own specification documen
 
 The main project repositories are listed on the project main page
 
-- > [Libre Gaming Manifest Project](https://github.com/users/pyramid3d/projects/1 "Libre Gaming Manifest Project") \
-  > (https://github.com/users/pyramid3d/projects/1) \
+- > [Libre Gaming Manifest Project](https://github.com/users/pyramid3d/projects/1 "Libre Gaming Manifest Project")
+  > (https://github.com/users/pyramid3d/projects/1)
 
-- > [Libre Gaming Manifest](https://github.com/pyramid3d/libre-gaming-manifest) \
-  > (https://github.com/pyramid3d/libre-gaming-manifest) \
-  > Libre Gaming Manifest documentation \
+- > [Libre Gaming Manifest](https://github.com/pyramid3d/libre-gaming-manifest)
+  > (https://github.com/pyramid3d/libre-gaming-manifest)
+  > Libre Gaming Manifest documentation
 
-- > [Libre Gaming Mirror](https://github.com/pyramid3d/libre-gaming-mirror) \
-  > (https://github.com/pyramid3d/libre-gaming-mirror) \
-  > Libre Gaming reference documents mirrored \
+- > [Libre Gaming Mirror](https://github.com/pyramid3d/libre-gaming-mirror)
+  > (https://github.com/pyramid3d/libre-gaming-mirror)
+  > Libre Gaming reference documents mirrored
 
-- > [Libre Gaming Assets](https://github.com/pyramid3d/libre-gaming-assets) \
-  > (https://github.com/pyramid3d/libre-gaming-assets) \
-  >  Libre Gaming asset collection \
+- > [Libre Gaming Assets](https://github.com/pyramid3d/libre-gaming-assets)
+  > (https://github.com/pyramid3d/libre-gaming-assets)
+  >  Libre Gaming asset collection
 
-- > [Libre Gaming Engines](https://github.com/pyramid3d/libre-gaming-engines) \
-  > (https://github.com/pyramid3d/libre-gaming-engines) \
-  > Libre Gaming engine related collections \
+- > [Libre Gaming Engines](https://github.com/pyramid3d/libre-gaming-engines)
+  > (https://github.com/pyramid3d/libre-gaming-engines)
+  > Libre Gaming engine related source code collections, libraries
 
-- > [Libre Gaming Piepline](https://github.com/pyramid3d/libre-gaming-pipeline) \
-  > (https://github.com/pyramid3d/libre-gaming-pipeline) \
-  > Libre Gaming content pipeline related tool collections \
+- > [Libre Gaming Piepline](https://github.com/pyramid3d/libre-gaming-pipeline)
+  > (https://github.com/pyramid3d/libre-gaming-pipeline)
+  > Libre Gaming content pipeline related tool collections
 
 The document can have multiple release instatiations in the form of various target release formats.
 
