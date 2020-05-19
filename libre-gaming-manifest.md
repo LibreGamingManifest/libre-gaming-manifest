@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2020-05-11
+# @version: 2020-05-19
 # @created: 2019-02-01
 #
 ```
@@ -9,6 +9,8 @@
 
 **Introduction**
 =====================================
+
+**Libre Gaming Manifest** slogan - The collection that makes your games enticing!
 
 **Libre Gaming Manifest** (LGM) is a working title for what is to become a collection of ideas, practices, and tools for aiding and advancing the creative development of libre games (as in unrestricted in creativity by copyright or liability concerns) games. Manifest as in an ordered list (not as in manifesto, a declaration).
 
@@ -41,7 +43,7 @@ We aggregate, collect, discuss but do not create games within this community. Th
 **Game Vision**
 -------------------------------------
 
-The originators envision a cinematographic  exploratory free-style open-universe first-person adenture role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
+The originators envision a cinematographic  exploratory free-style open-universe first-person adventure role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
 
 Think about a holodeckesque style of game as the guiding vision.
 
@@ -258,24 +260,41 @@ author: [jackS](https://forums.vega-strike.org/memberlist.php?mode=viewprofile&u
 source: [https://forums.vega-strike.org/viewtopic.php?p=31090#p31090](https://forums.vega-strike.org/viewtopic.php?p=31090#p31090)
 
 
-**What can be done procedurally**
+**Procedural Content Generation (PCG)**
 -------------------------------------
 
-To avoid repetitiveness, content, in the long run, must be procedural
+In order to achieve any meaningful level of non-repetitive immersion procedural content generation, possibly coupled with machine learning and artificial intelligence, must be applied in future games. 
 
-- space
-- planets
-- landscapes
-- cities
+Examples of content that can already be generated procedurally today:
+
+- space objects: galaxies, star systems, planets, asteroids) 
+- geology, climate, ecosystems: landscapes, terrains, vegetation, wildlife
+- cities, buildings, streets
 - characters
-- missions
 - crafting recipes
 - loot boxes
 - gear
-- stories
-- vegetation
-- wildlife
+- missions and stories
 - ...
+
+For libre gaming, the challenge remains the availability of integrated solutions and artistic pipelines, mainly due to limitation of resources and lack of structured and standardized approaches to content generation.
+
+A high-level procedural content authoring pipeline concept would integrate:
+
+> 
+>
+> **GENERATOR >>> OUTPUT >>> CONVERSION >>> INPUT >>> GAME**
+>
+> 
+
+- A procedural content generator
+- Output to standardized output format
+- Conversion of output to target format or API
+- Game system with an application programming interface (*API*)  to integrate the procedural content generator
+
+Let's take for example the [World Forge](https://www.worldforge.org/) game system, and the [World Engine](https://github.com/Mindwerks/worldengine) procedural climate zones generator. We have generated climate zones in World Engine and output them as [protocol buffer](https://developers.google.com/protocol-buffers) data files. Using a custom python script, we have converted the  pixel climate zone coordinates into vectors, then created an XML world file that can be imported directly in to the World Forge [Cyphesis](https://www.worldforge.org/index.php/components/cyphesis/) server.
+
+
 
 
 **Content and Challenge Types**
@@ -368,6 +387,8 @@ See also:
 - https://www.gamasutra.com/blogs/AlexanderFreed/20150504/242101/Yes_You_Have_To_Write_a_Game_Plot_Summary_and_Yes_It_Has_To_Be_Good.php
 
 
+
+
 **Storyboarding**
 -------------------------------------
 
@@ -375,9 +396,9 @@ Before moving on with asset production, the story can be optionally converted in
 
 A libre standard storyboard exchange source format for stories is desired. Not only to make stories interchangeable but also to allow for future artificial algorithms to automatically add additional content to the game.
 
-A storyboard exchange format (SXF) should at least contain informmation on
+A storyboard exchange format (SXF) should at least contain information on
 
-- personnages
+- personages
 - location
 - time
 - dependencies
@@ -389,11 +410,13 @@ A storyboard exchange format (SXF) should at least contain informmation on
 - dialog options
 - optionally images to visualize your story
 
-Libraries for reading and writing storybords must exist, as well as user software for creators.
+Libraries for reading and writing storyboards must exist, as well as user software for creators.
 
-Explorable topics: screenwriting software, storyboard software, story writing software, storyboard templates
+Explorable topics: screen writing software, storyboard software, story writing software, storyboard templates
 
 - https://github.com/wonderunit/storyboarder
+
+
 
 
 **Conversations**
@@ -410,7 +433,7 @@ Key concepts to consider
 - Character emphasis
 - Player character customization
 - Branching Narratives
-- Complex storylines with critical path
+- Complex story lines with critical path
 - Tool requirements
 - Simple choice
 - Hub and Spoke structure
@@ -472,16 +495,18 @@ Recommended further reading:
 **Game Mechanics**
 -------------------------------------
 
+@TODO
+
 
 **Player Character**
 -------------------------------------
 
-
+@TODO
 
 **Player Posessions**
 -------------------------------------
 
-
+@TODO
 
 **Character Progression**
 -------------------------------------
@@ -504,6 +529,7 @@ The autosaving feature immerses the player in the fictional world to a better ex
 **Time Progression**
 -------------------------------------
 
+@TODO
 
 How fast should time progress in-game?
 How should the time progression be relative to the real out-of-game time?
@@ -512,11 +538,28 @@ In Vega Strike around 14h gameplay correspond to 1 Vega Strike Earth year.
 
 
 
+
+
 **Universal Time**
 -------------------------------------
 
+@TODO
+
 In a space simulator game, there are different clocks on different planets, or in space, even different clocks across alien cultures.
 How would we establish a universal clock?
+
+
+
+**Game Architecture**
+-------------------------------------
+
+Paraphrasing [bmorel](https://github.com/bmorel) who [describes it very well](https://github.com/vegastrike/Vega-Strike-Engine-Source/issues/72#issuecomment-617954838): Generally, projects should rely on libraries, and not on frameworks or full built engines, if the long term existence is a goal. It's easy to replace a library, hard to replace a framework. A 3D rendering engine is almost a framework, and does not do all the jobs: there is still 2D (HUD), physics, sounds, etc. Game engines do everything. They often are based on specific languages, sometimes even homemade (Godot, Neverwinter Nights, Unreal Engine). Using a common language (C, C++, Java, C#, ...) without a framework implies that any developer that knows that language can jump in without spending weeks or days learning a framework or specific architecture.
+
+[two](https://github.com/hugoam/two) is a live prototyping solution that implements this philosophy: **two** stems from a strong programming philosophy: it wagers that the future of application and game coding lies in small, self-contained, reusable and shared libraries, and **not** in gigantic tightly coupled *engines* of hundreds thousands of lines of code. For our shared knowledge and our programs to progress, the building blocks have to be **small** and **understandable** (which is essentially the same thing). There are many such blocks (libraries) already existing in many domains, with many others missing. With the building blocks **two** provides, one can create live graphical applications in few lines of code, but also, **anyone** can potentially create a *game engine*.
+
+**Recommendation**
+
+- [two](https://github.com/hugoam/two) - is an all-purpose c++ app prototyping library, focused on live graphical apps and games.
 
 
 
@@ -532,23 +575,38 @@ The most popular cinematic quality engine for cinema and games seems to be the [
 
 We do not recommend:
 
-- [CryEngine](https://github.com/CRYTEK/CRYENGINE) though visually stunning with an impressive reference of major past games, it on ly supports non-libre WIndows based development. 
+- [CryEngine](https://github.com/CRYTEK/CRYENGINE) though visually stunning with an impressive reference of major past games, it on ly supports non-libre Windows based development. 
 
-- [Unity](https://unity.com/) though impressive and popular is closed-source and only free for personal use, thus not adequate to comunity projects.
+- [Unity](https://unity.com/) though impressive and popular is closed-source and only free for personal use, thus not adequate to community projects.
 
 Our **recommendation** goes to
 
 - [Godot Engine](http://godotengine.org/) comes with innovative design and features, is extensible in C++ and scripting, script debugging, supports many major target platforms, and offers a wide range of authoring tools, as well as a friendly community, and much more.
 
+**Rendering Engine**
+-------------------------------------
+
+As opposed to full-fledged game engines, one may consider a rendering library and build a specific engine around it, if this kind of flexibility is required.
+
+[DiligentEngine](https://github.com/DiligentGraphics/DiligentEngine). It claims to be more modern than [BGFX](https://github.com/bkaradzic/bgfx) and designed with DX12, Vulkan  and Metal in mind, while not supporting some older APIs. It is under Apache 2.0 License. BGFX, it turns out has problems with modern APIs. So, if some API agnostic rendering backend library is desired, and it should be a more modern one, it  might worth a try.  BGFX has a long history (so meaning more support and bug fixes), while DiligentEngine is obviously a recent  and new thing, so this thing has to be considered.
+
+Our **recommendation** goes to
+
+- [bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform rendering library
+
+
+
 
 **Single or Multiplayer**
 -------------------------------------
 
-Huge online universes can be fun through interactionn with other players though require many servers.
+Huge online universes can be fun through interaction with other players though require many servers.
 
-Thete is an inerent latency problem that may arise in universe instances with local servers and a gobal population.
+There is an inherent latency problem that may arise in universe instances with local servers and a global population.
 
 Scaling of servers to users implies cost and time for maintenance.
+
+
 
 
 **Game Architecture**
@@ -571,8 +629,15 @@ A very [solid multiplayer architecture](https://www.worldforge.org/index.php/dev
 -------------------------------------
 
 The following concepts are current reference:
+
 - https://wiki.worldforge.org/wiki/Quest_Generation_Algorithm
 - https://github.com/vegastrike/VS-Design-Docs
+
+@TODO: What is a possible standard quest exchange format.
+
+
+
+
 
 
 **Open Asset Formats**
@@ -616,12 +681,14 @@ Release formats must support the various requirements of an engine, most notably
 - release: engine specific
 
 
+
+
 **Serialization Formats**
 -------------------------------------
 
 There are many formats available for serialization, the most commonly used being CSV, XML, JSON, YAML.
 
-Our requiremnet for data serialization is that it would be:
+Our requirement for data serialization is that it would be:
 
 - Editable with a text editor
 - Human readable
@@ -640,9 +707,24 @@ Following the analysis and recommendations in this article, we equally **recomme
 Some say that "life is a game".
 Actually it is a "play" and you are the player. Life is full of fakes: e.g. fake news, fake packaging, fake friends, and fake virtual reality games.
 
-Within those games we are given the opportunity to be gods and create a better reality. Within those games we create minigames.
+Within those games we are given the opportunity to be gods and create a better reality. Within those games we create mini games.
 
 Games within games to chose in which one you want to grow.
+
+
+
+**Scene Representation**
+-------------------------------------
+
+Immersion demands no cuts or loading times between scenes. Ideally continuous scenes on large scale (star system to planet landings), medium scale (traversing a landscape) and small scale (rooms, dungeons, phased areas) would be progressively loaded and provided to the current player context.
+
+
+
+OpenSceneGraph is open source, real-time graphics middle-ware that uses the scene graph approach to represent 3D worlds as a graph of nodes that logical and spatially groups subgraphs for behavior and high performance. 
+
+
+
+
 
 
 **Production Pipeline**
@@ -663,11 +745,13 @@ Will strongly depend on asset formats and types of games.
 **Asset Tools**
 -------------------------------------
 
-A good practise when constructing new tools is to separte binaries for processing and visualization.
+A good practice when constructing new tools is to separate binaries for processing and visualization.
 
 The asset pipeline should be automatable in the sense that bulk operations can be scripted.
 
-By creating technology dependent user interfaces which call the command line procesding tool we assure cross-platform as well as future portability.
+By creating technology dependent user interfaces which call the command line processing tool we assure cross-platform as well as future portability.
+
+
 
 
 **Asset Catalogs**
@@ -720,6 +804,8 @@ In order to improve rendering some textures might be need to be tweaked further
 - PBR metallic intensity range to be validated (min=235; max=255)
 - PBR roughness may be customized (where 0=smooth; 255=rough)
 
+
+
 **Terrain Tiling Issue**
 -------------------------------------
 
@@ -761,7 +847,7 @@ The image ratio horizontal:vertical must be 2:1 (assuming pixel ratio of the map
 
 The vertical and horizontal sizes should be a power of two (POT). Really, NPOT (non-power-of-two) textures are possible, but really, really, really troublesome. Don't use them. Just use POT. Love the POT. The POT is the mother, the POT is the father. Trust the POT.
 
-Naturally, the images should be seamless (tilable) so that seams are not visible on the rotating planet, neither on the stitch nor at the poles.
+Naturally, the images should be seamless (tileable) so that seams are not visible on the rotating planet, neither on the stitch nor at the poles.
 
 3d rendering software with unwrap functions is recommended, since it is extremely inefficient and troublesome to create seamless textures in 2d programs.
 
@@ -775,15 +861,6 @@ source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](
 - [Procedural Content Generation](http://ianparberry.com/research/content/)
 
 
-
-**Procedural Textures**
--------------------------------------
-
-Here are some tools to review for making procedural game textures
-
-- [Material Maker](https://github.com/RodZill4/material-maker)
-- [Processing Framework](https://processing.org/)
-- [Processing Source Code](https://github.com/processing)
 
 
 
@@ -806,15 +883,15 @@ The 48-bit random number seed is salted with "entropy" because otherwise it does
 Now in the next version of Context Free there will be global and local variables and you can change their value without affecting the "entropy". The entropy will be derived from the variable's name, not its value. There will be ways to animate designs using changing variables.
 source: https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=895
 
-Context Free uses a tree of random number seeds instead of a global pseudo-random number generator. This is done so that a variation doesn't change radically when you change the rendering resolution. To keep things interesting, the actual text of each shape replacement in a rule is reduced to a 64-bit value that we call its "entropy". This entropy value gets exclusive-ORed into the random seed during the shape replacement. If you change the text of a shape replacement then you change the entropy, which changes the randomness of the descendent shapes.
+Context Free uses a tree of random number seeds instead of a global pseudo-random number generator. This is done so that a variation doesn't change radically when you change the rendering resolution. To keep things interesting, the actual text of each shape replacement in a rule is reduced to a 64-bit value that we call its "entropy". This entropy value gets exclusive-ORed into the random seed during the shape replacement. If you change the text of a shape replacement then you change the entropy, which changes the randomness of the descendant shapes.
 
 If you have a value that you want to change without affecting randomness then store this value in a global variable and reference the global variable in your shape rules. The entropy of a variable is derived from its name, not its value. So you can change a value without affecting randomness.
 
 references and sources (search: same seed): [1](https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=1053&p=3959), [2](https://www.contextfreeart.org/phpbb/viewtopic.php?f=4&t=895&p=3354)
 
-Godot engine implements the performant PCG 32 bit pseudorandom number generator.
+Godot engine implements the performant PCG 32 bit pseudo-random number generator.
 
-As such, sufficient randomness and repeatability (across platforms) is assured and thus fulfils our needs for procedural generation.
+As such, sufficient randomness and repeatability (across platforms) is assured and thus fulfills our needs for procedural generation.
 
 Open topics to investigate next:
 
@@ -834,6 +911,8 @@ keywords: real-time procedural universe
 
 listings
 - https://awesomeopensource.com/projects/procedural-generation
+
+
 
 
 **Procedural Starfields and Space Backgrounds**
@@ -864,6 +943,8 @@ articles and code
 - https://www.shadertoy.com/view/XlfGRj
 - Unity's ShaderLab: https://gist.github.com/CloudyWater/9dc32b60f73e4a3c300e067c11caa027
 - https://github.com/slammayjammay/hyper-postprocessing/blob/master/examples/glsl/space-travel.glsl
+
+
 
 
 **Procedural Planet**
@@ -915,8 +996,22 @@ catalogs
 - https://sourceforge.net/directory/graphics/graphics/3drendering/
 
 
+
+
 **Procedural Terrain**
 -------------------------------------
+
+@TODO: create "Open Specification for Procedural Terrain Building". Some thoughts that need lots of more work:
+
+- Rendering should use geometry shaders and texture streaming.
+- Has a terrain generation API. Procedural terrain is the future, and that  means also APIs, scripts, and/or even plugins would be due. 
+- Consider large terrain features (e.g. planetary).
+- One  would need to be able define several different terrain areas.
+- Varying  terrain modifiers would be able to be attached to specific terrain points and with defined surface modifiers.
+- Polygon area with textures/surfaces modifiers can be attached.
+- A system where a combination of procedural terrain plus visual editing in the client can live along each other.
+
+
 
 search: fractal terrain generation
 
@@ -957,8 +1052,59 @@ listings
 
 
 
-**Biosphere Building**
+**Biome Building**
 -------------------------------------
+
+The biosphere of a planet includes the whole of the planet including the areas where life is found and consists of various biomes that depend on different parameters like geology, climate, and ecology. On earth there are terrestrial and aquatic biomes, the former include examples like tundra, taiga, savanna, forest, grassland, desert.
+
+Some of the influencing factors include: elevation, temperature, latitude, moisture, water bodies.
+
+A game world that spans a large area will include several biomes. To generate biomes we start with a biome map. A simple map can be generated by distorting squares with perlin noise, or using voronoi cells, or combining both. Planetary temperature maps help assigning temperature zones to map cells. Distance from water and altitude can define the humidity or rainfall.
+
+Then using a simple temperature/rainfall biome diagram would yield several possible biomes.
+
+![Biome function of temperature and rainfall](image/BiomeMap.png "Biome function of temperature and rainfall")
+
+source: [BiomeMap](https://files.4026.me.uk/worldgen/BiomeMap.png) by [Diabolickal](https://www.reddit.com/user/Diabolickal/)
+
+
+
+World Engine (https://github.com/Mindwerks/worldengine) is a tectonic surface height and climate zone generator used to generate biome areas for World Forge. The above approach is used by World Engine to generate planetary scale climate zones. World Engine generates large climate zones, which would require further subdivision into specific equal-climate biomes (this part is not available in World Engine).
+
+
+
+
+
+
+
+**References**
+
+[1] [Polygonal Map Generation for Games](http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/). Amit Patel. 2010-09-04. Last modified on 2020-03-29. Retrieved on 2020-05-11.
+
+[2]  [Generating terrain in Cuberite](http://mc-server.xoft.cz/docs/Generator.html). Unknown author. Retrieved on 2020-05-11.
+
+[3] [Holdridge life zones](https://en.wikipedia.org/wiki/Holdridge_life_zones). Wikipedia. Retrieved on 2020-05-11.
+
+[4] [WorldEngine - a world generator](https://github.com/Mindwerks/worldengine). GitHub. Retrieved on 2020-05-11.
+
+
+
+**Procedural Textures**
+-------------------------------------
+
+In the long run, texturing by hand will become obsolete. A mechanism is needed to integrate procedural image generation solutions to seamlessly integrate into asset data.
+
+For any new universe seed, new texture sets will be procedurally generated. However when revisiting scenes with previously generated textures, those can be reloaded and need not be generated again if the seed remains the same.
+
+The challenge with big amounts of large textures in complex scenes is the processing power required to generate a new scene. Probably at some future point in time sufficient processing power would be available for such a feat.
+
+ 
+
+Here are some tools to review for making procedural game textures
+
+- [Material Maker](https://github.com/RodZill4/material-maker)
+- [Processing Framework](https://processing.org/)
+- [Processing Source Code](https://github.com/processing)
 
 
 
@@ -1164,15 +1310,18 @@ A collection of assorted references with the objective to shorten the entry barr
 **Fictional Universes**
 -------------------------------------
 
-- Science Fiction \
-  The Vega Strike Universe \
-  [Vega Strike Universe Development Document](https://github.com/vegastrike/VS-Universe-Lore-Docs) \
+**Science Fiction**
+
+- The Vega Strike Universe
+  [Vega Strike Universe Development Document](https://github.com/vegastrike/VS-Universe-Lore-Docs)
   https://github.com/vegastrike/VS-Universe-Lore-Docs
 
-- Medieval Fantasy \
-  Dural \
-  [Dural on World Forge Wiki](https://wiki.worldforge.org/wiki/Dural) \
+**Medieval Fantasy**
+
+- Dural
+  [Dural on World Forge Wiki](https://wiki.worldforge.org/wiki/Dural)
   https://wiki.worldforge.org/wiki/Dural
+
 
 
 **Story Writing**
@@ -1182,53 +1331,24 @@ A collection of assorted references with the objective to shorten the entry barr
 - [Dialog](https://www.linusakesson.net/dialog/)
 
 
-**2D Assets**
+
+
+
 -------------------------------------
 
-e.g. portraits, background images
-
-- http://opengameart.org/, also 3D, sound, music
-
-
-**Libre 3D Assets**
+**Libre Games**
 -------------------------------------
 
-- https://free3d.com/3d-models/vegastrike
+- [Vega Strike](https://www.vega-strike.org/) - open space simulator engine and game
+- [OpenMW](https://openmw.org/) - moddable open-world role-playing game engine
+- [Worldforge](https://www.worldforge.org/) - provides tools, technologies, servers, clients, protocol, media and a community to allow anyone to create their own virtual world
+- Naev [http://naev.org/]
+- PlaneShift [http://www.planeshift.it/]
+- [Oolite](http://www.oolite.org/)
 
-May be free but not libre
-- [Unreal Engine Free Assets](https://www.unrealengine.com/marketplace/en-US/free)
-- [Unreal Engine Free Assets of the Month](https://www.unrealengine.com/marketplace/en-US/assets?tag=4910)
-
-
-**Texture Assets**
--------------------------------------
-
-### **With Sources**
-
-Procedurally generated textures with source files that allow altering or reproduction of textures (e.g. with different resolution).
-
-
-
-
-### **Release Only**
-
-Texture files in various image formats but without source files.
-
-- https://www.deviantart.com
-- http://texturelib.com
-
-
-
-**Shaders**
--------------------------------------
-
-
-**Sounds**
--------------------------------------
-
-
-**Music Assets**
--------------------------------------
+Libre game listings
+- https://en.wikipedia.org/wiki/List_of_open-source_video_games
+- [Listing from https://wiki.vega-strike.org/Links:Free_Games](https://wiki.vega-strike.org/Links:Free_Games)
 
 
 **Game Engines**
@@ -1242,6 +1362,7 @@ Popular engines
 - [Godot Engine](http://godotengine.org/)
 - [Blender Game Engine](http://www.blender.org/)
 - [Torque 3D](http://torque3d.org/)
+- [Armory Engine](https://armory3d.org/)
 - [CryEngine](https://github.com/CRYTEK/CRYENGINE)
 - [Urho3D](https://urho3d.github.io/)
 - [Kha](http://kha.tech/)
@@ -1249,13 +1370,18 @@ Popular engines
 - [The Atomic Game Engine](https://github.com/AtomicGameEngine/AtomicGameEngine)
 - [Castle Game Engine](https://castle-engine.io/)
 - [WorldForge](https://www.worldforge.org/)
+- [toyengine](https://github.com/hugoam/toy) - a thin and modular c++ game engine.
 
 
 **Game Libraries**
 -------------------------------------
 
+- [bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform rendering library
 - [OGRE](https://www.ogre3d.org/)
-- [Armory Engine](https://armory3d.org/)
+- [Diligent Engine ](https://github.com/DiligentGraphics/DiligentEngine) A modern cross-platform low-level graphics library and rendering framework
+- [assimp](https://github.com/assimp/assimp) Open Asset Import Library (assimp)
+- [OpenSceneGraph](http://www.openscenegraph.org/) is an open source high performance 3D graphics toolkit.
+- [VulkanSceneGraph](https://github.com/vsg-dev/VulkanSceneGraph) - www.vulkanscenegraph.org
 - [OpenMesh](http://openmesh.org/)
 - [Collada](https://www.khronos.org/collada/)
 - [Universal Scene Description](https://github.com/PixarAnimationStudios/USD)
@@ -1275,18 +1401,21 @@ Popular engines
 - [Single-file public-domain/open source libraries with minimal dependencies](https://github.com/nothings/single_file_libs)
 
 
+
+**Game Creation Tools**
+-------------------------------------
+
+- [two](https://github.com/hugoam/two) - c++ toolkit for rapid development of live graphical apps and games
+
+
 **Graphic Content Creation Tools**
 -------------------------------------
 
 - [GIMP](https://www.gimp.org/)
-
 - [Listing from https://wiki.vega-strike.org/Links:Graphic_Applications](https://wiki.vega-strike.org/Links:Graphic_Applications)
-
 - [AcademySoftwareFoundation Landscape](https://github.com/AcademySoftwareFoundation/aswf-landscape)
 - [ASWF Interactive Landscape](https://landscape.aswf.io/)
-
 - [OpenSourceVFX.org](http://opensourcevfx.org/)
-
 - [OpenFX](http://openfx.sourceforge.net/)
 - [OpenColorIO](https://opencolorio.org/)
 - [Open Shading Language](http://opensource.imageworks.com/?p=osl)
@@ -1297,9 +1426,11 @@ Popular engines
 - [Alembic](https://github.com/alembic/alembic)
 - [OpenFlipper](http://www.openflipper.org/)
 - [SeExpr](http://www.disneyanimation.com/technology/seexpr.html)
-
 - [Physically Based Rendering: From Theory to Implementation Code](https://github.com/mmp/pbrt-v3)
 - [LuxCoreRender PBR Engine](https://luxcorerender.org/)
+- [MakeHuman](http://www.makehumancommunity.org/)
+
+
 
 
 **3D Modeling Applications**
@@ -1307,9 +1438,11 @@ Popular engines
 
 - [Blender](http://www.blender.org/)
 - [Cocos Creator](https://www.cocos.com/en/products#CocosCreator)
-
 - [Listing from OGRE Tools](https://www.ogre3d.org/download/tools)
 - [Listing from https://wiki.vega-strike.org/Links:3D_Applications](https://wiki.vega-strike.org/Links:3D_Applications)
+- [Open 3D Model Viewer](https://github.com/acgessler/open3mod) - A quick and powerful 3D model viewer
+
+
 
 
 **3D Texture Painting**
@@ -1368,6 +1501,9 @@ https://github.com/heremaps/tin-terrain
 https://cesiumjs.org/
 https://github.com/heremaps/quantized-mesh-viewer
 
+- https://github.com/Mindwerks/worldengine
+
+
 
 **Godot Engine Tools and Plugins**
 -------------------------------------
@@ -1400,19 +1536,6 @@ keywords: godot engine procedural generation
 - [Everquest Emulator Source](https://github.com/EQEmu/Server)
 
 
-**Notable Libre Games**
--------------------------------------
-
-- World Forge [https://www.worldforge.org/]
-- Vega Strike [http://vegastrike.sourceforge.net/]
-- Naev [http://naev.org/]
-- PlaneShift [http://www.planeshift.it/]
-- [Oolite](http://www.oolite.org/)
-
-Libre game listings
-- https://en.wikipedia.org/wiki/List_of_open-source_video_games
-- [Listing from https://wiki.vega-strike.org/Links:Free_Games](https://wiki.vega-strike.org/Links:Free_Games)
-
 
 **Development Tools**
 -------------------------------------
@@ -1420,10 +1543,21 @@ Libre game listings
 - [Easy Guide on using Git](https://wiki.worldforge.org/wiki/Using_Git)
 
 
+
+**Standards Specifications**
+-------------------------------------
+
+- [glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0) - GL Transmission Format (glTF) is an API-neutral runtime asset delivery format.
+
+
+
+
 **Coding Standards**
 -------------------------------------
 
 - [Unreal Engine](https://docs.unrealengine.com/en-US/Programming/Development/CodingStandard/index.html)
+
+
 
 
 **Catalogs**
