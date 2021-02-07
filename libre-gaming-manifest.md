@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2020-05-19
+# @version: 2021-02-07
 # @created: 2019-02-01
 #
 ```
@@ -20,7 +20,7 @@ Other potential candidates pondered for a release title were
 
 We live in a world where economic concerns play a more or less part of our daily tasks and duties. Nevertheless, there are many that are willing or eager invest their spare time by engage their creativity on some task of their own satisfaction. One of those tasks can be game creation.
 
-Why create games?
+**Why create games?**
 Due to the narrative and artistic aspects added to technological development, game creation is as diverse as it can get. In game creation, there is room for many types of creativity, be it writing stories, scenes, or narratives, be it artistic content creation of all kinds, like images, textures, 3d models, animation, sound, music, cinematography, world, or character creation, through to the more structured creativity of the kind of programming, coding, conceptualization, organization, management, public relation, or documentation. There is space for almost any type of creativity or interest.
 
 Libre game creation not only challenges but also brings fun, utilizing your free time while benefiting all humanity, and can be a much more rewarding (if not even therapeutic) escape from the harsh reality of our life ('cause she is equally a harsh mistress). Creative engagement presents a much better reality escape route than e.g. television, web surfing, or drugs. It further presents a excellent playing field for personal growth.
@@ -28,6 +28,10 @@ Libre game creation not only challenges but also brings fun, utilizing your free
 Still, even in the age of global tech giants living off libre software without returns to original developers, we advocate the establishment of structures that will enable creators to fully exercise their creativity with as few obstacles as possible.
 
 This project is an attempt at removing obstacles and reducing challenges found by contemporary and future libre game creators and developers.
+
+It is initially approached from a "*tabula rasa*" point of view and is targeted for entry-level green-horn noobs with creative powers.
+
+
 
 
 **Game Types**
@@ -40,10 +44,12 @@ We are a community of contributors to existing libre game projects and a forum f
 We aggregate, collect, discuss but do not create games within this community. The latter is reserved to individual project communities and groups.
 
 
+
+
 **Game Vision**
 -------------------------------------
 
-The originators envision a cinematographic  exploratory free-style open-universe first-person adventure role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
+The originator, aka pyramid, envisions a cinematographic exploratory free-style open-universe first-person adventure role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
 
 Think about a holodeckesque style of game as the guiding vision.
 
@@ -52,24 +58,22 @@ It should be a large cosmos possibilities and opportunities populated by star sy
 Further specifics will be discussed in later chapters keeping in mind that an exemplary fantasy game may as well utilize a subset of the envisioned mechanics.
 
 
+
+
 **Open Source Games**
 -------------------------------------
 
 Because (for those who care)
 
 - we don't need repeated effort for the same type of games over and over and again
-
 - for-benefit of many is more desirable than for-profit for few
-
 - we must not be indirectly responsible for low-wage coding sweat shops
-
 - we may be the only ones to boss oneself around
-
 - creativity shall be free
-
 - through creativity and safe play we learn to be gods in the overarching game play of life
-
 - because we can
+
+
 
 
 **Open Source**
@@ -77,47 +81,49 @@ Because (for those who care)
 
 Think twice, investigate, read or listen to opinions, if you expect to be making a living from open source. Though not impossible or unheard of, it requires a lot of commercial overhead.
 
-Most of open source developers ate employed individuals who choose to spendvtheir free time doing somthing they consider useful while at the same time keeping their mind active and well excercised.
+Most of open source developers ate employed individuals who choose to spend their free time doing something they consider useful while at the same time keeping their mind active and well exercised.
 
 You must also be prepared for commercial organizations to sell and use your open code without any return to the original developers.
 This is the nature of open source.
 Be sure that you are prepared to walk this path.
 
 
+
+
 **Headsup Advice**
 -------------------------------------
 
 - corporate strongarms will steal your work
-
 - open source community has elements that do not care about responsibility or diligence
-
 - the attrition and abandonement culture of some open projects can be nerve-straining
-
 - some of the github project leaders' neglect of merging pull requests is outright disrespectful
-
 - while open source should strive for unity   of solutions, the previous realities lead to unsustainable fragmentation
-
 - your body is the vehicle for your mind. the healthier the better your contributions
-
 - equally, emotional health allows for better creativity and contributions
-
 - there is naysayers, apes and savages in t-shirts abound, and they will be out to get you. just keep cool and detached.
-
 - as all roads, this one is also full of sweat and disappointments (but also achievements and rewards)
+
+
 
 
 **About the Originator**
 -------------------------------------
 
-Game industry is as old as humanity. Computer games have been around for well over 60 years (as of 25 Jan 2020) and the originator of this project (aka pyramid) has been creating and playing them for nearly 40 years.
+Game industry is as old as humanity. Computer games have been around for well over 60 years (as of 25 Jan 2020) and the originator of this project, pyramid (aka pyramid3d) has been creating and playing them for nearly 40 years.
 
-Far from considering himself expert, he thinks of his contributions more as aggregatory with a slight visionary touch.
+Far from considering himself expert, he thinks of his contributions more as aggregatory functions with a slight visionary touch.
 
-The aggregation of catalogued knowledge becomes more and more necessary with a very large knowledge base spread across the vast world wide web and more and more fractioning becoming prevalent. It should help lower the entry line for newcomers and make life easier for seasoned developers and creators.
+The aggregation of cataloged knowledge becomes more and more necessary, with a very large knowledge base spread across the vast world wide web and more and more fractioning becoming prevalent. It should help lower the entry line for newcomers and make life easier for seasoned developers and creators.
 
-On a side note: 1958's Tennis for Two is considered to be the first video game (source [https://www.bnl.gov/about/history/firstvideo.php](https://www.bnl.gov/about/history/firstvideo.php). For timeline of video games also see [https://www.museumofplay.org/about/icheg/video-game-history/timeline](https://www.museumofplay.org/about/icheg/video-game-history/timeline)
+As early as 2017-08-30, pyramid started a collection of ideas for future games, albeit starting with a simple listing of objectives, features, and anti-features for games he would like to play, it was the spark that ignited the voyage that trails the present document.
 
-As early as 2017-08-30, pyramid started a collection of ideas for future games, albeit limited to a simple listing of objectives, features, and anti-features for games he would like to play, it was the spark that ignited this voyage.
+As for his knowledge on game development, his self-description is
+
+> "I am a C++ beginner with some programming experience"
+
+His public identity is a matter of privacy by choice.
+
+On a side note: 1958's Tennis for Two is considered to be the first video game (source [https://www.bnl.gov/about/history/firstvideo.php](https://www.bnl.gov/about/history/firstvideo.php). For timeline of video games also see [https://www.museumofplay.org/about/icheg/video-game-history/timeline](https://www.museumofplay.org/about/icheg/video-game-history/timeline).
 
 
 
@@ -129,8 +135,6 @@ The [gaming challenges](#gaming-challenges) chapter is the manifesto of this doc
 
 
 
-
-
 Gaming Challenges
 =====================================
 
@@ -138,15 +142,20 @@ Gaming Challenges
 **Things to Consider**
 -------------------------------------
 
-For our sci-fi roleplaying space opera game, we would like to see the following desired features (non-exhaustive)
+For our sci-fi role playing space opera game, we would like to see the following desired features (non-exhaustive):
 
+- Set in a near or distant future
+- Setting and universe based on imagined future scientific or technological advances
+- Science and technology are at the center or the basis of the plot, having either benefited or harmed the societies portrayed
+- Portrays aliens or life on other planets
 - space travel
 - walkable space ships
 - docking to space objects
-- planet flight and landings without cutscenes
-- walkable planets without barriers
+- planet flight and landings without cut scenes
+- seamless walkable planets without barriers
 - terrain with progressive loading
 - no loading screens for relocation
+- no exclusive (phased) areas (dungeons, pvp areas, ...)
 - loading screens only to private player dungeons that require teleporting (e.g. arenas)
 - Unlimited skill-based experience levels
 - Automatic idle progression (when not in game)
@@ -155,6 +164,12 @@ For our sci-fi roleplaying space opera game, we would like to see the following 
 - non-combat sportive skill matches (e.g. races, knowledge competition, crafting competition)
 - cooperative game modes (groups, parties, squads, operations)
 - local and global chats
+- Story telling 
+- Character building and progression
+- Choices that affect the game world (within realistic influence)
+- An emphasis on exploration
+
+
 
 
 **Things to Avoid**
@@ -180,7 +195,7 @@ We would also strongly discourage the following anti-features:
 
 - currency based economy
 
-- oversized weapons
+- over-sized weapons
 
 - limited skill treas (by trade or class)
 
@@ -219,10 +234,12 @@ Those compelling, enticing, reactive games with unique and realistic content tha
 
 Just like life, there is no knowing what will be. Games must become the same.
 
-Usual objectives in casual gaming:
+Possible player objectives in casual gaming:
+
 - immersion (mixing your life with someone else's story)
 - pastime (actively doing something)
 - progression (sense of advancement and growth)
+- achievement (validation of prowess or public recognition)
 - heroics (help humanity by eliminating monsters or saving a character from peril)
 - safety (fight the bad and evil and you will not really get hurt or die)
 - challenge (solve puzzles or problems to keep brain activity)
@@ -230,8 +247,13 @@ Usual objectives in casual gaming:
 - social advancement (encourage evolution of cooperative behavior, learn to flourish and thrive together)
 - creativity (satisfaction from imagining worlds, characters, places, events and turning them virtual)
 - physical activity (limited, depends on technology like 3d controllers or holodeck)
+- escape from the mundane reality
+
+
 
 There is little doubt that content development must swing towards artificially and intelligently procedurally generated universes in order to provide the games with enticing (immersive, challenging, safe, active) gaming experience.
+
+
 
 
 **Realism**
@@ -245,7 +267,7 @@ I've said it before and I will probably say it many times again before I die. Mo
 
 If a person is shot in an action movie, the realistic result is he drops to the floor. But that's not fun to watch, so instead the bullet knocks them off into the water. To enhance the beliveabiltiy, that happens every time someone gets shot (except for the main character, of course, he just bleeds). In our world, we need to get to a planet far away. Realism would say we need 200,000 years and a fuel tank the size of the moon, but that's not any fun. So we make up a magic super-fast travel system, and use it all the time. And we make up fictional documentation to back up our absurd creation.
 
-We still know it's not realistic, but we believe it anyway. Why? Because we want to, and we can belive it "exactly the same" every time. The real secret to making a believeable environment is to take advantage of just enough of what reality does give us to help our immersion, then make up stuff to keep people interested, and use that made-up stuff in a way that is consistent throughout the entire game experience, offer "believable" (again NOT realistic) explanations in case people DO question it, and use this made-up material in such a way that the people playing WANT TO BELEIVE IT.
+We still know it's not realistic, but we believe it anyway. Why? Because we want to, and we can believe it "exactly the same" every time. The real secret to making a believable environment is to take advantage of just enough of what reality does give us to help our immersion, then make up stuff to keep people interested, and use that made-up stuff in a way that is consistent throughout the entire game experience, offer "believable" (again NOT realistic) explanations in case people DO question it, and use this made-up material in such a way that the people playing WANT TO BELIEVE IT.
 
 It's called **willing suspension of disbelief**, people. That's the secret. NOT realism.
 
@@ -316,11 +338,21 @@ We separate the game content from the game play. The following documents are req
 - Universe canon
 - Game design
 
-Universe canon describes history, events,species, culture, music, art, designs, vessels, personnae, galaxies, planets, places, fauna, flora, and everything that is needed to represent a believable universe.
+Universe canon describes history, events,species, culture, music, art, designs, vessels, personae, galaxies, planets, places, fauna, flora, and everything that is needed to represent a believable universe.
 
 The design document describes game mechanics, technologies, object standards, interfaces, libraries, coding standards, and everything required to make the game.
 
 We **recommend** the structure for both documents derived from the one of the [Vega Strike Universe Development Document](https://github.com/vegastrike/VS-Universe-Lore-Docs) and [Game Design Document](https://github.com/vegastrike/VS-Design-Docs) documents.
+
+
+
+**References**
+
+[1] [Game Design Document](https://github.com/vegastrike/VS-Design-Docs)
+
+[2] [EQEmu Design Docs](https://github.com/EQEmu/docs-main)
+
+
 
 
 **Documentation Standards and Formats**
@@ -368,23 +400,95 @@ See also:
 - https://www.gamasutra.com/blogs/AlexanderFreed/20150615/246115/On_a_Lack_of_Originality_in_ScienceFiction_and_Fantasy_Game_Settings.php
 
 
+
+
 **Story Writing**
 -------------------------------------
 
 Engaging in non-repetitive story writing is a challenging undertaking. Many stories can be sampled from real life, art, and especially literature.
 
-A word processor is your main tool for story writing. A chapter should be reserved for the manuscript with the big picture plot, personnages, notes, comments, and ideas.
+A plot is a sequence of events and a set of relationships among them. The plot is “what happened” organized by time and high-level causality, however, left to itself, the plot isn’t about anything. The plot must connect to a story and support it. 
 
-Try Manuskript, the open-source tool for writers: http://www.theologeek.ch/manuskript/
+Plot connects quests to a story and thus to a larger whole. In fiction writing, it is usually recommended to have a  protagonist and antagonist with opposing goals. With two people /  organizations working towards opposing goals, there is interesting  interaction, a game.
+
+The most prevalent question for game story writing is how events develop as the game progresses. It is more believable when the player character’s doings revolve around the progress of events (rather than the other way around). This means that the universe, politics, other characters progress even when the player takes no action. It conveys a sense of a living universe, where the player can also step into the character to be entertained by watching the world evolve.
+
+As [jackS](https://github.com/LibreGamingManifest/libre-gaming-mirror/blob/master/game-design/vegastrike/VegaStrike-UponTheColdestSea-GameDesignDocument-20100714.pdf) put it:  
+
+> The epic sweep of events is a backdrop, rather than a result of player actions. The player’s challenges and losses will be important to the player character and those around him, but not so much to historians.
+
+However, the player character is not detached from the larger events. He is still subject to influence by external events and can in turn influence their outcomes. However, as the fate of mankind doesn’t rest on his shoulders alone. One should aim for epic scope in setting, not in the degree of impact that the player characters actions will have upon future generations to come. Allow opportunities for heroism, but on a personal scale, not a galactic or cosmic one.
+
+The big plot is an epic canvas, a great, boldly painted backdrop with thick lines and firm colors against which and within which smaller events are set, contrasted, and constrained. The big plot should concern itself with what would be written in history texts after its conclusion, whereas the little plot should concern itself with what its surviving characters would tell their grand-children about what they were doing during some chapter in the aforementioned history text. 
+
+
+
+A word processor is your main **tool** for story writing. A chapter should be reserved for the manuscript with the big picture plot, personages, notes, comments, and ideas.
+
+Try [Manuskript](http://www.theologeek.ch/manuskript/), the open-source tool for writers: http://www.theologeek.ch/manuskript/
 
 See also: https://alternativeto.net/software/scrivener/?license=opensource, https://itsfoss.com/open-source-tools-writers/, https://github.com/Blecki/TreeWriter, https://www.giuspen.com/cherrytree/
 
 Stories must be converted into workable code, usually using scripting.
 
-See also:
 
-- https://www.gamasutra.com/blogs/AlexanderFreed/20150629/247222/Six_Metrics_for_Better_Game_Narrative.php
-- https://www.gamasutra.com/blogs/AlexanderFreed/20150504/242101/Yes_You_Have_To_Write_a_Game_Plot_Summary_and_Yes_It_Has_To_Be_Good.php
+
+**References**
+
+[1]  [Philosophy of scope and goals for plot and protagonist](https://github.com/LibreGamingManifest/libre-gaming-mirror/blob/master/lore-documents/vegastrike/Vega-Strike-Universe-Canon.pdf). jackS. 2020-02-17.
+
+[2] [Six Metrics for Better Game Narrative](https://www.gamasutra.com/blogs/AlexanderFreed/20150629/247222/Six_Metrics_for_Better_Game_Narrative.php). Alexander Freed. 2015-06-29. Retrieved 2020-02-15.
+
+[3] [Yes, You Have To Write a Game Plot Summary; and Yes, It Has To Be Good]( https://www.gamasutra.com/blogs/AlexanderFreed/20150504/242101/Yes_You_Have_To_Write_a_Game_Plot_Summary_and_Yes_It_Has_To_Be_Good.php). Alexander Freed. 2015-04-05. Retrieved 2020-02-15.
+
+
+
+
+**Quests and Missions**
+-------------------------------------
+
+Quests, tasks, missions, campaigns engage the player actively and give him the opportunity to explore and learn about the game universe. They are the driving force for the [compelling experience](#compelling-experience) of the player and the choice of quests will shape the focus of the game and the nature of the experience. Quest fulfillment may be tied to achievements.
+
+Through plot, that is connected to story writing, various quests are connected to convey integrity and meaning to the universe. To generate quests, there can exist an entity (character, faction, organization) with some goals that can be broken down in tasks.  The quests are then the steps necessary to meet the goal. Quests can also be generated spontaneously by a narrator entity that is not an in-game character or faction.
+
+Quests can be defined as **contracts** between contract issuer and receiver and should contain information like:
+
+- task definition (transport, build, negotiate, help, patrol, scout, find, rescue)
+- issuing conditions (type of player character, certain quests completed before)
+- fulfillment conditions (package delivered, villain killed)
+- resulting rewards (items, money, reputation)
+- penalty when not fulfilled (perhaps a time penalty for reissuing the quest)
+- Parent quest (this quest must be fulfilled before the parent one can be finished)
+
+
+
+The simplest approach is to automated generation of quest is using mission templates (metaquests) of the nature: (issuer, task, task location, reward) where the individual components can be randomly exchanged to generate quests like for example:
+
+- Baron X awards an Implant of Healing for picking up a package from The Merchant in the Alley of Light and deliver it to him.
+- The Collective of Biomorphs awards a 1000 tons of fuel for patrolling five navigation points in the Alpha System between Alpha A1 and Alpha A3.
+  - Subquest: Should pirates be encountered, credits will be awarded for the reporting or elimination of such elements.  
+
+This type of quests, though easy to implement can only serve few [compelling experience](#compelling-experience) goals (pastime and progression) but will not engage more demanding players for a long time.
+
+For immersive experiences more sophisticated procedural quest generation systems, possibly requiring further advancement in artificial intelligence to fully convey meaning related to the story or plot, are required.
+
+
+
+See also: [Procedural Quest Authoring](#procedural-quest-authoring)
+
+
+
+**References**
+
+- https://wiki.worldforge.org/wiki/Quest_Generation_Algorithm
+- https://github.com/vegastrike/VS-Design-Docs
+- https://eqemu.gitbook.io/server/categories/how-to-guides/task-system-guide
+
+
+
+**Further Research and Exploration**
+
+@TODO: What is a possible standard quest exchange format.
 
 
 
@@ -419,7 +523,7 @@ Explorable topics: screen writing software, storyboard software, story writing s
 
 
 
-**Conversations**
+**Conversation Dialogues**
 -------------------------------------
 
 Conversations add immersion, realism, believability, engagement, and interactivity to the game play usually in one of the prevalent forms of branching conversations, with or without voice over, subtitles, or cinematographic scenes.
@@ -447,71 +551,151 @@ Key concepts to consider
 - Skipping through conversations
 - Merging “conversation” and “gameplay” games
 
+
+
 ***Conversation Tools of the trade***
 
-- TreeLine Outliner Tool in Python \
-  http://treeline.bellz.org/ \
+- DlgSystem C++ Library and Tool
+  https://gitlab.com/NotYetGames/DlgSystem/wikis/home
+  https://gitlab.com/NotYetGames/DlgSystem
+- TreeLine Outliner Tool in Python
+  http://treeline.bellz.org/
   Source code: https://github.com/doug-101/TreeLine
-
-- Ink open source scripting markup \
+- Ink open source scripting markup
   https://www.github.com/inkle/ink
   Inky open source scripting editor: https://www.github.com/inkle/inky
-
-- DlgSystem C++ Library and Tool \
-  https://gitlab.com/NotYetGames/DlgSystem/wikis/home \
-  https://gitlab.com/NotYetGames/DlgSystem \
-
-- ClearDialogue Java Dialogue Tool\
-  https://github.com/SkyAphid/ClearDialogue \
+- ClearDialogue Java Dialogue Tool
+  https://github.com/SkyAphid/ClearDialogue
   Example format: https://github.com/SkyAphid/ClearDialogue/blob/master/ClearDialogueAPI/examples/ButThouMust.json
-
-- Twine Tool for Interactive Stories \
-  http://twinery.org/ \
+- Twine Tool for Interactive Stories
+  http://twinery.org/
   Harlowe file format: https://twine2.neocities.org/
-
-- Yarn Editor \
-  https://github.com/YarnSpinnerTool/YarnEditor \
+- Yarn Editor
+  https://github.com/YarnSpinnerTool/YarnEditor
   https://yarnspinnertool.github.io/YarnEditor/
-
-- Monologue Branching Dialogue Editor in Haxe (superseded by ClearDialogue) \
-  https://github.com/nospoone/monologue \
+- Monologue Branching Dialogue Editor in Haxe (superseded by ClearDialogue)
+  https://github.com/nospoone/monologue
   File format: https://github.com/nospoone/monologue.wiki.git
 
-There is no recommendation as to the preferential tool yet, but a quick analysis highlights TreeLine or DlgSystem as potential candidates.
-TreeLine is a flexible and customizable tree node editor, but lacks a C++ library or game engine integration.
-DlgSystem comes with a library as well as authoring tools, allows for game engine integration, but seems a bit more complicated to grasp.
+There is no recommendation as to the preferential tool yet, but a quick analysis highlights DlgSystem as a potential candidate.
+
+DlgSystem comes with a library as well as authoring tools, allows for game engine integration, but seems a bit more complicated to grasp as it is only targeted for the commercial Unreal Engine.
+
+TreeLine, Yarn, Twine are flexible and customizable tree node editors, but some of those lack a C++ library or production proven game engine integration.
 
 **Conversation formats** must represent the conversation in such a way that it can be written, tested, debugged, and scripted. This means that in addition to text and the tree structure of the dialog object, it must include certain attributes that allow referencing audio, subtitles, and animation sequences. Further it should allow to contain information on which mood to apply when delivering voice-over and acting, what are the conditions triggering the conversation, variables that allow the dialogue to reflect previous player choices.
 
-Such a standard format has yet to be established.
+@TODO Such a standard format has yet to be established. Should you have knowledge of such a format, please do not hesitate to contact the author. 
+
+
+
+**Procedural Writing**
+
+In [Writing with the machine](https://www.robinsloan.com/notes/writing-with-the-machine/) [Robin Sloan](https://www.robinsloan.com/about/) shares his vision (paraphrased)
+
+> I am not talking about an editor that “writes for you”. The ideas here are augmentation; partnership; call and response. The goal is not to make the resulting text “better”; it’s to make it *different* — weirder, with effects maybe not available by other means.
+
+Maybe his writer support system (**[torch-rnn-server](https://github.com/robinsloan/torch-rnn-server)** and **[rnn-writer](https://github.com/robinsloan/rnn-writer)**) will evolve into something that is able to at least partially help create more enticing content in the far future.
+
+
+
+**References**
 
 Recommended further reading:
 
 - [Branching Conversation Systems](http://www.alexanderfreed.com/2014/09/02/branching-conversation-systems-and-the-working-writer-part-1-introduction/) by [Alexander Freed](alexanderfreed.com)
 - [Defining Dialogue Systems](https://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php) by [Brent Ellison](https://www.gamasutra.com/view/authors/849904/Brent_Ellison.php)
+- [Writing with the machine](https://www.robinsloan.com/notes/writing-with-the-machine/) by [Robin Sloan](https://www.robinsloan.com/about/). 2016.
+
+
+
+**Factions**
+-------------------------------------
+Factions with opposing or aligned goals bring playful interaction into the game.
+
+Factions can be implemented so that there are several organizations  with opposing goals, that create quests that would promote their own goals and/or hinder opposing goals. They can reward players for carrying out quests. Player characters would be able to join factions.
+
+
+
+**Further Research and Exploration**
+
+@TODO: Link faction design document
+
+@TODO: Guild are special, player created factions
+
+
+
+
+
+
+
+
+
+See also:
+
+- https://eqemu.gitbook.io/server/categories/how-to-guides/customizing-factions/understanding-the-database-tables
 
 
 
 **Game Mechanics**
 -------------------------------------
 
-@TODO
 
 
-**Player Character**
+**Further Research and Exploration**
+
+@TODO: ...
+
+
+
+**Player and Non-Player Characters**
 -------------------------------------
 
-@TODO
+Characters that populate the virtual world in various locations can be player characters (PC) or non-player characters (NPC). If we want to model character and animal companions, we could even extend the character class to contain animals.
 
-**Player Posessions**
+For modeling characters properly, we must decide which aspects should be modeled as **properties**, which ones as **relations** (related classes).
+
+A **character name** is probably unique and does not have any significant dependencies, hence name can be a direct property of the character. Likewise **experience**, if a unique number, can be a property. A **species** on the other hand, can be common for different characters, hence the generic attributes defining and describing a species would be modeled as an independent class and then linked to the character. Character location is an example of attributes that could be modeled as properties (if the are only composed of world coordinates in simple worlds) or as a class (if world coordinates are not sufficient, but additional information must be modeled, e.g. star system, planet, area or instance).
+
+But ...  wait a moment. Classes? Scratch that ancient stuff. Look out for [Entity Component Systems](#entity-component-systems) instead.
+
+
+
+**Further Research and Exploration**
+
+@TODO: ...
+
+
+
+## Occupations and Skills
+
+
+
+How wise is it to model occupations in the sense of profession or line of work, or career? On the one hand one's profession is where one spends the majority of his time or specializes in in order to earn subsistence. But then, one character can be occupied with this now, and with other thing later, and can have various equally advanced skills. Then if I need a specific professional, should I not rather select one based on a character's skill in a particular occupation?
+
+This means that there will be a specific implementation for occupations, and their respective skills that each character can earn, rather than rigid "professions".
+
+
+
+**Player Possession**
 -------------------------------------
 
-@TODO
+
+
+**Further Research and Exploration**
+
+@TODO: ...
+
+
 
 **Character Progression**
 -------------------------------------
 
 Instead of player levels, we recommend a per skill progression, advancing the particular skill, the more it is used. Slowly forgetting the skill during prolonged non-usage is an explorable option. Care must be given to balancing forgetting so as not to annoy and demotivate the player.
+
+
+
+**Achievements** play an important role in player satisfaction offering the sense of character progression beyond skill points. Many players will strive for achievements regardless of their necessity - achievements provide personal, and, if public, group validation of efforts or prowess. 
 
 
 
@@ -550,12 +734,175 @@ How would we establish a universal clock?
 
 
 
+Open World Seamless Universe
+-------------------------------------
+
+Immersion and believability (at least suspension of disbelief) demands no cuts or loading times between scenes as the player moves around the universe. Ideally continuous scenes on large scale (star system to planet landings), medium scale (traversing a landscape) and small scale (rooms, dungeons, phased areas) would be progressively loaded and provided to the current player context.
+
+A huge worlds demands huge sets of data. **Time to access** world data must be shorter than time taken for the player character to move across the world. It cannot be solved by loading all universe in memory due to  **memory limit** hardware limitations. Another limitation for online games is the capacity of the **server** and **internet connection** to update all game states to all players in the same area.
+
+**Definition of a seamless world**:  A **Seamless World** is a design method for MMORPGs where the world is loaded as you travel and the player is able to travel to any place without **unbelievable discontinuity** of location (either by physical locomotion or key enabled travel portal). This kind of method makes the game feel more like a world than one that uses zones.
+
+**Definition of an open world**: an [**open world**](https://en.wikipedia.org/wiki/Open_world) is a [game mechanic](https://en.wikipedia.org/wiki/Game_mechanics) of using a [virtual world](https://en.wikipedia.org/wiki/Virtual_world) that the [player](https://en.wikipedia.org/wiki/Gamer) can explore and approach objectives freely, as opposed to a world with more linear and structured gameplay.
+
+In seamless world the player expects to get the experience of exploration by finding "natural wonders" or at least beautiful scenery with diverse fauna and flora during his travels. This can be accomplished by utilizing procedural techniques coupled with machine intelligence (as opposed to rule based generation).
+
+Things preventing a world form being considered seamless: loading screens between zones, no ability to travel between places, unreachable painted backgrounds, phased areas not accessible to all players (special zones and dungeons, pvp environments, mini games).
+
+Often it is a problematic for player groups to play in boss areas (kill and loot steal, boss farming, malicious pvp). The correct game mechanism to prevent such annoyances is **not to create phased areas **but rather either to increase boss respawn rates or restrict access by other believable means (doors with keys, restrictions on limited parties allowed to enter). 
+
+Current **technology** seems to pivot around dual-contouring voxel engine with a bunch of pre-made 3D modeled "blocks” to add a little flavor, QuadTrees, LODs and dynamic mesh generation. The major issue is when there are leaks in data (texture) streaming content from HDD into memory, this is the real bottleneck a  good engine has to solve to scale the content. A lot of effort is needed involving all areas, graphics, terrains, physics, floating-point precision handling, persistence, networking, sound, collision detection. Therefore not many commercial game makers venture into truly seamless open worlds and therefore it can be a strength explorable by open source engines. Scenery tiles are paged (loaded/unloaded) in a separate thread to minimize the frame rate hit when you need to load new areas.
+
+[OpenSceneGraph](http://www.openscenegraph.com/) and [VulkanSceneGraph](http://www.openscenegraph.com/index.php/8-news/232-vulkan-vkscenegraph-project) is open source, real-time graphics middle-ware that uses the scene graph approach to represent 3D worlds as a graph of nodes that logical and spatially groups subgraphs for behavior and high performance. 
+
+
+
+Notable games attempting a seamless world:
+
+- Darkfall
+- Vanguard
+- Ultima Online
+- Risen/Gothic 2 (the harbor town of Khorinis)
+- A Tale in the Desert (https://www.desert-nomad.com/)
+- Lineage 2
+- The Elder Scrolls 3
+- EVE Online
+- Perpetuum
+- Fallen Earth
+- Star Wars Galaxies
+- Istaria
+- No Man's Sky
+- Space Engineers
+- Dual Universe
+- Outerra (https://github.com/Outerra)
+- Space Exploration Engine
+- Cryengine
+
+
+
+**References**
+
+[1]  [Seamless game world](http://acamara.es/blog/2012/08/running-a-lua-5-2-script-from-c/). [Igor Morgado](https://github.com/igormorgado).  2018. Retrieved 2021-02-06.
+
+[2] [The Truth behind a 'seamless' world](https://forums.mmorpg.com/discussion/303622/the-truth-behind-a-seamless-world). [tavoc ](https://forums.mmorpg.com/profile/tavoc). 2011. Retrieved 2021-02-06.
+
+[3] https://www.outerra.com/ - 3D planetary engine for seamless planet rendering from space down to the surface.
+
+[4] [Pattern: Seamless World Game Server](https://gameserverarchitecture.com/2016/03/pattern-seamless-world-game-server/). [Matthew Walker aka matsaleh](https://www.linkedin.com/in/matsaleh). Last modified on 2016-03-08. Retrieved 2021-02-06.
+
+[5] [Seamless World 2.0](http://hewiki.heroengine.com/wiki/Seamless_World_2.0). Last modified on 2013-02-08. Retrieved 2021-02-06.
+
+[6] https://www.semanticscholar.org/search?q=3d%20seamless%20world&sort=relevance
+
+
+
+
+
 **Game Architecture**
 -------------------------------------
 
+
+
+### Libraries
+
 Paraphrasing [bmorel](https://github.com/bmorel) who [describes it very well](https://github.com/vegastrike/Vega-Strike-Engine-Source/issues/72#issuecomment-617954838): Generally, projects should rely on libraries, and not on frameworks or full built engines, if the long term existence is a goal. It's easy to replace a library, hard to replace a framework. A 3D rendering engine is almost a framework, and does not do all the jobs: there is still 2D (HUD), physics, sounds, etc. Game engines do everything. They often are based on specific languages, sometimes even homemade (Godot, Neverwinter Nights, Unreal Engine). Using a common language (C, C++, Java, C#, ...) without a framework implies that any developer that knows that language can jump in without spending weeks or days learning a framework or specific architecture.
 
+**Library Design**
+
+Well designed libraries are modular with clear separation of:
+
+- Data constructs that represent the game world
+- Functions that operate on the data and provide the API
+- Serialization to different codecs (text based or binary)
+- Persistence and exchange (file or data base storage)
+- Visualization (optional as it may be very specific to the client)
+
+> LIBRARY
+>
+> |--- DATA
+>
+> |--- FUNCTIONS
+>
+> |--- SERIALIZATION
+>
+> |--- PERSISTENCE
+>
+> |--- VISUALIZATION
+
+
+
+There is a myriad of [open source libraries available](#game-libraries), most not specific to resolving game related problems, but useful nevertheless.
+
+An example of a library for procedurally generating galaxies, star systems, and objects, is the [libprocu-galaxy](https://github.com/LibreGamingManifest/libre-gaming-engines/tree/master/libprocu-galaxy).
+
+
+
+### Entity Component Systems
+
+The probably most cited article "Evolve Your Hierarchy" by Mick West nails the usefulness of the component system, whose invention is generally attributed to Scott Bilas and in 2001:
+
+> Game programmers have consistently used a deep class hierarchy to represent game entities. The tide is beginning to shift from this use of deep hierarchies to a variety of methods that compose a game entity object as an aggregation of components.
+
+The system abandons problematic inheritance-based code design in favor of  containers of components for game objects.
+
+**The Entity** is a game object, like character, vehicle, wall. **The Component** is the data for entities, like location, mass, or experience points. **The System** contains the logic for entities based on their components. 
+
+Open libraries exist. We **recommend** **[EnTT](https://github.com/skypjack/entt)** for it's performance, production readiness. **[EntityX](https://github.com/alecthomas/entityx)** seems a viable alternative. **[anax](https://github.com/miguelmartin75/anax)** and **[EntityPlus](https://github.com/Yelnats321/EntityPlus)** are not maintained anymore.
+
+For further information follow the references.
+
+**References**
+
+[1] [Evolve Your Hierarchy](http://cowboyprogramming.com/2007/01/05/evolve-your-heirachy/). Mick West. 2007-01-05.
+
+[2] [Modelling Game Entities Using Traits](https://villane.wordpress.com/2008/09/15/modelling-game-entities-using-traits/). [Erkki Lindpere](https://villane.wordpress.com/author/villane/). 2008-09-15.
+
+[3] [Game Object Structure:  Inheritance vs. Aggregation](http://gamearchitect.net/Articles/GameObjects1.html). 2002-07-03
+
+[4] [What is an Entity System?](https://github.com/miguelmartin75/anax/wiki/What-is-an-Entity-System%3F). Lutz Kellen. Last updated on 2017-08-25. Retrieved on 2020-05-20.
+
+[5] [Entity Systems Wiki](http://entity-systems.wikidot.com/). Retrieved on 2020-05-20.
+
+[6] [Entity Systems are the future of MMOG development](http://t-machine.org/index.php/2007/09/03/entity-systems-are-the-future-of-mmog-development-part-1/). Adam Martin. 2007-12-22.
+
+[7] [Component Based Engine Design](https://www.randygaul.net/2013/05/20/component-based-engine-design/). [Randy Gaul](https://www.randygaul.net/). 2013-05-20.
+
+
+
+### Component Communication
+
+Often components of the game engine must communicate with each other. The following mechanisms can be applied for various situations:
+
+- [Observer](http://gameprogrammingpatterns.com/observer.html) is good for synchronous communication, i.e. when the subject must wait for the observer to have finished processing the message.
+- [Event Queue](http://gameprogrammingpatterns.com/event-queue.html) is an asynchronous communication pattern and, depending on your needs, can come in many incarnations (events/messages, broadcast/work, ...).
+
+
+
+### Architecture Examples
+
+
+
+**Example: two Architecture**
+
 [two](https://github.com/hugoam/two) is a live prototyping solution that implements this philosophy: **two** stems from a strong programming philosophy: it wagers that the future of application and game coding lies in small, self-contained, reusable and shared libraries, and **not** in gigantic tightly coupled *engines* of hundreds thousands of lines of code. For our shared knowledge and our programs to progress, the building blocks have to be **small** and **understandable** (which is essentially the same thing). There are many such blocks (libraries) already existing in many domains, with many others missing. With the building blocks **two** provides, one can create live graphical applications in few lines of code, but also, **anyone** can potentially create a *game engine*.
+
+
+
+**Example: World Forge Architecture**
+
+A very [solid multiplayer architecture](https://www.worldforge.org/index.php/develop/technical-overview/) is presented in the World Forge project.
+
+![World Forge architecture](image/WF_component_rel_graph.jpg "World Forge architecture")
+
+[Cyphesis](https://www.worldforge.org/index.php/components/cyphesis/) is the main WorldForge server. It provides everything needed in order to run a virtual world.
+
+[Mercator](https://www.worldforge.org/index.php/components/mercator/) is primarily aimed at terrain for multiplayer online games. Mercator is designed in such a way that individual tiles can be generated on-the-fly from a very small source data set. Each tile uses a fast deterministic random number generation to ensure that identical results are produced "anytime, anywhere". This enables transmission of terrain across low bandwidth links as part of the standard data stream, or server side collision detection with the same terrain that the player sees.
+
+[Atlas](https://www.worldforge.org/index.php/components/atlas-cpp/) is the protocol which binds all of Worldforge together. It's a protocol meant to express a complete virtual worlds, and all communication between the servers and the clients uses it. The world itself as well as all actions that occur are all expressed through Atlas.
+
+[Eris](https://www.worldforge.org/index.php/components/eris/) is designed to simplify client development (and promote code reuse) by providing a common system to deal with the back-end Atlas tasks. Notably, Eris encapsulates most of the work in getting Atlas entities available on your client, and managing updates from the server. Thus it can be considered as a session layer above Atlas, providing persistent (for an entire gaming session) objects as opposed to transient Atlas ones.
+
+
 
 **Recommendation**
 
@@ -583,6 +930,8 @@ Our **recommendation** goes to
 
 - [Godot Engine](http://godotengine.org/) comes with innovative design and features, is extensible in C++ and scripting, script debugging, supports many major target platforms, and offers a wide range of authoring tools, as well as a friendly community, and much more.
 
+
+
 **Rendering Engine**
 -------------------------------------
 
@@ -596,8 +945,62 @@ Our **recommendation** goes to
 
 
 
+## Scripting Engine
 
-**Single or Multiplayer**
+Why should we use scripts in game engines?
+
+Scripts are usually **compiled at run time**, while the  host language will be compiled at compile time. This means that we don't need to recompile if the script changes. Recompiling a full game can  take minutes to hours, which implies a big productivity hit.
+
+Usually, the critical code or backend code will not be scripted. This code should run fast and often memory management is crucial. In games, game logic and configuration are typically contained in script files. These **scripts can easily be updated by non-programmers** (like the designer) to tweak the gameplay. Script languages are easy and act in a forgiving manner for that purpose. Often, a script language is also used to do **scripting at real time**. This comes in handy for tweaking some gameplay elements or even for  debugging. Many games provide a console for this (mostly in-house)  purpose.
+
+It is very well possible that you create a game using an existing game engine, just by scripting. The **game engine layer is thus fully decouple from the game logic layer**. Modern engines can usually be used to create FPS or RTS games easily  like this, but it is not possible for any genre. An MMO would probably  require another type of engine.
+
+So the bottom line is **decoupling**. The benefits listed above often outweigh the extra work to create or integrate a scripting language.
+
+author: [Nef](https://gamedev.stackexchange.com/users/1219/nef) on [Game Development on Stack Exchange](https://gamedev.stackexchange.com/a/2914)
+
+
+
+Some of the advantages of using scripting:
+
+- Scripting languages for game logic is a very good example of the software architecture pattern [Alternate Hard and Soft Layers](http://c2.com/cgi-bin/wiki?AlternateHardAndSoftLayers).  There's a good discussion on that site (and others I'm sure) on the benefits of doing so.
+- Easier implementation by programmers and creative designers as script languages are often simple to understand and easy to program.
+- Script changes are easy to deploy.
+- Allow for the game engine to be extensible by plugins or addons.
+
+
+
+To decide which scripting language is more appropriate we should consider the following aspects:
+
+- How easy is it to integrate (embed) with your engine
+- How well can you understand the syntax
+- How much beginner tutorials are available
+- Is the scripting system mature
+- Is it actively maintained
+
+
+
+While the choice is not easy, GitHub user [D. Bohdan](https://github.com/dbohdan) has put up a collection of **[Embedded Scripting Languages](https://github.com/dbohdan/embedded-scripting-languages)**. Some of the usually mentioned scripting languages for games are:
+
+- [ChaiScript](http://chaiscript.com/)
+- [AngelScript](http://www.angelcode.com/angelscript/)
+- [Lua](http://lua.org/)
+- [Squirrel](http://squirrel-lang.org/)
+- [Python](https://www.python.org/)
+- [daScript](https://dascript.org/)
+
+
+
+**References**
+
+[1]  [Running a Lua 5.2 script from C++](http://acamara.es/blog/2012/08/running-a-lua-5-2-script-from-c/). [Soy_yuma](http://acamara.es/blog/author/soy_yuma/).  2012-08-14.
+
+
+
+
+
+
+**Single and Multiplayer**
 -------------------------------------
 
 Huge online universes can be fun through interaction with other players though require many servers.
@@ -605,37 +1008,6 @@ Huge online universes can be fun through interaction with other players though r
 There is an inherent latency problem that may arise in universe instances with local servers and a global population.
 
 Scaling of servers to users implies cost and time for maintenance.
-
-
-
-
-**Game Architecture**
--------------------------------------
-
-A very [solid multiplayer architecture](https://www.worldforge.org/index.php/develop/technical-overview/) is presented in the World Forge project.
-
-![World Forge architecture](image/WF_component_rel_graph.jpg "World Forge architecture")
-
-[Cyphesis](https://www.worldforge.org/index.php/components/cyphesis/) is the main WorldForge server. It provides everything needed in order to run a virtual world.
-
-[Mercator](https://www.worldforge.org/index.php/components/mercator/) is primarily aimed at terrain for multiplayer online games. Mercator is designed in such a way that individual tiles can be generated on-the-fly from a very small source data set. Each tile uses a fast deterministic random number generation to ensure that identical results are produced "anytime, anywhere". This enables transmission of terrain across low bandwidth links as part of the standard data stream, or server side collision detection with the same terrain that the player sees.
-
-[Atlas](https://www.worldforge.org/index.php/components/atlas-cpp/) is the protocol which binds all of Worldforge together. It's a protocol meant to express a complete virtual worlds, and all communication between the servers and the clients uses it. The world itself as well as all actions that occur are all expressed through Atlas.
-
-[Eris](https://www.worldforge.org/index.php/components/eris/) is designed to simplify client development (and promote code reuse) by providing a common system to deal with the back-end Atlas tasks. Notably, Eris encapsulates most of the work in getting Atlas entities available on your client, and managing updates from the server. Thus it can be considered as a session layer above Atlas, providing persistent (for an entire gaming session) objects as opposed to transient Atlas ones.
-
-
-**Quests and Missions**
--------------------------------------
-
-The following concepts are current reference:
-
-- https://wiki.worldforge.org/wiki/Quest_Generation_Algorithm
-- https://github.com/vegastrike/VS-Design-Docs
-
-@TODO: What is a possible standard quest exchange format.
-
-
 
 
 
@@ -701,6 +1073,8 @@ Following the analysis and recommendations in this article, we equally **recomme
 [1]  [CSV vs XML vs JSON – Which is the Best Response Data Format?](https://digitalhospital.com.sg/csv-vs-xml-vs-json-which-is-the-best-response-data-format/). Digital Hospital. 2016. Retrieved on 2020-02-23.
 
 
+
+
 **Games Within Games**
 -------------------------------------
 
@@ -710,19 +1084,6 @@ Actually it is a "play" and you are the player. Life is full of fakes: e.g. fake
 Within those games we are given the opportunity to be gods and create a better reality. Within those games we create mini games.
 
 Games within games to chose in which one you want to grow.
-
-
-
-**Scene Representation**
--------------------------------------
-
-Immersion demands no cuts or loading times between scenes. Ideally continuous scenes on large scale (star system to planet landings), medium scale (traversing a landscape) and small scale (rooms, dungeons, phased areas) would be progressively loaded and provided to the current player context.
-
-
-
-OpenSceneGraph is open source, real-time graphics middle-ware that uses the scene graph approach to represent 3D worlds as a graph of nodes that logical and spatially groups subgraphs for behavior and high performance. 
-
-
 
 
 
@@ -736,10 +1097,14 @@ The story dictates which characters and environment assets will be designed.
 Visual Effects, voice, audio, and cut scenes may be required in additions.
 
 
+
+
 **Asset Pipeline**
 -------------------------------------
 
 Will strongly depend on asset formats and types of games.
+
+
 
 
 **Asset Tools**
@@ -899,9 +1264,17 @@ How do we assure repeatability of planet when refinement is dependent on camera 
 
 How do we store the seed hierarchy (e.g. system, planets and types, planet surface, biomes)?
 
-Do we allow offline procedural preselection  of seeds by the asset artist, to lets say select one of several procedurally generated biomes?
+Do we allow offline procedural pre-selection  of seeds by the asset artist, to lets say select one of several procedurally generated biomes?
 
 Do we generate on server (seed only) or on client (geometry) in a multi-player environment?
+
+
+
+**References**
+
+[1] [Random Seed Hierarchies](https://github.com/LibreGamingManifest/libre-gaming-manifest/blob/master/articles/article-random-hierarchies.md). Pyramid. 2020.
+
+
 
 
 **Procedural Universe Building**
@@ -1040,6 +1413,56 @@ search: open source terrain
 - https://www.artifexterra.com/
 
 
+
+**Voxel Procedural Terrains**
+
+https://mikolalysenko.github.io/MinecraftMeshes/index.html
+
+Vulkan projects
+
+https://awesomeopensource.com/projects/vulkan
+
+VulkanSceneGraph
+
+https://github.com/vsg-dev/MyFirstVsgApplication
+https://github.com/gwaldron/osgearth
+
+Voxel Engine Code
+
+http://www.minetest.net/
+https://www.voxelquest.com/
+https://github.com/Relintai/broken_seals
+https://github.com/codewing/vulkan_rendering
+https://voxelplugin.com/ (UE4)
+https://goxel.xyz/
+
+https://github.com/topics/voxel-engine
+https://github.com/s-macke/VoxelSpace
+https://github.com/BayatGames/VoxelFramework (Unity)
+https://github.com/XenonLab-Studio/TerraCraft (Python)
+https://github.com/Relintai/voxelman
+https://github.com/Russoul/voxelized3d (Dual Contouring)
+https://github.com/TheSpyGeek/VoxelEngine
+https://github.com/Tunied/CEVoxelMeshGreedyOptimizer
+https://github.com/himanshugoel2797/ProtoVoxel
+https://github.com/theSoenke/ProceduralTerrain (Unity)
+
+Libraries
+
+https://www.openvdb.org/
+
+Topics
+
+https://awesomeopensource.com/project/meshula/awesome-voxel
+
+- adaptive dual contouring
+- octree simplification
+- storing extra information in voxels: a distance at which simplification is preferred
+- output triangulated surface
+
+
+
+
 **Procedural World Building**
 -------------------------------------
 
@@ -1073,10 +1496,6 @@ World Engine (https://github.com/Mindwerks/worldengine) is a tectonic surface he
 
 
 
-
-
-
-
 **References**
 
 [1] [Polygonal Map Generation for Games](http://www-cs-students.stanford.edu/~amitp/game-programming/polygon-map-generation/). Amit Patel. 2010-09-04. Last modified on 2020-03-29. Retrieved on 2020-05-11.
@@ -1098,7 +1517,7 @@ For any new universe seed, new texture sets will be procedurally generated. Howe
 
 The challenge with big amounts of large textures in complex scenes is the processing power required to generate a new scene. Probably at some future point in time sufficient processing power would be available for such a feat.
 
- 
+
 
 Here are some tools to review for making procedural game textures
 
@@ -1166,11 +1585,14 @@ References
 A collection of assorted references with the objective to shorten the entry barrier for new members.
 
 
+
+
 **Game Design Books**
 -------------------------------------
 
 - [Learn OpenGL](https://learnopengl.com/Offline-book)
 - [The gamebook convention](https://github.com/r-lyeh/gamebook)
+- [Game Programming Patterns](http://gameprogrammingpatterns.com/contents.html) - the web version
 
 
 
@@ -1197,9 +1619,12 @@ A collection of assorted references with the objective to shorten the entry barr
 - https://terranova.blogs.com/
 - https://terranova.blogs.com/terra_nova/games/
 - [Physically Based Rendering: From Theory To Implementation](http://www.pbr-book.org/)
+- [Cowboy Programming](http://cowboyprogramming.com/)
 
 
-**Conferencees**
+
+
+**Conferences**
 -------------------------------------
 
 - http://jcgt.org/
@@ -1222,15 +1647,15 @@ A collection of assorted references with the objective to shorten the entry barr
 -------------------------------------
 
 - [Thinking in C++] (http://www.bruceeckel.com/ThinkingInCPP2e.html)
-
 - [Adaptive planet and terrain mesh generation] (http://www.vterrain.org/LOD/Papers/index.html)
-
 - [A Real-Time Procedural Universe] (http://sponeil.net/)
-
 - [SFZ Engine Implementation] (http://sfz.schattenkind.net/wiki/index.php/Main_Page)
-
 - [Defining Dialogue Systems](https://www.gamasutra.com/view/feature/3719/defining_dialogue_systems.php?print=1)
 - [Dialogue Trees in Interactive Fiction](https://voicefirstfiction.com/2018/05/dialogue-trees-in-interactive-fiction/)
+
+- [Evolve Your Hierarchy - Refactoring Game Entities with Components](http://cowboyprogramming.com/2007/01/05/evolve-your-heirachy/)
+
+
 
 
 **Game Developer Blogs**
@@ -1249,6 +1674,10 @@ A collection of assorted references with the objective to shorten the entry barr
 - [Paul Bourke](http://paulbourke.net/)
 - https://freegamer.blogspot.com/search/label/devcorner
 - https://www.iquilezles.org/www/index.htm
+- https://gamedesignlounge.com/
+- [Engines of Delight](https://gameserverarchitecture.com/) (https://gameserverarchitecture.com/)
+
+
 
 
 **Game Development Forums**
@@ -1277,6 +1706,8 @@ A collection of assorted references with the objective to shorten the entry barr
 - https://forum.freegamedev.net/
 
 
+
+
 **Gamer Forums**
 -------------------------------------
 
@@ -1298,13 +1729,17 @@ A collection of assorted references with the objective to shorten the entry barr
 - [Escapist Forums](https://www.escapistmagazine.com/forums/)
 - [Ars Technica Forums](https://arstechnica.com/civis/viewforum.php?f=22)
 - [Game Revolution Forums](https://forums.gamerevolution.com/)
-- [Something Awful FOrums](https://forums.somethingawful.com/forumdisplay.php?forumid=44)
+- [Something Awful Forums](https://forums.somethingawful.com/forumdisplay.php?forumid=44)
+
+
 
 
 **Asset Artists Forums**
 -------------------------------------
 
 - [Blender Artists](https://blenderartists.org/)
+
+
 
 
 **Fictional Universes**
@@ -1332,8 +1767,6 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
-
-
 -------------------------------------
 
 **Libre Games**
@@ -1349,6 +1782,8 @@ A collection of assorted references with the objective to shorten the entry barr
 Libre game listings
 - https://en.wikipedia.org/wiki/List_of_open-source_video_games
 - [Listing from https://wiki.vega-strike.org/Links:Free_Games](https://wiki.vega-strike.org/Links:Free_Games)
+
+
 
 
 **Game Engines**
@@ -1371,6 +1806,8 @@ Popular engines
 - [Castle Game Engine](https://castle-engine.io/)
 - [WorldForge](https://www.worldforge.org/)
 - [toyengine](https://github.com/hugoam/toy) - a thin and modular c++ game engine.
+
+
 
 
 **Game Libraries**
@@ -1399,6 +1836,32 @@ Popular engines
 - [A curated list of awesome C++ (or C) frameworks, libraries, resources](https://github.com/fffaraz/awesome-cpp)
 - [Awesome list of C++ GameDev project](https://github.com/Cmdu76/AwesomeCppGameDev)
 - [Single-file public-domain/open source libraries with minimal dependencies](https://github.com/nothings/single_file_libs)
+- [EQEmu Server](https://github.com/EQEmu/Server)
+- [EntityX](https://github.com/alecthomas/entityx) - C++ Entity Component System
+- [anax](https://github.com/miguelmartin75/anax) - C++ entity system designed to be portable, lightweight and easy to use.
+- [EntityPlus](https://github.com/Yelnats321/EntityPlus) - a C++17 Entity Component System
+- [entt](https://github.com/skypjack/entt) - a fast and reliable entity component system (ECS)
+
+
+
+**Entity Component Systems**
+
+- [EntityX](https://github.com/alecthomas/entityx)
+- [EnTT](https://github.com/skypjack/entt)
+- [anax](https://github.com/miguelmartin75/anax)
+- [EntityPlus](https://github.com/Yelnats321/EntityPlus)
+
+
+
+**Procedural Libraries**
+
+- [libprocu-galaxy](https://github.com/LibreGamingManifest/libre-gaming-engines/tree/master/libprocu-galaxy) is a library for procedurally generating galaxies, star systems, and objects.
+
+
+
+**Library Listings**
+
+- https://en.cppreference.com/w/cpp/links/libs
 
 
 
@@ -1407,14 +1870,18 @@ Popular engines
 
 - [two](https://github.com/hugoam/two) - c++ toolkit for rapid development of live graphical apps and games
 
+- [Recast](https://github.com/EQEmu/recastnavigation) - navigation mesh construction toolset for games
+
+
+
 
 **Graphic Content Creation Tools**
 -------------------------------------
 
+- [ASWF Interactive Landscape](https://landscape.aswf.io/)
+- [AcademySoftwareFoundation Landscape](https://github.com/AcademySoftwareFoundation/aswf-landscape)
 - [GIMP](https://www.gimp.org/)
 - [Listing from https://wiki.vega-strike.org/Links:Graphic_Applications](https://wiki.vega-strike.org/Links:Graphic_Applications)
-- [AcademySoftwareFoundation Landscape](https://github.com/AcademySoftwareFoundation/aswf-landscape)
-- [ASWF Interactive Landscape](https://landscape.aswf.io/)
 - [OpenSourceVFX.org](http://opensourcevfx.org/)
 - [OpenFX](http://openfx.sourceforge.net/)
 - [OpenColorIO](https://opencolorio.org/)
@@ -1452,10 +1919,14 @@ Popular engines
 - [ArmorPaint](https://armorpaint.org/)
 
 
+
+
 **Software: Texture Processing**
 -------------------------------------
 
 - [Texture Synthesis](https://github.com/EmbarkStudios/texture-synthesis)
+
+
 
 
 **Procedural Planet Generators**
@@ -1472,6 +1943,8 @@ https://zarkonnen.itch.io/planet-generator
 https://worldengine.readthedocs.io/en/latest/
 https://github.com/ZKasica/Planet-Generator
 https://www..unity.com/threads/truly-procedural-planet-generator.198536/
+
+
 
 
 **Terrain Generators**
@@ -1519,14 +1992,29 @@ tools
 keywords: godot engine procedural generation
 
 
+
+
 **Audio Production**
 -------------------------------------
 
 - [Audacity](http://audacity.sourceforge.net/)
 
-
 **Movie Authoring**
 -------------------------------------
+
+
+
+## Dialogue Systems
+
+- [libprocu-dialogue](https://github.com/LibreGamingManifest/libre-gaming-engines/tree/master/libprocu-dialogue)
+- https://unitylist.com/p/c0d/Unity3D-dialogue-system
+- http://marian-brinkmann.com/projects/dialogue-system/documentation/
+- https://github.com/YarnSpinnerTool/YarnSpinner
+- https://yarnspinner.dev/docs/syntax/
+- [DeepPavlov](https://github.com/deepmipt/DeepPavlov)
+- [Writing With Ink](https://github.com/inkle/ink/blob/master/Documentation/WritingWithInk.md)
+
+
 
 
 **Procedural Quest Authoring**
@@ -1537,10 +2025,19 @@ keywords: godot engine procedural generation
 
 
 
+**Procedural Biology**
+-------------------------------------
+
+
+- [Framsticks](http://www.framsticks.com/) is a three-dimensional life simulation project.
+
+
+
 **Development Tools**
 -------------------------------------
 
 - [Easy Guide on using Git](https://wiki.worldforge.org/wiki/Using_Git)
+- [XMLtoJSON](https://github.com/EQEmu/Server/tree/master/utils/xmltojson) - XML to JSON format converter
 
 
 
@@ -1551,11 +2048,16 @@ keywords: godot engine procedural generation
 
 
 
-
 **Coding Standards**
 -------------------------------------
 
+There are many coding books, tutorials, and standards available. We just list some we accidentally came across:
+
+- [C++ Programming](https://en.wikibooks.org/wiki/C%2B%2B_Programming)
 - [Unreal Engine](https://docs.unrealengine.com/en-US/Programming/Development/CodingStandard/index.html)
+- [Semantic Versioning](https://semver.org/)
+- [Pointers and References](https://www3.ntu.edu.sg/home/ehchua/programming/cpp/cp4_PointerReference.html)
+- [Reflection](https://stackoverflow.com/questions/41453/how-can-i-add-reflection-to-a-c-application)
 
 
 
@@ -1573,16 +2075,16 @@ keywords: godot engine procedural generation
 
 
 
-Appendix - Libre Gaming Management Guidelines
+Appendix: Libre Gaming Management Guidelines
 =====================================
 
 
 **Organization**
 -------------------------------------
 
-As a global and intercultural community, we use internalional standards (e.g. SI units, ISO-8601 date and time formats within our discourse and in the products (games and tools) we provide.
+As a global and inter-cultural community, we use international standards (e.g. SI units, ISO-8601 date and time formats within our discourse and in the products (games and tools) we provide.
 
-Our dialog language is English (not restricted to any particular tomaytoe or tomaato). Localization is at the interested parties' leisure and not considered master or reference in any way.
+Our dialog language is English (not restricted to any particular "*tomaytoe*" or "*tomaato*"). Localization is at the interested parties' leisure and not considered master or reference in any way.
 
 
 **Contribution**
@@ -1623,25 +2125,27 @@ The main project repositories are listed on the project main page
   > (https://github.com/pyramid3d/libre-gaming-pipeline)
   > Libre Gaming content pipeline related tool collections
 
-The document can have multiple release instatiations in the form of various target release formats.
+The document can have multiple release instantiations in the form of various target release formats.
+
+
 
 
 **Consensus**
 -------------------------------------
 
-A variety of opinion is encouraged. It drives innivation, creativity, and evolution.
+A variety of opinion is encouraged. It drives innovation, creativity, and evolution.
 
-Wheteever possible, multiple best practices are endorsed. Ideally, there is a delineation of the use case scenarios where practices for overlapping topics differ.
+Whatever possible, multiple best practices are endorsed. Ideally, there is a delineation of the use case scenarios where practices for overlapping topics differ.
 
 There are however certain decisions that are binary (not likely in our generic collection of practices, but in practical implementations thereof). Likewise, consensus to include or exclude some aspect into this documented collection might need to bd reached.
 
-In such cases, we reach consensus by discoursive agreement, this means:
+In such cases, we reach consensus by discursive agreement, this means:
 1  upon presentation of the idea or problem
 2  we list out available options
 3  describe adherents and deterrents
 4  come to an informed agreement
 
-Outdated techniques for consensus building are not suported and shall be altogether avoided:
+Outdated techniques for consensus building are not supported and shall be altogether avoided:
 - authoritative decisions
 - representative voting
 - uninformed mob rule
@@ -1649,7 +2153,17 @@ Outdated techniques for consensus building are not suported and shall be altoget
 - meritocracy imposed consensus
 - group think guided
 
-Silent agreement and decision by absence of  philosophets are acceptable forms of agreement. Especially because agreements may be questioned and reopened again.
+Silent agreement and decision by absence of philosophies are acceptable forms of agreement. Especially because agreements may be questioned and reopened again.
+
+
+
+## Source Code
+
+The libraries and sample source code is in development whenever a community member requires change of existing functionality. Some functionality has been implemented so that anyone is able to quickly copy the approaches into their own application. Simple [**sample applications***](#sample-applications) are usually bundled with the library code.
+
+When writing the code we are trying to avoid high-performant code in favor of understandable code. Code lines are usually generously commented so that the learning curve effort is reduced to a bare minimum.
+
+
 
 
 **License**
@@ -1659,6 +2173,288 @@ This document is published under the [GNU Free Documentation License (FDL)](http
 
 
 
+# **Appendix: C++ Snippets**
+
+## Style
+
+The author does not recommend any particular coding style, with few exceptions.
+
+Formatting (largely) follows the clean Stroustrup style.
+
+```cpp
+class Base {
+public:
+	// ...
+};
+```
+
+
+
+, though we think it is more logical to do:
+
+```cpp
+// declarations after type
+int& i;
+int* j;
+// assignment operators before variable
+i = *j;
+j = &i;
+```
+
+
+
+## **Print**
+
+Quick print *bool* false or true
+
+```cpp
+cout << (bIsTrueVar==true? "true":"false") << std::endl;
+```
+
+Print hex number
+
+```cpp
+cout << "0x" << hex << setw(4) << setfill('0') << iNumber
+     << dec << std::endl;
+```
+
+Fill leading zeros
+
+```cpp
+cout << dec << setw(4) << setfill('0') << iNumber << std::endl;
+```
+
+Print seed as hex, int, and size
+
+```cpp
+cout << "seed: 0x" << setw(16)
+     << setfill('0') << hex << uSeed
+     << dec << " (" << uSeed << ") ("
+     << sizeof(uSeed) << " bytes)\n";
+```
+
+Print to string
+
+```cpp
+std::stringstream buffer;
+buffer << "> " << nextVar << std::endl;
+```
+
+
+
+## **Containers**
+
+A pair (tuple)
+
+```cpp
+// constructor
+std::pair<int, std::string> p(1, "entry");
+// access
+cout << p.first << " " << p.second << endl;
+```
+
+Container in-place ordered list
+
+```cpp
+// constructor
+std::list<std::string> letters = {
+  "B", "A", "F"
+};
+// element access
+std::string element = *(std::next(letters.begin(), index));
+// iterator
+for(auto &letter: letters) {
+  cout << letter << " ";
+} cout << std::endl;
+```
+
+Ordered vector in contiguous memory, fast member access
+
+```cpp
+std::vector<int> vec(20);
+vec[15] = 10;
+// sort
+std::sort(vec.begin(), vec.end());
+// sort with cutom function
+bool compare(int var1, int var2) { 
+    return (var1 < var2); } 
+std::sort(vec.begin(), vec.end(), compare);
+```
+
+Container in-place ordered array
+
+```cpp
+// constructor
+std::string order[5] = {
+  "CO2", "H2", "N2", "O2", "He"
+};
+// iterator
+for(int i=0; i<5; ++i) {
+    cout << order[i] << std::endl;
+}
+```
+
+Container in-place map (auto ordered by key)
+
+```cpp
+// constructor
+std::map<std::string, float> probability = {
+    {"CO2", 0.965f}, {"Xe",  0.0001f}
+};
+//iterator
+for (auto& [key, value] : probability) {
+    cout << key << ":" << value << std::endl;
+}
+//iterator
+for (std::pair<std::string, float> element : probability) {
+      std::string key = element.first;
+      float val = element.second;
+}
+// get value from key
+probability.find("CO2")->second;
+```
+
+Container in-place map of pairs (auto ordered by map key)
+
+```cpp
+// constructor
+std::map<int, std::pair<std::string, std::string>> idCharInLoc;
+//iterator
+for(auto& [i, map]: idCharInLoc) {
+    std::pair<std::string, std::string> element = map;
+    cout << i << ":" << element.first << " " << element.second << std::endl;
+  }
+```
+
+Container in-place enumeration
+
+```cpp
+enum class Place {
+  Valley = 0, City, Field
+}
+```
+
+
+
+## Random numbers
+
+Pristine random system seed
+
+```cpp
+random_device rd;  // random device
+uSeed = static_cast<uint64_t>(rd());
+```
+
+Random generator
+
+```cpp
+pcg32 rng;
+rng.seed(uSeed);
+```
+
+Random int
+
+```cpp
+int which = minCnt + (int)rng.nextUInt(maxCnt-minCnt);
+```
+
+Get random container element
+
+```cpp
+// use current time as seed for random generator
+std::srand(std::time(nullptr));
+// init items iterator
+auto randIter = container.value().begin();
+// set iterator to random position
+std::advance(randIter, std::rand() % container.value().size());
+// get the random element
+auto randElement = *randIter;
+```
+
+
+
+
+
+## Arguments
+
+Arguments to string
+
+```cpp
+std::vector<std::string> args(argv, argv+argc);
+```
+
+Program name
+
+```cpp
+size_t pos = args[0].find("/", 0);
+size_t end = args[0].length();
+std::string progName = args[0].substr(pos+1,end+1-pos);
+```
+
+
+
+## Optional Values (*null* Replacement)
+
+```cpp
+// define
+std::optional<bool> bIsTrue;
+// set value
+bIsTrue = std::optional<bool>{true};
+// check with
+if (bIsTrue) { ... } // or
+bIsTrue.has_value(); // less common
+// stream or get value
+cout << bIsTrue.value();
+// return value
+return std::nullopt;
+```
+
+
+
+## Check For Null Value
+
+```cpp
+// declare variabe and pointer
+Type item;
+Type* itemptr = nullptr; // for initialization checking
+// assign item and pointer
+if (someObject) {
+  item = someObject;
+  itemptr = &item; }
+// error checking
+if (itemptr==nullptr) { ... }
+```
+
+
+
+
+
+## Errors
+
+Throw a string error
+
+```cpp
+void func() {
+    throw string("an error occurred");
+}
+```
+
+Catch an error from function
+
+```cpp
+try {
+    func();
+} catch(string e) {
+    std::cout << e << std::endl; // print error
+    return;                      // don't continue
+}
+```
+
+
+
+[cplusplus reference](http://www.cplusplus.com/reference/)
+
 
 
 ``` EOF ```
+

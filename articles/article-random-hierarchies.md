@@ -3,6 +3,7 @@
 # @file   : article-random-hierarchies.md
 # @version: 2020-02-22
 # @created: 2020-02-18
+# @author : pyramid
 #
 ```
 
@@ -117,7 +118,7 @@ for (int seed_number=0, i<2, i++) {
   seed[seed_number] = master_seed + seed_number;
 }
 
-``` 
+```
 
 **Sequence Independence**
 -------------------------------------
