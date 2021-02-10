@@ -1,7 +1,7 @@
 ```
 #
 # @file   : article-random-hierarchies.md
-# @version: 2020-02-22
+# @version: 2021-02-10
 # @created: 2020-02-18
 # @author : pyramid
 #
@@ -56,13 +56,12 @@ We take the following example structure hierarchy:
 
 The overall flow for this example structure is
 
-```
+
 - create new unique master_seed
 - create biome 1 and 2 seeds derived from master_seed 
 - continue for substructures of biome 1 and 2 but derived from biome seeds
 - use random number sequence on the lowest hierarchy level. here, individual seeds are not needed anymore
 
-```
 
 
 
@@ -78,10 +77,12 @@ We start with a random number to create the initial game seed:
   cout << "--- creating pristine random seed:\n";
   random_device rd; // rom random device
   uint64_t uSeed = static_cast<uint64_t>(rd());
-  cout << "  seed from random device   : 0x" << hex << setw(16) << setfill('0') << uSeed
+  cout << "  seed from random device   : 0x" << hex 
+	<< setw(16) << setfill('0') << uSeed
     << dec << " (" << uSeed << ") ("<< sizeof(uSeed) << " bytes)\n";
 
 ```
+
 
 
 **Reproducibility**
@@ -105,6 +106,7 @@ uint64_t master_seed = load(master_seed);
 ```
 
 
+
 **Seed Hierarchy**
 -------------------------------------
 
@@ -119,6 +121,8 @@ for (int seed_number=0, i<2, i++) {
 }
 
 ```
+
+
 
 **Sequence Independence**
 -------------------------------------
@@ -150,11 +154,15 @@ We have demonstrated the simplicity of procedural generation approach guaranteei
 In future, we want to apply the presented principles to generating whole galaxies for fictional universes.
 
 
+
+
 **References**
 =====================================
 
 [1]  Procedurally Generating an Artificial Galaxy. Olof Elfwering. 2016.
+
 [2]  PCG: A Family of Simple Fast Space-Efficient Statistically Good Algorithms for Random Number Generation. Melissa O'Neill. 2014.
+
 [3]  PCG32 - a tiny self-contained C++ implementation of the PCG32 random number. Wenzel Jakob (wjakob). 2016. https://github.com/wjakob/pcg32. Retrieved on 2020-02-20.
 
 
