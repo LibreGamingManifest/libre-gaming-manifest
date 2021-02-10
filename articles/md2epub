@@ -1,0 +1,33 @@
+#! /bin/bash
+# @file   : md2epub (Linux)
+# @version: see header below
+# @created: 2020-01-19
+# @author : pyramid
+# @brief  : make .epub from .md source
+# @param  : none
+# list system fonts
+# find /usr/share/texmf-dist/tex/latex | grep sty | uniq
+# fc-list --format="%{family[0]}\n" | sort | uniq
+
+
+echo "------------------------------"
+echo "---   md2epub | 2021-02-10  ---"
+echo "------------------------------"
+echo "md2epub docname : builds epub document"
+
+TARGETDIR=.
+SOURCEDIR=articles
+RELEASEDATE=$(date --iso-8601)
+
+COMMAND=""
+FILENAME=""
+# sample filename from input parameter
+if [ "$1" != "" ] ; then
+    FILENAME=$1
+    FILENAME=$(echo "$FILENAME" | cut -f 1 -d '.')
+fi
+
+
+# create plain epub without toc, metadata
+echo "creating epub from $FILENAME.md"
+pandoc --metadata title="$FILENAME" --metadata papersize="a4paper" --metadata geometry="margin=3cm" --metadata fontfamilyoptions="sfdefault" --metadata fontfamily="merriweather" --metadata fontsize="12pt" --metadata colorlinks="true" --metadata author="authors: $AUTHOR" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.epub $FILENAME.md

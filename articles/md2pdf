@@ -1,6 +1,6 @@
 #! /bin/bash
 # @file   : md2pdf (Linux)
-# @version: 2020-02-18
+# @version: see header below
 # @created: 2020-01-19
 # @author : pyramid
 # @brief  : make .pdf from .md source
@@ -11,59 +11,23 @@
 
 
 echo "------------------------------"
-echo "---   md2pdf | 2020-02-18  ---"
+echo "---   md2pdf | 2021-02-10  ---"
 echo "------------------------------"
-echo "md2pdf      : builds pdf document"
-echo "md2pdf epub : adds epub document"
+echo "md2pdf docname : builds pdf document"
 
 TARGETDIR=.
 SOURCEDIR=articles
-FILENAME=article-random-hierarchies
-#TITLE="LibreGaming Article"
-AUTHOR="pyramid"
 RELEASEDATE=$(date --iso-8601)
 
 COMMAND=""
-# sample param from input parameter
+FILENAME=""
+# sample filename from input parameter
 if [ "$1" != "" ] ; then
-    COMMAND=$1
+    FILENAME=$1
+    FILENAME=$(echo "$FILENAME" | cut -f 1 -d '.')
 fi
-
-
-# insert below code to include toc
-#echo "exporting toc items"
-#echo "egrep '===|---' -B1 --no-group-separator $FILENAME.md | tee toc.txt"
-#egrep '===|---' -B1 --no-group-separator $FILENAME.md | tee toc.txt
-
-# create target dir if not .
-#echo "creating dir $TARGETDIR"
-#echo "mkdir -p $TARGETDIR"
-#mkdir -p $TARGETDIR
 
 # create plain pdf without toc, metadata
 echo "creating pdf from $FILENAME.md"
-pandoc --metadata papersize="a4paper" --metadata geometry="margin=3cm" --metadata fontfamilyoptions="sfdefault" --metadata fontfamily="merriweather" --metadata fontsize="12pt" --metadata colorlinks="true" --metadata author="authors: $AUTHOR" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.pdf $FILENAME.md
-
-if [ "$COMMAND" = "epub" ]
-then
-
-# create plain epub without toc, metadata
-echo "creating epub from $FILENAME.md"
-pandoc --metadata title="$FILENAME" --metadata papersize="a4paper" --metadata geometry="margin=3cm" --metadata fontfamilyoptions="sfdefault" --metadata fontfamily="merriweather" --metadata fontsize="12pt" --metadata colorlinks="true" --metadata author="authors: $AUTHOR" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.epub $FILENAME.md
-
-fi
-
-
-# create pdf from metadata with toc and release date
-#echo "creating pdf from $FILENAME.md"
-#echo "pandoc --metadata title='$TITLE' -o $FILENAME.pdf $FILENAME.md"
-#pandoc --metadata title="$TITLE" -o $FILENAME.epub $FILENAME.md
-#pandoc --toc --toc-depth=3 --number-sections --metadata title="$TITLE" --metadata author="authors: $AUTHOR" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.pdf $FILENAME.md
-#pandoc --toc --toc-depth=3 --number-sections --metadata-file=metadata.yaml --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.pdf $FILENAME.md
-
-# create epub from metadata with toc and release date
-#echo "creating epub from $FILENAME.md"
-#echo "pandoc --metadata title='$TITLE' -o $FILENAME.epub $FILENAME.md"
-#pandoc --toc --toc-depth=3 --number-sections --metadata title="$TITLE" --metadata author="authors: $AUTHOR" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.epub $FILENAME.md
-#pandoc --toc --toc-depth=3 --number-sections --metadata-file=metadata.yaml --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.epub $FILENAME.md
+pandoc --metadata papersize="a4paper" --metadata geometry="margin=3cm" --metadata fontfamilyoptions="sfdefault" --metadata fontfamily="merriweather" --metadata fontsize="12pt" --metadata colorlinks="true" --metadata date="release date: $RELEASEDATE" -o $TARGETDIR/$FILENAME.pdf $FILENAME.md
 
