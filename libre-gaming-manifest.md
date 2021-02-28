@@ -1,10 +1,14 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2021-02-07
+# @version: 2021-02-28
 # @created: 2019-02-01
+# @author : pyramid
 #
 ```
+
+
+
 
 
 **Introduction**
@@ -34,8 +38,7 @@ It is initially approached from a "*tabula rasa*" point of view and is targeted 
 
 
 
-**Game Types**
--------------------------------------
+## Game Types
 
 While we focus our attention on 3D words, the collected and established best practices may be useful to other game types.
 
@@ -46,8 +49,7 @@ We aggregate, collect, discuss but do not create games within this community. Th
 
 
 
-**Game Vision**
--------------------------------------
+## Game Vision
 
 The originator, aka pyramid, envisions a cinematographic exploratory free-style open-universe first-person adventure role playing game that is non-repetitive enticing and at the same time rewards the player for his spent time.
 
@@ -60,8 +62,7 @@ Further specifics will be discussed in later chapters keeping in mind that an ex
 
 
 
-**Open Source Games**
--------------------------------------
+## Open Source Games
 
 Because (for those who care)
 
@@ -76,8 +77,7 @@ Because (for those who care)
 
 
 
-**Open Source**
--------------------------------------
+## Open Source
 
 Think twice, investigate, read or listen to opinions, if you expect to be making a living from open source. Though not impossible or unheard of, it requires a lot of commercial overhead.
 
@@ -90,8 +90,7 @@ Be sure that you are prepared to walk this path.
 
 
 
-**Headsup Advice**
--------------------------------------
+## Headsup Advice
 
 - corporate strongarms will steal your work
 - open source community has elements that do not care about responsibility or diligence
@@ -106,8 +105,7 @@ Be sure that you are prepared to walk this path.
 
 
 
-**About the Originator**
--------------------------------------
+## About the Originator
 
 Game industry is as old as humanity. Computer games have been around for well over 60 years (as of 25 Jan 2020) and the originator of this project, pyramid (aka pyramid3d) has been creating and playing them for nearly 40 years.
 
@@ -131,7 +129,15 @@ On a side note: 1958's Tennis for Two is considered to be the first video game (
 **Chapter Outline**
 -------------------------------------
 
-The [gaming challenges](#gaming-challenges) chapter is the manifesto of this document. It discusses desired game mechanics, technology, story telling, and other aspects relevant to creation and gameplay.
+The [gaming challenges](#gaming-challenges) chapter is the manifesto of this document. It discusses desired game mechanics, technology, content building, and other aspects relevant to creation and gameplay.
+
+We have attempted at maintaining a flat chapter structure. Nevertheless, the chapters are ordered by:
+
+- Game **design** (philosophy, mechanics, writing)
+- Game **technology** (development, architecture)
+- Game **content** (assets)
+
+
 
 
 
@@ -139,8 +145,7 @@ Gaming Challenges
 =====================================
 
 
-**Things to Consider**
--------------------------------------
+## Design: Things to Consider
 
 For our sci-fi role playing space opera game, we would like to see the following desired features (non-exhaustive):
 
@@ -172,8 +177,7 @@ For our sci-fi role playing space opera game, we would like to see the following
 
 
 
-**Things to Avoid**
--------------------------------------
+## Design: Things to Avoid
 
 We would also strongly discourage the following anti-features:
 
@@ -227,8 +231,7 @@ We would also strongly discourage the following anti-features:
 
 
 
-**Compelling Experience**
--------------------------------------
+## Design: Compelling Experience
 
 Those compelling, enticing, reactive games with unique and realistic content that are able to engage the user for a long time will prevail.
 
@@ -256,8 +259,7 @@ There is little doubt that content development must swing towards artificially a
 
 
 
-**Realism**
--------------------------------------
+## Design: Realism
 
 I've said it before and I will probably say it many times again before I die. Most people have confused the concepts of realism with that of believability. They are NOT the same thing. And I think those people who keep saying "I don't want realism because it isn't fun" may not necessarily know it, but they have a more accurate idea what term means what.
 
@@ -282,8 +284,7 @@ author: [jackS](https://forums.vega-strike.org/memberlist.php?mode=viewprofile&u
 source: [https://forums.vega-strike.org/viewtopic.php?p=31090#p31090](https://forums.vega-strike.org/viewtopic.php?p=31090#p31090)
 
 
-**Procedural Content Generation (PCG)**
--------------------------------------
+## Design: Procedural Content Generation (PCG)
 
 In order to achieve any meaningful level of non-repetitive immersion procedural content generation, possibly coupled with machine learning and artificial intelligence, must be applied in future games. 
 
@@ -319,8 +320,7 @@ Let's take for example the [World Forge](https://www.worldforge.org/) game syste
 
 
 
-**Content and Challenge Types**
--------------------------------------
+## Design: Content and Challenge Types
 
 TODO: why this chapter?
 
@@ -330,8 +330,7 @@ TODO: why this chapter?
 - Knowledge based
 
 
-**Design Documents**
--------------------------------------
+## Design: Design Documents
 
 We separate the game content from the game play. The following documents are required for good game design
 
@@ -355,30 +354,36 @@ We **recommend** the structure for both documents derived from the one of the [V
 
 
 
-**Documentation Standards and Formats**
--------------------------------------
+
+
+## Design: Documentation Standards and Formats
 
 For the 2 types of documentation, canon and design appropriate libre standard formats shall be used.
 
 It is required that formats support conversion and interchangeability (which most of libre formats do anyway).
 
 We distinguish the following use cases:
-- shared scratch pads or forums may be used to develop a canon aspect, results should be ported to the master source document
-- master source document shall be used as the authoritative source of the canon
-- master source can be converted to various presentation formats (html, wiki, pdf, epub, ...)
+- **shared** **scratch pads** or forum threads (for each discussion aspect) may be used to **develop** an aspect of the game (story, canon, design), results should be ported to the master source document
+- one **master** source document shall be then used as the authoritative source of the canon (aggregated from the scratch pad discussion)
+- the master source document can then be converted to various **presentation** formats (html, wiki, pdf, epub, ...)
+
+
 
 An appropriate pipeline shall be established for the above documentation process.
 
 **Recommendation**
 
-- scratch pad: canon forum, e.g. https://forums.vega-strike.org/viewforum.php?f=28
-- master document: Markdown (md), Open Document Text (odt), LaTex (tex)
-- master document repository: game repository under doc/canon
-- converted documents in repo directory: doc/canon/release
+- **scratch pad** formats: forum thread , e.g. https://forums.vega-strike.org/viewforum.php?f=28
+- **master document** formats: Markdown (md), Open Document Text (odt), LaTex (tex), [Markdeep](http://casual-effects.com/markdeep) (md.html)
+- master document **repository**: in game source code repository under ```doc/design```, ```doc/canon```
+- converted **presentation** documents in repository under: ```doc/release```
 
 
-**Open Fictional Universe Canons**
--------------------------------------
+
+
+
+
+## Design: Open Fictional Universe Canons
 
 There are a lot of interesting universes out there. Unfortunately, due to the state of general greed and copyright laws, it is not recommended to develop games based on published mainstream canon (think Star $$$$).
 
@@ -402,8 +407,7 @@ See also:
 
 
 
-**Story Writing**
--------------------------------------
+## Design: Story Writing
 
 Engaging in non-repetitive story writing is a challenging undertaking. Many stories can be sampled from real life, art, and especially literature.
 
@@ -444,8 +448,7 @@ Stories must be converted into workable code, usually using scripting.
 
 
 
-**Quests and Missions**
--------------------------------------
+## Design: Quests and Missions
 
 Quests, tasks, missions, campaigns engage the player actively and give him the opportunity to explore and learn about the game universe. They are the driving force for the [compelling experience](#compelling-experience) of the player and the choice of quests will shape the focus of the game and the nature of the experience. Quest fulfillment may be tied to achievements.
 
@@ -493,8 +496,7 @@ See also: [Procedural Quest Authoring](#procedural-quest-authoring)
 
 
 
-**Storyboarding**
--------------------------------------
+## Design: Storyboarding
 
 Before moving on with asset production, the story can be optionally converted into a graphical sequence of events.
 
@@ -523,8 +525,7 @@ Explorable topics: screen writing software, storyboard software, story writing s
 
 
 
-**Conversation Dialogues**
--------------------------------------
+## Design: Conversation Dialogues
 
 Conversations add immersion, realism, believability, engagement, and interactivity to the game play usually in one of the prevalent forms of branching conversations, with or without voice over, subtitles, or cinematographic scenes.
 
@@ -609,8 +610,8 @@ Recommended further reading:
 
 
 
-**Factions**
--------------------------------------
+## Design: Factions
+
 Factions with opposing or aligned goals bring playful interaction into the game.
 
 Factions can be implemented so that there are several organizations  with opposing goals, that create quests that would promote their own goals and/or hinder opposing goals. They can reward players for carrying out quests. Player characters would be able to join factions.
@@ -627,18 +628,13 @@ Factions can be implemented so that there are several organizations  with opposi
 
 
 
-
-
-
-
 See also:
 
 - https://eqemu.gitbook.io/server/categories/how-to-guides/customizing-factions/understanding-the-database-tables
 
 
 
-**Game Mechanics**
--------------------------------------
+## Design: Game Mechanics
 
 
 
@@ -648,8 +644,7 @@ See also:
 
 
 
-**Player and Non-Player Characters**
--------------------------------------
+## Design: Player and Non-Player Characters
 
 Characters that populate the virtual world in various locations can be player characters (PC) or non-player characters (NPC). If we want to model character and animal companions, we could even extend the character class to contain animals.
 
@@ -667,7 +662,7 @@ But ...  wait a moment. Classes? Scratch that ancient stuff. Look out for [Entit
 
 
 
-## Occupations and Skills
+## Design: Occupations and Skills
 
 
 
@@ -677,9 +672,7 @@ This means that there will be a specific implementation for occupations, and the
 
 
 
-**Player Possession**
--------------------------------------
-
+## Design: Player Possession
 
 
 **Further Research and Exploration**
@@ -688,8 +681,7 @@ This means that there will be a specific implementation for occupations, and the
 
 
 
-**Character Progression**
--------------------------------------
+## Design: Character Progression
 
 Instead of player levels, we recommend a per skill progression, advancing the particular skill, the more it is used. Slowly forgetting the skill during prolonged non-usage is an explorable option. Care must be given to balancing forgetting so as not to annoy and demotivate the player.
 
@@ -699,8 +691,7 @@ Instead of player levels, we recommend a per skill progression, advancing the pa
 
 
 
-**Autosaving**
--------------------------------------
+## Design: Autosaving
 
 The autosaving feature immerses the player in the fictional world to a better extent. Care must be given that the player character is not locked into a situation without escape when reverting to a previous game state.
 
@@ -710,8 +701,7 @@ The autosaving feature immerses the player in the fictional world to a better ex
 - create autosave slots at different intervals (equivalent to yearly, monthly, daily)
 
 
-**Time Progression**
--------------------------------------
+## Design: Time Progression
 
 @TODO
 
@@ -724,8 +714,7 @@ In Vega Strike around 14h gameplay correspond to 1 Vega Strike Earth year.
 
 
 
-**Universal Time**
--------------------------------------
+## Design: Universal Time
 
 @TODO
 
@@ -734,8 +723,7 @@ How would we establish a universal clock?
 
 
 
-Open World Seamless Universe
--------------------------------------
+## Design: Open World Seamless Universe
 
 Immersion and believability (at least suspension of disbelief) demands no cuts or loading times between scenes as the player moves around the universe. Ideally continuous scenes on large scale (star system to planet landings), medium scale (traversing a landscape) and small scale (rooms, dungeons, phased areas) would be progressively loaded and provided to the current player context.
 
@@ -751,7 +739,7 @@ Things preventing a world form being considered seamless: loading screens betwee
 
 Often it is a problematic for player groups to play in boss areas (kill and loot steal, boss farming, malicious pvp). The correct game mechanism to prevent such annoyances is **not to create phased areas **but rather either to increase boss respawn rates or restrict access by other believable means (doors with keys, restrictions on limited parties allowed to enter). 
 
-Current **technology** seems to pivot around dual-contouring voxel engine with a bunch of pre-made 3D modeled "blocks” to add a little flavor, QuadTrees, LODs and dynamic mesh generation. The major issue is when there are leaks in data (texture) streaming content from HDD into memory, this is the real bottleneck a  good engine has to solve to scale the content. A lot of effort is needed involving all areas, graphics, terrains, physics, floating-point precision handling, persistence, networking, sound, collision detection. Therefore not many commercial game makers venture into truly seamless open worlds and therefore it can be a strength explorable by open source engines. Scenery tiles are paged (loaded/unloaded) in a separate thread to minimize the frame rate hit when you need to load new areas.
+Current **technology**  pivots around dual-contouring voxel engines with procedurally generated 3D  "blocks” to model LODed terrains using  sparse voxel octrees, and dynamic mesh generation or quad tree ray tracing. The major issue is when there are leaks in data (texture) streaming content from HDD into memory, this is the real bottleneck a  good engine has to solve to scale the content. A lot of effort is needed involving all areas, graphics, terrains, physics, floating-point precision handling, persistence, networking, sound, collision detection. Therefore not many commercial game makers venture into truly seamless open worlds and therefore it can be a strength explorable by open source engines. Scenery tiles are paged (loaded/unloaded) in a separate thread to minimize the frame rate hit when you need to load new areas.
 
 [OpenSceneGraph](http://www.openscenegraph.com/) and [VulkanSceneGraph](http://www.openscenegraph.com/index.php/8-news/232-vulkan-vkscenegraph-project) is open source, real-time graphics middle-ware that uses the scene graph approach to represent 3D worlds as a graph of nodes that logical and spatially groups subgraphs for behavior and high performance. 
 
@@ -796,11 +784,30 @@ Notable games attempting a seamless world:
 
 
 
+## Design: Single and Multiplayer
+
+Huge online universes can be fun through interaction with other players though require many servers.
+
+There is an inherent latency problem that may arise in universe instances with local servers and a global population.
+
+Scaling of servers to users implies cost and time for maintenance.
 
 
-**Game Architecture**
--------------------------------------
 
+## Design: Games Within Games
+
+Some say that "life is a game".
+Actually it is a "play" and you are the player. Life is full of fakes: e.g. fake news, fake packaging, fake friends, and fake virtual reality games.
+
+Within those games we are given the opportunity to be gods and create a better reality. Within those games we create mini games.
+
+Games within games to chose in which one you want to grow.
+
+
+
+
+
+## Technology: Game Architecture
 
 
 ### Libraries
@@ -850,6 +857,8 @@ The system abandons problematic inheritance-based code design in favor of  conta
 Open libraries exist. We **recommend** **[EnTT](https://github.com/skypjack/entt)** for it's performance, production readiness. **[EntityX](https://github.com/alecthomas/entityx)** seems a viable alternative. **[anax](https://github.com/miguelmartin75/anax)** and **[EntityPlus](https://github.com/Yelnats321/EntityPlus)** are not maintained anymore.
 
 For further information follow the references.
+
+
 
 **References**
 
@@ -910,8 +919,7 @@ A very [solid multiplayer architecture](https://www.worldforge.org/index.php/dev
 
 
 
-**Game Engine**
--------------------------------------
+## Technology: Game Engine
 
 The burning question is: how to select an open source game engine?
 Some of the most popular open source game engines are listed under [References Game Engines](#game-engines).
@@ -932,12 +940,18 @@ Our **recommendation** goes to
 
 
 
-**Rendering Engine**
--------------------------------------
+
+
+## Technology: Rendering Engine
 
 As opposed to full-fledged game engines, one may consider a rendering library and build a specific engine around it, if this kind of flexibility is required.
 
-[DiligentEngine](https://github.com/DiligentGraphics/DiligentEngine). It claims to be more modern than [BGFX](https://github.com/bkaradzic/bgfx) and designed with DX12, Vulkan  and Metal in mind, while not supporting some older APIs. It is under Apache 2.0 License. BGFX, it turns out has problems with modern APIs. So, if some API agnostic rendering backend library is desired, and it should be a more modern one, it  might worth a try.  BGFX has a long history (so meaning more support and bug fixes), while DiligentEngine is obviously a recent  and new thing, so this thing has to be considered.
+[DiligentEngine](https://github.com/DiligentGraphics/DiligentEngine) claims to be more modern than [BGFX](https://github.com/bkaradzic/bgfx) and designed with DX12, Vulkan  and Metal in mind, while not supporting some older APIs. It is an API agnostic rendering backend library.  BGFX has a long history (so meaning more support and bug fixes), while DiligentEngine is obviously more recent.
+
+Notable rendering libraries are
+
+- [DiligentEngine](https://github.com/DiligentGraphics/DiligentEngine) - a lightweight cross-platform graphics rendering framework.
+- [two](https://github.com/hugoam/two) - an all-purpose c++ app prototyping library
 
 Our **recommendation** goes to
 
@@ -945,7 +959,53 @@ Our **recommendation** goes to
 
 
 
-## Scripting Engine
+Sooner or later all game programmers will be in touch with GPU rendering. Here are some tutorial resources to get you started
+
+- [Learning Modern 3D Graphics Programming](https://paroj.github.io/gltut/)
+- [Vulkan Tutorial](https://vulkan-tutorial.com/)
+- [I am Graphics And So Can You](https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1)
+- [RenderDoc](https://renderdoc.org/)
+- [Beginners Guide to Vulkan](https://www.khronos.org/blog/beginners-guide-to-vulkan)
+
+
+
+
+
+## Technology: Field Of View
+
+One not so obvious questions many game designers would have to decide on is:
+
+>  **What is the most natural field of view of the human eye to set up for the rendering camera perspective?**
+
+
+
+The human vision field of view is around 200 degrees horizontal.
+
+The part occupied by the rendering display will highly depend on the device used by the player. Most people are fine with having their monitor be a portal-like view of a world. Typically the field of view (FOV) on a display device would be around 45 - 55 degrees.
+
+In photography the most popular field of view are 55° (wide angle focal length 35 mm) and 40° (normal view focal legth 50mm).
+
+
+
+**Recommendation**
+
+The game should offer the player the possibility to **configure** the field of view (FOV) according to his needs.
+
+
+
+**References**
+
+[1] [[What is the correct field of view angle for human eye?](https://stackoverflow.com/questions/8506087/what-is-the-correct-field-of-view-angle-for-human-eye)](https://stackoverflow.com/questions/8506087/what-is-the-correct-field-of-view-angle-for-human-eye). Stackoverflow. 2011. Retrieved 2021-02-28.
+
+[2] [The Focal Length Closest to the Human Eye: If You Had to Take Just One Lens… ](https://the.me/the-focal-length-closest-to-the-human-eye-if-you-had-to-take-just-one-lens/). theme. 2012. Retrieved 2021-02-28.
+
+[3] [Field of View Calculator (FoV) of a Camera and Lens](https://www.scantips.com/lights/fieldofview.html). www.scantips.com. 2021. Retrieved 2021-02-28.
+
+
+
+
+
+## Technology: Scripting Engine
 
 Why should we use scripts in game engines?
 
@@ -997,23 +1057,20 @@ While the choice is not easy, GitHub user [D. Bohdan](https://github.com/dbohdan
 
 
 
+## Technology: Build Management
 
+The following collection of resources may help you decide for the most appropriate build manager.
 
-
-**Single and Multiplayer**
--------------------------------------
-
-Huge online universes can be fun through interaction with other players though require many servers.
-
-There is an inherent latency problem that may arise in universe instances with local servers and a global population.
-
-Scaling of servers to users implies cost and time for maintenance.
+- [xmake build utility](https://xmake.io/)
+- [Makefile Tutorial](https://makefiletutorial.com/)
 
 
 
 
-**Open Asset Formats**
--------------------------------------
+
+
+## Technology: Open Asset Formats
+
 
 From experience, like in source code we must distinguish between
 
@@ -1055,8 +1112,7 @@ Release formats must support the various requirements of an engine, most notably
 
 
 
-**Serialization Formats**
--------------------------------------
+## Technology: Serialization Formats
 
 There are many formats available for serialization, the most commonly used being CSV, XML, JSON, YAML.
 
@@ -1074,65 +1130,7 @@ Following the analysis and recommendations in this article, we equally **recomme
 
 
 
-
-**Games Within Games**
--------------------------------------
-
-Some say that "life is a game".
-Actually it is a "play" and you are the player. Life is full of fakes: e.g. fake news, fake packaging, fake friends, and fake virtual reality games.
-
-Within those games we are given the opportunity to be gods and create a better reality. Within those games we create mini games.
-
-Games within games to chose in which one you want to grow.
-
-
-
-
-**Production Pipeline**
--------------------------------------
-
-From idea to finished release. All creativity starts with an idea. There is the player character, the non-player characters, the environment, and a a story to connect and relate them all and give the player something meaningful and entertaining to spend his time.
-
-The story dictates which characters and environment assets will be designed.
-Visual Effects, voice, audio, and cut scenes may be required in additions.
-
-
-
-
-**Asset Pipeline**
--------------------------------------
-
-Will strongly depend on asset formats and types of games.
-
-
-
-
-**Asset Tools**
--------------------------------------
-
-A good practice when constructing new tools is to separate binaries for processing and visualization.
-
-The asset pipeline should be automatable in the sense that bulk operations can be scripted.
-
-By creating technology dependent user interfaces which call the command line processing tool we assure cross-platform as well as future portability.
-
-
-
-
-**Asset Catalogs**
--------------------------------------
-
-There is a variety of distributed asset management sites available today.
-Some of them offer free model.
-
-Licensing must be considered as some of the free assets may be only for personal or academic use.
-
-An aggregator service with search and filtering would enshorten the creators time when looking for appropriate libre assets for his creation.
-
-
-
-**Texture Rendering Systems**
--------------------------------------
+## Technology: Texture Rendering Systems
 
 The traditional FFP (fixed function pipeline) shaders usually use this set of textures:
 - diffuse map
@@ -1171,8 +1169,8 @@ In order to improve rendering some textures might be need to be tweaked further
 
 
 
-**Terrain Tiling Issue**
--------------------------------------
+## Technology: Terrain Tiling Issue
+
 
 Graphical world representation uses meshes and textures to simulate visual properties of materials. Large terrains can become problematic when tiling (repeating) the same textures over a large terrain expanse. Due to distinctive features of the texture, they can become repetitive. Where texture tiling is very visible it will break the immersion for the player.
 
@@ -1205,8 +1203,7 @@ Tiling is a recognized problem for environment artists.  There is no unique cure
 
 
 
-**Planetary Textures**
--------------------------------------
+## Technology: Planetary Textures
 
 The image ratio horizontal:vertical must be 2:1 (assuming pixel ratio of the map is 1:1), since the texture is wrapped around the planet sphere horizontally around 360 degrees and vertically around 180 degrees. Necessarily, in order for the surface not to appear distorted, your pixel ratio of the generated texture must be 1.0, i.e. a circle must show as a circle when viewing the texture in an image viewer, on a monitor with square pixels.
 
@@ -1220,8 +1217,7 @@ source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](
 
 
 
-**Procedural Content**
--------------------------------------
+## Technology: Procedural Content
 
 - [Procedural Content Generation](http://ianparberry.com/research/content/)
 
@@ -1229,8 +1225,7 @@ source: text by pyramid from [Vega Strike Development: Orbital Planet Surfaces](
 
 
 
-**Procedural Randomness**
--------------------------------------
+## Technology: Procedural Randomness
 
 An interesting concept to consider is the [random number generator](https://github.com/MtnViewJohn/context-free/wiki/About#any-code-worth-snagging) used in [Context Free Art](https://www.contextfreeart.org/) procedural processor:
 
@@ -1277,8 +1272,7 @@ Do we generate on server (seed only) or on client (geometry) in a multi-player e
 
 
 
-**Procedural Universe Building**
--------------------------------------
+## Technology: Procedural Universe Building
 
 keywords: real-time procedural universe
 
@@ -1288,8 +1282,7 @@ listings
 
 
 
-**Procedural Starfields and Space Backgrounds**
--------------------------------------
+## Technology: Procedural Starfields and Space Backgrounds
 
 keywords
 
@@ -1320,8 +1313,7 @@ articles and code
 
 
 
-**Procedural Planet**
--------------------------------------
+## Technology: Procedural Planet
 
 keywords: open source seamless planetary flight, open source planet generator, Adaptive Mesh Refinement
 
@@ -1371,8 +1363,7 @@ catalogs
 
 
 
-**Procedural Terrain**
--------------------------------------
+## Technology: Procedural Terrain
 
 @TODO: create "Open Specification for Procedural Terrain Building". Some thoughts that need lots of more work:
 
@@ -1427,45 +1418,10 @@ VulkanSceneGraph
 https://github.com/vsg-dev/MyFirstVsgApplication
 https://github.com/gwaldron/osgearth
 
-Voxel Engine Code
-
-http://www.minetest.net/
-https://www.voxelquest.com/
-https://github.com/Relintai/broken_seals
-https://github.com/codewing/vulkan_rendering
-https://voxelplugin.com/ (UE4)
-https://goxel.xyz/
-
-https://github.com/topics/voxel-engine
-https://github.com/s-macke/VoxelSpace
-https://github.com/BayatGames/VoxelFramework (Unity)
-https://github.com/XenonLab-Studio/TerraCraft (Python)
-https://github.com/Relintai/voxelman
-https://github.com/Russoul/voxelized3d (Dual Contouring)
-https://github.com/TheSpyGeek/VoxelEngine
-https://github.com/Tunied/CEVoxelMeshGreedyOptimizer
-https://github.com/himanshugoel2797/ProtoVoxel
-https://github.com/theSoenke/ProceduralTerrain (Unity)
-
-Libraries
-
-https://www.openvdb.org/
-
-Topics
-
-https://awesomeopensource.com/project/meshula/awesome-voxel
-
-- adaptive dual contouring
-- octree simplification
-- storing extra information in voxels: a distance at which simplification is preferred
-- output triangulated surface
 
 
 
-
-**Procedural World Building**
--------------------------------------
-
+## Technology: Procedural World Building
 
 listings
 
@@ -1475,8 +1431,7 @@ listings
 
 
 
-**Biome Building**
--------------------------------------
+## Technology: Biome Building
 
 The biosphere of a planet includes the whole of the planet including the areas where life is found and consists of various biomes that depend on different parameters like geology, climate, and ecology. On earth there are terrestrial and aquatic biomes, the former include examples like tundra, taiga, savanna, forest, grassland, desert.
 
@@ -1508,8 +1463,7 @@ World Engine (https://github.com/Mindwerks/worldengine) is a tectonic surface he
 
 
 
-**Procedural Textures**
--------------------------------------
+## Technology: Procedural Textures
 
 In the long run, texturing by hand will become obsolete. A mechanism is needed to integrate procedural image generation solutions to seamlessly integrate into asset data.
 
@@ -1527,14 +1481,13 @@ Here are some tools to review for making procedural game textures
 
 
 
-**Coordinate Systems**
--------------------------------------
+## Technology: Coordinate Systems
 
 **Recommendation**
 
 We use the more common **right-handed cartesian coordinate system** (the same as in  OpenGL). When using your right hand, your thumb points to the right (the +X axis), your index finger points up (the +Y axis), and your middle finger points towards you (the +Z axis). Note: a careful reevaluation should be done in around 10-20 years time should OpenGL be discontinued for the majority of game engines and replaced by Vulkan, since Vulkan's y-axis points downward.
 
-For planet positions we use the counter-clockwise **spherical coordinate system** whereas the distance from origin is *rho*, the angle along the latitudonal equator in the xz-plane is *theta*, and the angular position along the longitude is *phi*. However, the azimuth *phi* is restricted to the interval (-180 deg, +180 deg), or (-*pi*, + *pi*) in radians. This is the standard convention for geographic longitude. Conversion between cartesian and polar coordinates must be performed whenever entering or leaving a planet and when landing on a planet. 
+For planet positions we use the counter-clockwise **spherical coordinate system** whereas the distance from origin is *rho*, the angle along the latitudinal equator in the xz-plane is *theta*, and the angular position along the longitude is *phi*. However, the azimuth *phi* is restricted to the interval (-180 deg, +180 deg), or (-*pi*, + *pi*) in radians. This is the standard convention for geographic longitude. Conversion between cartesian and polar coordinates must be performed whenever entering or leaving a planet and when landing on a planet. 
 
 For HUDs we use **2D cartesian coordinate system** with extensions between (0.0, 1.0). Whenever the screen aspect ratio differs from 1:1 the smaller screen extension will have an extension of (0.0+0.5/aspect_ration, 1.0-0.5/aspect_ratio).
 
@@ -1562,6 +1515,51 @@ y screen extension min, max = (0.0+0.5/1.78, 1.0-0.5/1.78) = 0.28, 0.72
 
 
 
+## Content: Production Pipeline
+
+-------------------------------------
+
+From idea to finished release. All creativity starts with an idea. There is the player character, the non-player characters, the environment, and a a story to connect and relate them all and give the player something meaningful and entertaining to spend his time.
+
+The story dictates which characters and environment assets will be designed.
+Visual Effects, voice, audio, and cut scenes may be required in additions.
+
+
+
+
+## Content: Asset Pipeline
+
+
+Will strongly depend on asset formats and types of games.
+
+
+
+
+## Content: Asset Tools
+
+
+A good practice when constructing new tools is to separate binaries for processing and visualization.
+
+The asset pipeline should be automatable in the sense that bulk operations can be scripted.
+
+By creating technology dependent user interfaces which call the command line processing tool we assure cross-platform as well as future portability.
+
+
+
+
+## Content: Asset Catalogs
+
+There is a variety of distributed asset management sites available today.
+Some of them offer free model.
+
+Licensing must be considered as some of the free assets may be only for personal or academic use.
+
+An aggregator service with search and filtering would enshorten the creators time when looking for appropriate libre assets for his creation.
+
+
+
+
+
 **Unsorted Topics**
 -------------------------------------
 
@@ -1579,25 +1577,29 @@ Simple use of [texture synthesis](https://github.com/EmbarkStudios/texture-synth
 
 
 
-References
-=====================================
+# References
+
 
 A collection of assorted references with the objective to shorten the entry barrier for new members.
 
 
 
 
-**Game Design Books**
--------------------------------------
+## Knowledge: Game Design Books
+
 
 - [Learn OpenGL](https://learnopengl.com/Offline-book)
 - [The gamebook convention](https://github.com/r-lyeh/gamebook)
 - [Game Programming Patterns](http://gameprogrammingpatterns.com/contents.html) - the web version
+- Learn Computer Graphics From Scratch! - https://www.scratchapixel.com/
+- Vulkan Tutorial. https://vulkan-tutorial.com/. Code: https://github.com/Overv/VulkanTutorial.
 
 
 
-**Gaming Theory**
--------------------------------------
+
+
+## Knowledge: Gaming Theory
+
 
 - Open Gaming (https://en.wikipedia.org/wiki/Open_gaming)
 - Open Game Systems (https://wiki.rpg.net/index.php/Open_Game_Systems)
@@ -1605,8 +1607,7 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
-**Game Design Sites**
--------------------------------------
+## Knowledge: Game Design Sites
 
 - [https://cgsociety.org/](https://cgsociety.org/)
 - https://social.freegamedev.net/channel/devplanet
@@ -1624,27 +1625,27 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
-**Conferences**
--------------------------------------
+## Knowledge: Conferences & Journals
 
-- http://jcgt.org/
+- the Journal of Computer Graphics Techniques - http://jcgt.org/
 - http://ianparberry.com/
 - [Gamedev.World](https://gamedev.world/en/)
 - [SIGGRAPH](https://www.siggraph.org/)
 - [SIGGRAPH Papers](https://dl.acm.org/conference/siggraph/proceedings)
 - [FOSDEM](https://fosdem.org/)
+- [Eurographics](https://www.eg.org/wp/). [Eurographics Digital Library](http://diglib.eg.org/).
+- [IEEE Transactionson Visualization and Computer Graphics](https://www.computer.org/csdl/journal/tg)
 
 
 
-**Research Papers**
--------------------------------------
+## Knowledge: Research Papers
+
 
 - [Lund University Computer Graphics](http://graphics.cs.lth.se/)
 
 
 
-**Technology Articles**
--------------------------------------
+## Knowledge: Technology Articles
 
 - [Thinking in C++] (http://www.bruceeckel.com/ThinkingInCPP2e.html)
 - [Adaptive planet and terrain mesh generation] (http://www.vterrain.org/LOD/Papers/index.html)
@@ -1658,8 +1659,7 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
-**Game Developer Blogs**
--------------------------------------
+## Knowledge: Game Developer Blogs
 
 - [Leah Lindner](http://leah-lindner.com/)
 - [Alexander Freed](alexanderfreed.com)
@@ -1676,12 +1676,16 @@ A collection of assorted references with the objective to shorten the entry barr
 - https://www.iquilezles.org/www/index.htm
 - https://gamedesignlounge.com/
 - [Engines of Delight](https://gameserverarchitecture.com/) (https://gameserverarchitecture.com/)
+- [GC Rassovsky CG Blog](https://grassovsky.wordpress.com/) - (https://grassovsky.wordpress.com/
+  ([L-Systems with C++](https://grassovsky.wordpress.com/2014/05/16/l-systems-with-c-and-opengl/), [Procedural Rock Piles into Contact](https://grassovsky.wordpress.com/2014/06/06/procedural-rock-piles-into-contact-3/), [Houdini City Generator](https://grassovsky.wordpress.com/2014/09/09/houdini-city-generator/), [Thesis: Cubical Marching Squares Implementation](https://grassovsky.wordpress.com/2014/09/09/cubical-marching-squares-implementation/))
+- [Casual Effects by Morgan McGuire](https://casual-effects.com/)
 
 
 
 
-**Game Development Forums**
--------------------------------------
+
+
+## Knowledge: Game Development Forums
 
 - [GameDev.net Forums](https://www.gamedev.net/forums/)
 - [IndieGamer Forums](http://forums.indiegamer.com/)
@@ -1708,9 +1712,10 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
-**Gamer Forums**
--------------------------------------
+## Knowledge: Gamer Forums
 
+
+- [Blender Artists](https://blenderartists.org/)
 - [NeoGAF](https://www.neogaf.com/forums/gaming-discussion.2/)
 - [Gamespot Forums](https://www.gamespot.com/forums/)
 - [VideoGamer Forums](https://www.videogamer.com/forums/)
@@ -1733,17 +1738,16 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
+## Library: Game Art Assets
 
-**Asset Artists Forums**
--------------------------------------
-
-- [Blender Artists](https://blenderartists.org/)
-
+- https://opengameart.org/ (2D, 3D, Concept, Textures, Music, Sounds)
+- https://free3d.com/ (3D assets)
 
 
 
-**Fictional Universes**
--------------------------------------
+
+## Library: Fictional Universes
+
 
 **Science Fiction**
 
@@ -1759,8 +1763,17 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
-**Story Writing**
--------------------------------------
+## Tools: Catalogs
+
+- [MagicTools](https://github.com/ellisonleao/magictools)
+- [GitHub Game Development](https://github.com/topics/game-development)
+- [PROCJAM Tutorials](http://www.procjam.com/tutorials/)
+- [https://www.gamedesigning.org/career/video-game-engines/]
+- [https://www.gamedesigning.org/engines/bullet/]
+
+
+
+## Tools: Story Writing
 
 - [Hemingway](http://www.hemingwayapp.com/)
 - [Dialog](https://www.linusakesson.net/dialog/)
@@ -1769,25 +1782,10 @@ A collection of assorted references with the objective to shorten the entry barr
 
 -------------------------------------
 
-**Libre Games**
--------------------------------------
-
-- [Vega Strike](https://www.vega-strike.org/) - open space simulator engine and game
-- [OpenMW](https://openmw.org/) - moddable open-world role-playing game engine
-- [Worldforge](https://www.worldforge.org/) - provides tools, technologies, servers, clients, protocol, media and a community to allow anyone to create their own virtual world
-- Naev [http://naev.org/]
-- PlaneShift [http://www.planeshift.it/]
-- [Oolite](http://www.oolite.org/)
-
-Libre game listings
-- https://en.wikipedia.org/wiki/List_of_open-source_video_games
-- [Listing from https://wiki.vega-strike.org/Links:Free_Games](https://wiki.vega-strike.org/Links:Free_Games)
 
 
 
-
-**Game Engines**
--------------------------------------
+## Tools: Game Engines
 
 Listings
 - [Wikipedia Listing of Game Engines](https://en.wikipedia.org/wiki/List_of_game_engines)
@@ -1806,16 +1804,29 @@ Popular engines
 - [Castle Game Engine](https://castle-engine.io/)
 - [WorldForge](https://www.worldforge.org/)
 - [toyengine](https://github.com/hugoam/toy) - a thin and modular c++ game engine.
+- [G3D Innovation Engine](http://casual-effects.com/g3d)
+- Amethyst Game Engine. https://amethyst.rs/. Written in Rust.
 
 
 
+## Tools: Code Libraries
 
-**Game Libraries**
--------------------------------------
+**Library Listings**
+
+- [Godot Extended Libraries](https://github.com/godot-extended-libraries)
+- [List of Modules for Godot engine](https://godottips.gitlab.io/stories/modules/)
+- [A curated list of awesome C++ (or C) frameworks, libraries, resources](https://github.com/fffaraz/awesome-cpp)
+- [Awesome list of C++ GameDev project](https://github.com/Cmdu76/AwesomeCppGameDev)
+- [Single-file public-domain/open source libraries with minimal dependencies](https://github.com/nothings/single_file_libs)
+
+
+
+**Graphics Libraries**
 
 - [bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform rendering library
 - [OGRE](https://www.ogre3d.org/)
 - [Diligent Engine ](https://github.com/DiligentGraphics/DiligentEngine) A modern cross-platform low-level graphics library and rendering framework
+- [Pumex](https://github.com/pumexx/pumex) - a Vulkan rendering library
 - [assimp](https://github.com/assimp/assimp) Open Asset Import Library (assimp)
 - [OpenSceneGraph](http://www.openscenegraph.org/) is an open source high performance 3D graphics toolkit.
 - [VulkanSceneGraph](https://github.com/vsg-dev/VulkanSceneGraph) - www.vulkanscenegraph.org
@@ -1831,25 +1842,18 @@ Popular engines
 - [OpenTimelineIO](https://github.com/PixarAnimationStudios/OpenTimelineIO)
 - [Ptex](https://github.com/wdas/ptex)
 - [Computational Geometry Lib](https://www.cgal.org/)
-- [Godot Extended Libraries](https://github.com/godot-extended-libraries)
-- [List of Modules for Godot engine](https://godottips.gitlab.io/stories/modules/)
-- [A curated list of awesome C++ (or C) frameworks, libraries, resources](https://github.com/fffaraz/awesome-cpp)
-- [Awesome list of C++ GameDev project](https://github.com/Cmdu76/AwesomeCppGameDev)
-- [Single-file public-domain/open source libraries with minimal dependencies](https://github.com/nothings/single_file_libs)
 - [EQEmu Server](https://github.com/EQEmu/Server)
-- [EntityX](https://github.com/alecthomas/entityx) - C++ Entity Component System
-- [anax](https://github.com/miguelmartin75/anax) - C++ entity system designed to be portable, lightweight and easy to use.
-- [EntityPlus](https://github.com/Yelnats321/EntityPlus) - a C++17 Entity Component System
-- [entt](https://github.com/skypjack/entt) - a fast and reliable entity component system (ECS)
+- [CRS4 Visual Computing](http://vic.crs4.it/vic/download/). http://vic.crs4.it/vic/download/ - Spaceland Library, RATMAN
+- [DungeonTemplateLibrary](https://github.com/AsPJT/DungeonTemplateLibrary)
 
 
 
 **Entity Component Systems**
 
-- [EntityX](https://github.com/alecthomas/entityx)
-- [EnTT](https://github.com/skypjack/entt)
-- [anax](https://github.com/miguelmartin75/anax)
-- [EntityPlus](https://github.com/Yelnats321/EntityPlus)
+- [EntityX](https://github.com/alecthomas/entityx) - C++ Entity Component System
+- [EnTT](https://github.com/skypjack/entt) - a fast and reliable entity component system (ECS)
+- [anax](https://github.com/miguelmartin75/anax) - C++ entity system designed to be portable, lightweight and easy to use.
+- [EntityPlus](https://github.com/Yelnats321/EntityPlus) - a C++17 Entity Component System
 
 
 
@@ -1865,18 +1869,8 @@ Popular engines
 
 
 
-**Game Creation Tools**
--------------------------------------
 
-- [two](https://github.com/hugoam/two) - c++ toolkit for rapid development of live graphical apps and games
-
-- [Recast](https://github.com/EQEmu/recastnavigation) - navigation mesh construction toolset for games
-
-
-
-
-**Graphic Content Creation Tools**
--------------------------------------
+## Tools: Graphic Content Creation Tools
 
 - [ASWF Interactive Landscape](https://landscape.aswf.io/)
 - [AcademySoftwareFoundation Landscape](https://github.com/AcademySoftwareFoundation/aswf-landscape)
@@ -1900,8 +1894,7 @@ Popular engines
 
 
 
-**3D Modeling Applications**
--------------------------------------
+## Tools: 3D Modeling Applications
 
 - [Blender](http://www.blender.org/)
 - [Cocos Creator](https://www.cocos.com/en/products#CocosCreator)
@@ -1912,8 +1905,7 @@ Popular engines
 
 
 
-**3D Texture Painting**
--------------------------------------
+## Tools: 3D Texture Painting
 
 - [CinePaint]()https://github.com/archont00/cinepaint-oyranos
 - [ArmorPaint](https://armorpaint.org/)
@@ -1921,16 +1913,14 @@ Popular engines
 
 
 
-**Software: Texture Processing**
--------------------------------------
+## Tools: Texture Processing
 
 - [Texture Synthesis](https://github.com/EmbarkStudios/texture-synthesis)
 
 
 
 
-**Procedural Planet Generators**
--------------------------------------
+## Tools: Procedural Planet Generators
 
 - [Fracplanet](http://www.bottlenose.net/share/fracplanet/index.htm) [http://www.bottlenose.net/share/fracplanet/index.htm](http://www.bottlenose.net/share/fracplanet/index.htm)
 
@@ -1947,8 +1937,7 @@ https://www..unity.com/threads/truly-procedural-planet-generator.198536/
 
 
 
-**Terrain Generators**
--------------------------------------
+## Tools: Terrain Generators
 
 http://vterrain.org/Packages/NonCom/
 http://vterrain.org/Packages/Artificial/
@@ -1978,8 +1967,7 @@ https://github.com/heremaps/quantized-mesh-viewer
 
 
 
-**Godot Engine Tools and Plugins**
--------------------------------------
+## Tools: Godot Engine Tools and Plugins
 
 articles
 - https://steincodes.tumblr.com/post/175407913859/introduction-to-procedural-generation-with-godot
@@ -1994,17 +1982,17 @@ keywords: godot engine procedural generation
 
 
 
-**Audio Production**
--------------------------------------
+## Tools: Audio Production
 
 - [Audacity](http://audacity.sourceforge.net/)
 
-**Movie Authoring**
--------------------------------------
+
+
+## Tools: Movie Authoring
 
 
 
-## Dialogue Systems
+## Tools: Dialogue Systems
 
 - [libprocu-dialogue](https://github.com/LibreGamingManifest/libre-gaming-engines/tree/master/libprocu-dialogue)
 - https://unitylist.com/p/c0d/Unity3D-dialogue-system
@@ -2017,39 +2005,41 @@ keywords: godot engine procedural generation
 
 
 
-**Procedural Quest Authoring**
--------------------------------------
+## Tools: Procedural Quest Authoring
 
 - [Everquest Emulator](http://www.eqemulator.org/)
 - [Everquest Emulator Source](https://github.com/EQEmu/Server)
 
 
 
-**Procedural Biology**
--------------------------------------
+## Tools: Procedural Biology
 
 
 - [Framsticks](http://www.framsticks.com/) is a three-dimensional life simulation project.
 
 
 
-**Development Tools**
--------------------------------------
+## Tools: Development Tools
 
+- [KDevelop](https://www.kdevelop.org/) - A cross-platform IDE for C, C++, Python
 - [Easy Guide on using Git](https://wiki.worldforge.org/wiki/Using_Git)
 - [XMLtoJSON](https://github.com/EQEmu/Server/tree/master/utils/xmltojson) - XML to JSON format converter
+- [two](https://github.com/hugoam/two) - c++ toolkit for rapid development of live graphical apps and games
+- [Recast](https://github.com/EQEmu/recastnavigation) - navigation mesh construction toolset for games
+- [GPUpad](https://github.com/houmain/gpupad) - GLSL shader editor and IDE for GPU based algorithms
 
 
 
-**Standards Specifications**
--------------------------------------
+## Standards: Specifications
 
-- [glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0) - GL Transmission Format (glTF) is an API-neutral runtime asset delivery format.
+- Open Data Description Language (OpenDDL) http://openddl.org/. [Download OpenDDL Specification](http://openddl.org/openddl-spec.pdf). [OpenDDL Reference Parser](https://github.com/EricLengyel/OpenDDL).
+
+- Open Game Engine Exchange Format OpenGEX http://opengex.org/. Open Game Engine Exchange [OpenGEX Specification](http://opengex.org/opengex-spec.pdf). [OpenGEX Reference Code](https://github.com/EricLengyel/OpenGEX)
+- [glTF](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0) - GL Transmission Format (glTF) is an API-neutral runtime asset delivery format (superseded by OpenGEX).
 
 
 
-**Coding Standards**
--------------------------------------
+## Standards: Coding Standards
 
 There are many coding books, tutorials, and standards available. We just list some we accidentally came across:
 
@@ -2061,15 +2051,23 @@ There are many coding books, tutorials, and standards available. We just list so
 
 
 
+## Games: Libre Games
 
-**Catalogs**
--------------------------------------
+**Libre game listings**
 
-- [MagicTools](https://github.com/ellisonleao/magictools)
-- [GitHub Game Development](https://github.com/topics/game-development)
-- [PROCJAM Tutorials](http://www.procjam.com/tutorials/)
-- [https://www.gamedesigning.org/career/video-game-engines/]
-- [https://www.gamedesigning.org/engines/bullet/]
+- https://en.wikipedia.org/wiki/List_of_open-source_video_games
+- [Listing from https://wiki.vega-strike.org/Links:Free_Games](https://wiki.vega-strike.org/Links:Free_Games)
+
+
+
+**Libre Games**
+
+- [Vega Strike](https://www.vega-strike.org/) - open space simulator engine and game
+- [OpenMW](https://openmw.org/) - moddable open-world role-playing game engine
+- [Worldforge](https://www.worldforge.org/) - provides tools, technologies, servers, clients, protocol, media and a community to allow anyone to create their own virtual world
+- Naev [http://naev.org/]
+- PlaneShift [http://www.planeshift.it/]
+- [Oolite](http://www.oolite.org/)
 
 
 
@@ -2214,6 +2212,7 @@ cout << (bIsTrueVar==true? "true":"false") << std::endl;
 Print hex number
 
 ```cpp
+#include <iomanip>
 cout << "0x" << hex << setw(4) << setfill('0') << iNumber
      << dec << std::endl;
 ```
@@ -2238,6 +2237,57 @@ Print to string
 ```cpp
 std::stringstream buffer;
 buffer << "> " << nextVar << std::endl;
+```
+
+
+
+## Output Steam Function
+
+
+
+```cpp
+/**
+ * @brief custom uint output stream
+ */
+std::ostream& operator<<(std::ostream& ostr, const uint& sequence) {
+  if(sequence) {
+      ostr << std::dec << sequence.value()
+           << " : 0x" << std:::hex << sequence.value();
+  }
+  return ostr;
+}
+
+/**
+ * @brief generic custom output stream
+ */
+template<typename T>
+std::ostream& operator<<(std::ostream& ostr, const std::optional<T>& ent) {
+  ostr << ent.value();
+  return ostr;
+}
+```
+
+
+
+## Replace Substring
+
+```cpp
+/**
+ * @ brief replaces a substring
+ * @param subject input string
+ * @param search string to find
+ * @param replace string to replace
+ * @source: https://stackoverflow.com/a/14678946
+ */
+std::string replaceString(std::string subject, const std::string& search, const std::string& replace) {
+    if (search.empty()) { return subject; }
+    std::size_t pos;
+    while ((pos = subject.find(search)) != std::string::npos) {
+      subject.replace(pos, search.size(), replace);
+      pos += replace.length();
+    }
+    return subject;
+}
 ```
 
 
@@ -2424,8 +2474,6 @@ if (someObject) {
 // error checking
 if (itemptr==nullptr) { ... }
 ```
-
-
 
 
 
