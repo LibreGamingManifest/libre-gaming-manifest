@@ -1,7 +1,7 @@
 ```
 #
 # @file   : libre-gaming-manifest.md
-# @version: 2021-02-28
+# @version: 2021-04-09
 # @created: 2019-02-01
 # @author : pyramid
 #
@@ -62,7 +62,7 @@ Further specifics will be discussed in later chapters keeping in mind that an ex
 
 
 
-## Open Source Games
+## Libre Source Games
 
 Because (for those who care)
 
@@ -77,7 +77,7 @@ Because (for those who care)
 
 
 
-## Open Source
+## Libre Source
 
 Think twice, investigate, read or listen to opinions, if you expect to be making a living from open source. Though not impossible or unheard of, it requires a lot of commercial overhead.
 
@@ -94,13 +94,36 @@ Be sure that you are prepared to walk this path.
 
 - corporate strongarms will steal your work
 - open source community has elements that do not care about responsibility or diligence
-- the attrition and abandonement culture of some open projects can be nerve-straining
+- the attrition and abandonment culture of some open projects can be nerve-straining
 - some of the github project leaders' neglect of merging pull requests is outright disrespectful
 - while open source should strive for unity   of solutions, the previous realities lead to unsustainable fragmentation
 - your body is the vehicle for your mind. the healthier the better your contributions
 - equally, emotional health allows for better creativity and contributions
 - there is naysayers, apes and savages in t-shirts abound, and they will be out to get you. just keep cool and detached.
 - as all roads, this one is also full of sweat and disappointments (but also achievements and rewards)
+
+
+
+## Intended Audience
+
+[Duion](https://duion.com/blogs/boredom-linear-story-based-games) astutely notes the different motivations for different types of gamers.
+
+> The creator needs to actually create something for real to get satisfaction and a competitive gamer needs to win against real competition to know he is good and the casual gamer is satisfied with the illusion and the cheater does not care - he simply gets satisfaction from making others feel worse.
+
+Intelligent players will need a diverse non-linear content and intelligent challenges to convince them of their ego boost.
+
+
+
+For the ease of argumentation, we distinguish the following user groups:
+
+- [**hackers**](https://en.wikipedia.org/wiki/Hacker) - savvy and advanced computer users versatile in computer science and inner workings of hardware and software; computer experts who use their technical knowledge to achieve a goal or overcome an obstacle, within a computerized system, in the traditional non-malevolent meaning of the word.
+- [**noobs**](https://en.wikipedia.org/wiki/Newbie) - casual users knowledgeable in interfacing with a computer system in a predefined way, though feeling or showing little concern as to the inner workings of hardware and software or for resolution or improvement of problems and improvements.
+
+This book is suitable for **hackers** but not for **noobs**.
+
+
+
+Further, we deal with libre systems, predominantly the Linux and Android operating systems, libre libraries, solutions, formats, and standards.
 
 
 
@@ -233,9 +256,11 @@ We would also strongly discourage the following anti-features:
 
 ## Design: Compelling Experience
 
-Those compelling, enticing, reactive games with unique and realistic content that are able to engage the user for a long time will prevail.
+Intelligent players need a diverse non-linear content and intelligent challenges to convince them of their ego boost.
 
-Just like life, there is no knowing what will be. Games must become the same.
+Those compelling, enticing, reactive games with unique and realistic content that are able to engage the user for a long time and challenge them intelligently without limiting their freedom to enjoy themselves will prevail.
+
+Just like life, there is no knowing what will be and therefore games must become the same.
 
 Possible player objectives in casual gaming:
 
@@ -284,6 +309,10 @@ author: [jackS](https://forums.vega-strike.org/memberlist.php?mode=viewprofile&u
 source: [https://forums.vega-strike.org/viewtopic.php?p=31090#p31090](https://forums.vega-strike.org/viewtopic.php?p=31090#p31090)
 
 
+
+
+
+
 ## Design: Procedural Content Generation (PCG)
 
 In order to achieve any meaningful level of non-repetitive immersion procedural content generation, possibly coupled with machine learning and artificial intelligence, must be applied in future games. 
@@ -330,6 +359,8 @@ TODO: why this chapter?
 - Knowledge based
 
 
+
+
 ## Design: Design Documents
 
 We separate the game content from the game play. The following documents are required for good game design
@@ -350,8 +381,6 @@ We **recommend** the structure for both documents derived from the one of the [V
 [1] [Game Design Document](https://github.com/vegastrike/VS-Design-Docs)
 
 [2] [EQEmu Design Docs](https://github.com/EQEmu/docs-main)
-
-
 
 
 
@@ -966,8 +995,11 @@ Sooner or later all game programmers will be in touch with GPU rendering. Here a
 - [I am Graphics And So Can You](https://www.fasterthan.life/blog/2017/7/11/i-am-graphics-and-so-can-you-part-1)
 - [RenderDoc](https://renderdoc.org/)
 - [Beginners Guide to Vulkan](https://www.khronos.org/blog/beginners-guide-to-vulkan)
+- [OpenGL Tutorial](https://www.opengl-tutorial.org/)
 
 
+
+See also further rendering engines under [Tools: Rendering Engines](#tools-rendering-engines)
 
 
 
@@ -1063,6 +1095,29 @@ The following collection of resources may help you decide for the most appropria
 
 - [xmake build utility](https://xmake.io/)
 - [Makefile Tutorial](https://makefiletutorial.com/)
+
+
+
+**Recommendation**
+
+We recommend [xmake](https://xmake.io/) over other build systems due to it being more user friendly than cmake, make, and other more recent make systems like [GENie](https://github.com/bkaradzic/GENie), or [Premake](https://premake.github.io/):
+
+- easy to comprehend syntax
+- flat learning curve
+
+- modular configuration
+
+- can generate other build files (cmake, make, sln)
+
+- has built in console ui
+
+- can build, run, package
+
+- can build c, c++, cuda, rust
+
+- can define custom rules, e.g. for .markdown builds
+
+Some configuration tips can be found under [Appendix: xmake Snippets](#appendix-xmake-snippets)
 
 
 
@@ -1661,6 +1716,7 @@ A collection of assorted references with the objective to shorten the entry barr
 
 ## Knowledge: Game Developer Blogs
 
+- [DUION](https://duion.com/)
 - [Leah Lindner](http://leah-lindner.com/)
 - [Alexander Freed](alexanderfreed.com)
 - [https://erikhjortsberg.blogspot.com/](https://erikhjortsberg.blogspot.com/)
@@ -1738,6 +1794,12 @@ A collection of assorted references with the objective to shorten the entry barr
 
 
 
+## Library: Curated Lists
+
+- [magictools](https://github.com/ellisonleao/magictools) a curated list of game development
+
+
+
 ## Library: Game Art Assets
 
 - https://opengameart.org/ (2D, 3D, Concept, Textures, Music, Sounds)
@@ -1794,18 +1856,37 @@ Popular engines
 
 - [Godot Engine](http://godotengine.org/)
 - [Blender Game Engine](http://www.blender.org/)
-- [Torque 3D](http://torque3d.org/)
+- [Torque 3D](http://torque3d.org/) (Windows centered)
 - [Armory Engine](https://armory3d.org/)
 - [CryEngine](https://github.com/CRYTEK/CRYENGINE)
 - [Urho3D](https://urho3d.github.io/)
 - [Kha](http://kha.tech/)
-- [jMonkey Engine](http://jmonkeyengine.org/)
+- [jMonkey Engine](http://jmonkeyengine.org/) (Java)
 - [The Atomic Game Engine](https://github.com/AtomicGameEngine/AtomicGameEngine)
 - [Castle Game Engine](https://castle-engine.io/)
 - [WorldForge](https://www.worldforge.org/)
 - [toyengine](https://github.com/hugoam/toy) - a thin and modular c++ game engine.
-- [G3D Innovation Engine](http://casual-effects.com/g3d)
 - Amethyst Game Engine. https://amethyst.rs/. Written in Rust.
+- [NeoAxisEngine](https://github.com/NeoAxis/NeoAxisEngine)
+- [RavEngine](https://github.com/Ravbug/RavEngine)
+- [anki-3d-engine](https://github.com/godlikepanos/anki-3d-engine) Vulkan game engine using SDL
+
+
+
+## Tools: Rendering Engines
+
+- [DiligentEngine](https://github.com/DiligentGraphics/DiligentEngine) - a lightweight cross-platform low-level graphics rendering framework.
+- [bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform rendering library (Windows centered)
+- [bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform rendering library
+- [OGRE](https://www.ogre3d.org/) graphics rendering engine
+- [Pumex](https://github.com/pumexx/pumex) - a Vulkan rendering library
+- [liblava](https://github.com/liblava/liblava) is cross-platform Vulkan rendering library
+- [G3D Innovation Engine](http://casual-effects.com/g3d) prototyping rendering engine
+- [two](https://github.com/hugoam/two) - an all-purpose c++ app prototyping library
+- [Granite](https://github.com/Themaister/Granite) Vulkan prototyping rendering engine
+- [vulkan-renderer](https://github.com/inexorgame/vulkan-renderer) - octree game engine based on C++17 and Vulkan
+- [island](https://github.com/tgfrerer/island) experimental hot-reloading Vulkan renderer/proto-engine
+- [MoravaEngine](https://github.com/dtrajko/MoravaEngine) 2D/3D graphics engine based on C++ and OpenGL ES 2.0
 
 
 
@@ -1823,10 +1904,6 @@ Popular engines
 
 **Graphics Libraries**
 
-- [bgfx](https://github.com/bkaradzic/bgfx) - Cross-platform rendering library
-- [OGRE](https://www.ogre3d.org/)
-- [Diligent Engine ](https://github.com/DiligentGraphics/DiligentEngine) A modern cross-platform low-level graphics library and rendering framework
-- [Pumex](https://github.com/pumexx/pumex) - a Vulkan rendering library
 - [assimp](https://github.com/assimp/assimp) Open Asset Import Library (assimp)
 - [OpenSceneGraph](http://www.openscenegraph.org/) is an open source high performance 3D graphics toolkit.
 - [VulkanSceneGraph](https://github.com/vsg-dev/VulkanSceneGraph) - www.vulkanscenegraph.org
@@ -2292,6 +2369,22 @@ std::string replaceString(std::string subject, const std::string& search, const 
 
 
 
+## Read File String
+
+```cpp
+std::string readASCIIFile(std::string const & filePath) {
+    std::ifstream file( filePath);
+    std::string asciiFile((std::istreambuf_iterator<char>(file)), std::istreambuf_iterator<char>());
+    return asciiFile;
+}
+```
+
+
+
+
+
+
+
 ## **Containers**
 
 A pair (tuple)
@@ -2501,6 +2594,64 @@ try {
 
 
 [cplusplus reference](http://www.cplusplus.com/reference/)
+
+
+
+# Appendix: xmake Snippets
+
+A basic tutorial can be found under https://tboox.org/2019/11/10/quickstart-4-basic-project-settings/ and a good reference is https://xmake.io/#/getting_started
+
+
+
+basic ```xmake.lua``` script for building a project using ```bgfx``` library
+
+```lua
+-- define binary output directory
+set_targetdir("bin")
+
+-- set compiler flags
+set_languages("c++17")
+-- comment if causing "stack smashing" error
+add_cxxflags("-O2")
+
+-- link system shared libraries
+-- equivalent to gcc -lglfw -lvulkan -lglut -lGLU -lGL -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi
+add_syslinks("glfw", "vulkan", "X11", "Xi", "GL", "dl", "pthread")
+
+-- add local library headers
+add_includedirs("lib/inc")
+
+-- add static and shared libraries path
+add_linkdirs("lib/bin")
+
+-- link shared libraries
+-- uncomment to build with shared libraries
+-- add_links("bgfx")
+
+-- link static libraries in that order
+-- comment to build with shared lib
+add_ldflags("-l:libbgfx.a", {force = true})
+add_ldflags("-l:libbimg.a", {force = true})
+add_ldflags("-l:libbx.a", {force = true})
+
+-- define build and run target
+target("bgfxminimal")
+    set_kind("binary")
+    add_files("helloworld.cpp")
+    set_default(true)
+```
+
+
+
+Pass options to pre-compiler
+
+```lua
+-- explicitly set a debug flag for the precompiler
+-- comment to enable release mode
+add_defines("DEBUG")
+```
+
+
 
 
 
